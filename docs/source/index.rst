@@ -1,5 +1,5 @@
 Welcome to PecubeGUI's documentation!
-===================================
+=====================================
 
 **PecubeGUI** is a graphical user interface for Pecube designed to help the Pecube's users
 to provide the input parameters. PecubeGUI also offers extended options such as the ability
