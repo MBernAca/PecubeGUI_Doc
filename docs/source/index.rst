@@ -16,7 +16,7 @@ in the Github repository.
 contact: maxime.bernard@uni-potsdam.de
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to :doc:`installation` the project.
 
 .. note::
 
@@ -28,4 +28,4 @@ Contents
 .. toctree::
 
    usage
-   api
+   installation
