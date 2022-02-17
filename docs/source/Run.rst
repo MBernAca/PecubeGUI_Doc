@@ -14,7 +14,7 @@ you will be able to provide and set all the Pecube input parameters for your pro
 .. figure:: ../images/New_Project.png
   :align: right
 
-  * **Figure 2.** Enter a new project name. This window shows up when clicking on the "New input file" action.*
+  **Figure 2.** Enter a new project name. This window shows up when clicking on the "New input file" action.
 
 
 The window should look like the Figure 3. On the top left, you could find and access all the projects you have loaded into the interface,
