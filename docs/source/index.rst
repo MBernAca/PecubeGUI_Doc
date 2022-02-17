@@ -29,5 +29,5 @@ Contents
 
    installation
    introduction
-   run a Pecube model
+   runPecube
    
