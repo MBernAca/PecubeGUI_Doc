@@ -4,9 +4,9 @@ Introduction
 
 .. _introduction:
 
-  Let's start here with a quick introduction of the interface.
+''Let's start here with a quick introduction of the interface.''
 
-  When opening PecubeGUI, a window will show up with a welcome message (Figure 1). This is the main window where you can access all the functionalities. Here, I give a brief overview of the access.
+When opening PecubeGUI, a window will show up with a welcome message (Figure 1). This is the main window where you can access all the functionalities. Here, I give a brief overview of the access.
   
 .. image:: ../images/Input_Parameters_interface.png
 
@@ -14,9 +14,9 @@ The numbers on Figure 1 give access to the followings:
 
 1. File menu. This menu comprises three options:
 
-  - New Input file: open a new Pecube project from which to set new input parameters.
-  - Open…: open an old input file and load the input parameters
-  - Exit: quit PecubeGUI. 
+  - **New Input file**: open a new Pecube project from which to set new input parameters.
+  - **Open…**: open an old input file and load the input parameters
+  - **Exit**: quit PecubeGUI. 
   All these actions can be called with keyboard shortcuts, found next to the action labels.
 
 2. Edit menu. Here you can access some preferences for the GUI:
