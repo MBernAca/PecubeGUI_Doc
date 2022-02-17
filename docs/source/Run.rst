@@ -27,5 +27,11 @@ and thus navigate through their respective parameters. The right part of the int
   
   
   The input parameters are presented by categories as referenced in the Pecube’s user guide. All the parameters are sorted in 9 categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Output*, *Isostasy*, *Inversion*, and *Miscellaneous* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appears describing the parameter.
+  
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI. For a detail description of the parameters, please refer to the Pecube user guide.
+
+Providing input parameters
+--------------------------
+
+
 
