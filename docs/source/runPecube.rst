@@ -1,5 +1,5 @@
-Run a Pecube model
-==================
+Run
+===
 
 .. _runPecube:
 
