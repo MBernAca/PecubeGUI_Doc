@@ -3,6 +3,6 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lumache"
+name = "PecubeGUI_Doc"
 authors = [{name = "Maxime Bernard", email = "maxime.bernard@uni-potsdam.de"}]
 dynamic = ["version", "description"]
