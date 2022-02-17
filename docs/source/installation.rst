@@ -1,5 +1,5 @@
-API
-===
+Installation
+============
 
 .. autosummary::
    :toctree: generated
