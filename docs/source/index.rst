@@ -29,4 +29,5 @@ Contents
 
    installation
    introduction
+   Usage
    
