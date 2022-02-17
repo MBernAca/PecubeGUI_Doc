@@ -1,4 +1,6 @@
-<h1> Run a Pecube model </h1>
+==================
+Run a Pecube model
+==================
 
 .. _run:
 
