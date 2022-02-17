@@ -15,8 +15,8 @@ in the Github repository.
 
 contact: maxime.bernard@uni-potsdam.de
 
-Check out the :doc:`introduction` section for further information, including
-how to :doc:`installation` the project.
+Check out the :doc:`installation` to go through the installation process, and
+the :doc:`introduction` section for a quick overview of the interface.
 
 .. note::
 
