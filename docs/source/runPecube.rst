@@ -2,7 +2,7 @@
 Run a Pecube model
 ==================
 
-.. _run:
+.. _runPecube:
 
 Create a new Pecube project
 ---------------------------
