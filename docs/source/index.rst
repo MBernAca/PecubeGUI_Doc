@@ -15,7 +15,7 @@ in the Github repository.
 
 contact: maxime.bernard@uni-potsdam.de
 
-Check out the :doc:`usage` section for further information, including
+Check out the :doc:`introduction` section for further information, including
 how to :doc:`installation` the project.
 
 .. note::
@@ -28,4 +28,5 @@ Contents
 .. toctree::
 
    installation
+   introduction
    
