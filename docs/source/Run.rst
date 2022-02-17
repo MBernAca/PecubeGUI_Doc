@@ -13,6 +13,6 @@ you will be able to provide and set all the Pecube input parameters for your pro
 
 .. figure:: ../images/New_Project.png
   :align: center
-  :alt: Figure 2. 
+  :alt:  
   
-  Enter a new project name. This window shows up when clicking on the "New input file" action. 
+  **Figure 2.** Enter a new project name. This window shows up when clicking on the "New input file" action. 
