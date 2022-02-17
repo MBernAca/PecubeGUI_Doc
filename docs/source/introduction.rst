@@ -25,9 +25,9 @@ The numbers on Figure 1 give access to the followings:
       +	GUI theme: ‘Dark’ or ‘White’. Default is ‘Dark’.
       + Show Console: allows to show a console when running Pecube, that shows some Pecube running outputs (see Figure 10).
       
-3. *New input file*. Open a new Pecube project.
+3. **New input file**. Open a new Pecube project.
 
-4. *Open Pecube file*. Open an old Pecube input file.
+4. **Open Pecube file**. Open an old Pecube input file.
 
-5. *show output*. Switch to the graphic area, to plot 2D or 3D data.
+5. **show output**. Switch to the graphic area, to plot 2D or 3D data.
 
