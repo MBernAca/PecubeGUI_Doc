@@ -1,5 +1,5 @@
-Run
-===
+RunPecube
+=========
 
 .. _runPecube:
 
