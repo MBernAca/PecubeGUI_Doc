@@ -10,9 +10,10 @@ The numbers on Figure 1 give access to the followings:
 
 1. File menu. This menu comprises three options:
 
-  - New Input file: open a new Pecube project from which to set new input parameters.
-  - Open…: open an old input file and load the input parameters
-  - Exit: quit PecubeGUI. \nAll these actions can be called with keyboard shortcuts, found next to the action labels.
+- New Input file: open a new Pecube project from which to set new input parameters.
+- Open…: open an old input file and load the input parameters
+- Exit: quit PecubeGUI. 
+  All these actions can be called with keyboard shortcuts, found next to the action labels.
 
 2. Edit menu. Here you can access some preferences for the GUI:
 
