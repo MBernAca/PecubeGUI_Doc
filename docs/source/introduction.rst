@@ -6,13 +6,14 @@ Introduction
   When opening PecubeGUI, a window will show up with a welcome message (Figure 1). This is the main window where you can access all the functionalities. Here, I give a brief overview of the access.
 
 The numbers on Figure 1 give access to the followings:
+
 1. File menu. This menu comprises three options:
   o New Input file: open a new Pecube project from which to set new input parameters.
-  o	Open…: open an old input file and load the input parameters
-  o	Exit: quit PecubeGUI.
-	All these actions can be called with keyboard shortcuts, found next to the action labels.
+  o Open…: open an old input file and load the input parameters
+  o Exit: quit PecubeGUI.
+  All these actions can be called with keyboard shortcuts, found next to the action labels.
 2. Edit menu. Here you can access some preferences for the GUI:
-  o	Preferences:
+  o Preferences:
       .	GUI theme: ‘Dark’ or ‘White’. Default is ‘Dark’.
       . Show Console: allows to show a console when running Pecube, that shows some Pecube running outputs (see Figure 10).
 3. ‘New input file’. Open a new Pecube project.
