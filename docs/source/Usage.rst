@@ -64,7 +64,7 @@ Topography tab
 | After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\data\SPM”. In parallel, the name “SPM/” is automatically provided to the    input parameters “Topography file name”, as well as for the grid resolution (i.e., nx and ny, only work with iSOSIA files, Figure 3).
 
 .. figure:: ../images/setTopography.png
-    :scale: 50
+    :scale: 30
     :align: center
 
     *Figure 5. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button.*
