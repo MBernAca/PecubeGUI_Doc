@@ -70,6 +70,7 @@ You are also able to provide a simple pre-spm history for the topographic evolut
 
 When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 3). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. Finally, you are able to check the topography you provided by clicking on “Show topography” (Figure 3). A new tab then appears on the right-hand side of the interface (Figure 5). This tab serves to visualize the topography and check your topography history as provided in the “Time evolution” part (see next section). You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 5).
 
+
 Time evolution tab:
 -------------------
 
@@ -86,4 +87,14 @@ In this tab (Figure 6) you can provide all the parameters controlling the time e
   
 | The default value for each parameter is also automatically provided. 
 | The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
+
+
+Tectonic tab:
+-------------------
+
+==================================
+
+|  This tab is related to the “Tectonic parameters” in the Pecube user guide. The tab comprises text boxes in the upper part and two tables at the bottom. To provide the input parameters, the tab is working as follow. You need to provide values for the input parameters “nfault”, “npoint”, and “nstep”. When provided, the size of the two tables will automatically adjust to provide the relevant parameters for the fault geometry (if any fault defined) and the kinematic of the model. 
+| An example of inputs taking “EXMP4” in Pecube user guide as an example, is shown in Figure 6.
+
 
