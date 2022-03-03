@@ -81,8 +81,7 @@ Time evolution tab:
 In this tab (Figure 6) you can provide all the parameters controlling the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
 
 .. figure:: ../images/Time_Evolution.png
-    :height: 514
-    :width: 594
+    :scale: 10
     :align: center
 
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
@@ -100,8 +99,7 @@ Tectonic tab:
 | An example of inputs taking “EXMP4” in Pecube user guide as an example, is shown in Figure 6.
 
 .. figure:: ../images/Tectonic_tab.png
-  :height: 506
-  :width: 613
+  :scale: 10
   :align: center
   
   *Figure 7. "Tectonic" tab where to provide parameters related to kinematic of rock uplift. The "EXMP4" in the Pecube's user guide is used as an example of input.*
@@ -120,8 +118,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the external routine. This has to be done in the “Data parameters” tab in the “Data folder” text box. In the current version, only the AHe system can be selected.
 
 .. figure:: ../images/Compute_age.png
-  :height: 418
-  :width: 625
+  :scale: 10
   :align: center
   
   *Figure 8. "Output" tab where to define the thermochronometers to use. Here, the example is made with sample specific prediction for the (U-Th)/He on apatite system.*
