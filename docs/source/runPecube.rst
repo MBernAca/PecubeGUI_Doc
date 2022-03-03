@@ -42,7 +42,7 @@ Topography tab:
 | I present in this section all kind of widgets you could find in PecubeGUI. When providing the project name, you will automatically be directed to the first tab that            presents the “Topography parameters” (Figure 3). All the default values of the input parameters are shown, so that you do not need to provide them if you want to keep these     default values. If you wish to change a parameter, simply click on the text box, and write your value. 
 | PecubeGUI offers the possibility to simply load topographic file(s) from (1) a csv file containing one column of elevation, or (2) output files from a spm to be read by        Pecube (see Pecube user guide – “Topography parameters”). For that purpose, click on ‘load file(s)…’ (Figure 3) will allow you to select the files to load. A window pops up    and Figure 4 shows an example, where files from iSOSIA (Egholm et al., 2011) have been loaded.
 
-    .. figure:: ../images/spm_loader.png
+.. figure:: ../images/spm_loader.png
       :height: 268
       :width: 350
       :align: center
@@ -62,7 +62,7 @@ Topography tab:
 | If provided, PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset         parameters the user will provide in the next steps (see next sections).
 | After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\data\SPM”. In parallel, the name “SPM/” is automatically provided to the    input parameters “Topography file name”, as well as for the grid resolution (i.e., nx and ny, only work with iSOSIA files, Figure 3).
 
-  .. figure:: ../images/setTopography.png
+.. figure:: ../images/setTopography.png
     :scale: 50
     :align: center
 
@@ -77,18 +77,17 @@ Time evolution tab:
 
 ==================================
 
+In this tab (Figure 6) you can provide all the parameters controlling the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
 
-  In this tab (Figure 6) you can provide all the parameters controlling the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
-
-  .. figure:: ../images/Time_Evolution.png
+.. figure:: ../images/Time_Evolution.png
     :height: 514
     :width: 594
     :align: center
 
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
-  | The default value for each parameter is also automatically provided. 
-  | The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
+| The default value for each parameter is also automatically provided. 
+| The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
 
 
 Tectonic tab:
@@ -141,6 +140,7 @@ By default, the same heating schedule is used for each grain. If you want to set
 *	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 9). 
 
 
-Important! When finished to provide all the parameters you need to click on “save samples file…” (Figure 8). This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project. It stores the parameters for He age prediction that the external routine will read (see the Sample_specific file description). The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations. This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
+**Important!** When finished to provide all the parameters you need to click on “save samples file…” (Figure 8). This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project. It stores the parameters for He age prediction that the external routine will read (see the Sample_specific file description). The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations. This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
+
 The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
 
