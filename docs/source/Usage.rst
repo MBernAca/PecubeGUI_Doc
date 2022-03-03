@@ -33,8 +33,8 @@ In the following, I provide a description of all the tabs, and how to provide th
 Providing input parameters
 --------------------------
 
-Topography tab:
--------------------
+Topography tab
+--------------
 
 ==================================
 
@@ -73,8 +73,8 @@ Topography tab:
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For     simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 3). This will automatically convert the values to longitude and           latitude distances that can be read by Pecube. Finally, you are able to check the topography you provided by clicking on “Show topography” (Figure 3). A new tab then          appears on the right-hand side of the interface (Figure 5). This tab serves to visualize the topography and check your topography history as provided in the “Time evolution”  part (see next section). You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 5).
 
 
-Time evolution tab:
--------------------
+Time evolution tab
+------------------
 
 ==================================
 
@@ -89,8 +89,13 @@ In this tab (Figure 6) you can provide all the parameters controlling the time e
 | The default value for each parameter is also automatically provided. 
 | The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
 
+Thermal tab
+-------------------
 
-Tectonic tab:
+==================================
+
+
+Tectonic tab
 -------------------
 
 ==================================
@@ -107,7 +112,7 @@ Tectonic tab:
 | When finishing to provide all three previous parameters, the tables updated. We see here that the first table on the left allows to set the geometry of the two faults, and the second one on the right, to define the fault kinematics (i.e., the negative values define an inverse fault, see Pecube user guide for more details). For each table the cells are sorted according to the fault (i.e., as shown by the fault name “*fault 1*, *fault 2*, …, *fault_n*”), to help the user to provide the characteristics of each. One can also decide to not define faults. In that case, “nfault” needs to be set to one and “npoint” to “-1”. Then, the number of steps (nstep) defines the kinematic of the entire model (uniform uplift). 
 
 
-Output tab:
+Output tab
 -------------------
 
 ==================================
@@ -148,8 +153,15 @@ The remaining tabs do not need details description. Simply fill the text boxes w
 
 
 
---------------------------
-Providing input parameters
---------------------------
+----------------
+Plotting results
+----------------
+
+In that section, I provide an overview of the graphical part of PecubeGUI. There, you can plot results from your Pecube run. 
+
+Plot 2D data
+------------
+
+==================================
 
 
