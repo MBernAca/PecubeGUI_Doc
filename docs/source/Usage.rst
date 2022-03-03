@@ -43,12 +43,13 @@ Topography tab:
 | PecubeGUI offers the possibility to simply load topographic file(s) from (1) a csv file containing one column of elevation, or (2) output files from a spm to be read by        Pecube (see Pecube user guide – “Topography parameters”). For that purpose, click on ‘load file(s)…’ (Figure 3) will allow you to select the files to load. A window pops up    and Figure 4 shows an example, where files from iSOSIA (Egholm et al., 2011) have been loaded.
 
 .. figure:: ../images/spm_loader.png
-      :height: 268
-      :width: 350
-      :align: center
+    :height: 268
+    :width: 350
+    :align: center
 
-     *Figure 4. Spm loader window.*
-
+    *Figure 4. Spm loader window.*
+     
+     
 | This window recovers some characteristics of your spm model, which are shown on the top for checking (works for iSOSIA models only). Then, you are asked to provide the      starting and ending times of your model (in Ma), as well as the number of steps (i.e., the number of topographic files). The initial time is greater than the end time. This      is required as it will be used to automatically set the time values for the “Time evolution parameters” table.
 
 | You are also able to provide a simple pre-spm history for the topographic evolution. For that purpose, click on “Pre-history” (Figure 4). You will be able to provide 4         parameters:
