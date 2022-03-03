@@ -42,6 +42,7 @@ Topography tab:
 .. figure:: ../images/spm_loader.png
   :height: 268
   :width: 350
+  :align: center
 
   *Figure 4. Spm loader window.*
 
