@@ -149,3 +149,10 @@ By default, the same heating schedule is used for each grain. If you want to set
 
 The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
 
+
+
+--------------------------
+Providing input parameters
+--------------------------
+
+
