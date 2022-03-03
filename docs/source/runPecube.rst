@@ -104,4 +104,37 @@ Tectonic tab:
   
   *Figure 7. "Tectonic" tab where to provide parameters related to kinematic of rock uplift. The "EXMP4" in the Pecube's user guide is used as an example of input.*
   
-| When finishing to provide all three previous parameters, the tables updated. We see here that the first table on the left allows to set the geometry of the two faults, and the second one on the right, to define the fault kinematics (i.e., the negative values define an inverse fault, see Pecube user guide for more details). For each table the cells are sorted according to the fault (i.e., as shown by the fault name “fault 1, fault 2, …, fault_n”), to help the user to provide the characteristics of each. One can also decide to not define faults. In that case, “nfault” needs to be set to one and “npoint” to “-1”. Then, the number of steps (nstep) defines the kinematic of the entire model (uniform uplift). 
+| When finishing to provide all three previous parameters, the tables updated. We see here that the first table on the left allows to set the geometry of the two faults, and the second one on the right, to define the fault kinematics (i.e., the negative values define an inverse fault, see Pecube user guide for more details). For each table the cells are sorted according to the fault (i.e., as shown by the fault name “*fault 1*, *fault 2*, …, *fault_n*”), to help the user to provide the characteristics of each. One can also decide to not define faults. In that case, “nfault” needs to be set to one and “npoint” to “-1”. Then, the number of steps (nstep) defines the kinematic of the entire model (uniform uplift). 
+
+
+Output tab:
+-------------------
+
+==================================
+
+This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 7). The first part (i.e., “Compute ages”) let you choose between three options:
+*	*none*: Pecube will not predict any thermochronological ages
+*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and choose the thermochronological system you are interested to use. 
+*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the external routine. This has to be done in the “Data parameters” tab in the “Data folder” text box. In the current version, only the AHe system can be selected.
+
+.. figure:: ../images/Compute_age.png
+  :height: 418
+  :width: 625
+  :align: center
+  
+  *Figure 8. "Output" tab where to define the thermochronometers to use. Here, the example is made with sample specific prediction for the (U-Th)/He on apatite system.*
+  
+| If you chose the “sample specific” option, then when clicking on “Age AHe” check box (the only one available in the current version) a new window will pop up (Figure 8). 
+| This window shows extra parameters for the computation of AHe ages. These extra parameters include:
+
+*	*Diffusion model*: the He diffusion model to use. The options are the Farley et al. (2008), Shuster et al. (2006), and the radiation damage models of Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
+*	*Ea*: The activation energy. This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
+*	*rmr0*: “The reduced length of the more-resistant apatite at the time-temperature conditions where the reduced length of the less-resistant apatite falls to zero” (Ketcham, 2005). This parameter is used in the annealing computation of radiation damages. The default value is 0.79.
+*	*D0*: the diffusivity parameter value for infinite temperature. The value updates according to the selected diffusion model. 
+*	*Number of iterations*: numbere of iterations for the Monte carlo algorithm.
+*	*Number of samples*: choose the number of sample locations you wish that Pecube provides outputs. When updating the value of this parameter, the table below is automatically updated to account for the number of samples. In this table, you must provide the latitude and longitude of the sample’s locations as well as the number of grains (i.e., ages) to predict at that location. 
+*	*Grains characteristics*: when checking this box, a new window opens. It shows a table in which you can change the size of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically.
+*	*4He/3He predictions*: allows to predict 4He/3He profile for each grain. When check, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the external routine to simulate a degassing experiment and compute 4He/3He ratios. The heat is in °C and the duration in hours. 
+By default, the same heating schedule is used for each grain. If you want to set a heating schedule for each grain, check “Set sample specific”. Then, you will be allowed to provide a heating schedule for each grain, with the grain number provided (e.g., “Heating_2, Duration_2”).
+*	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 9). 
+
