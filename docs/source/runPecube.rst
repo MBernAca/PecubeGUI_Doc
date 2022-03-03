@@ -58,7 +58,7 @@ You are also able to provide a simple pre-spm history for the topographic evolut
   *	The atmospheric lapse rate
 
 
-If provided, PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset parameters the user will provide in the next steps (see next sections).
+|If provided, PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset parameters the user will provide in the next steps (see next sections).
 |After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\data\SPM”. In parallel, the name “SPM/” is automatically provided to the input parameters “Topography file name”, as well as for the grid resolution (i.e., nx and ny, only work with iSOSIA files, Figure 3).
 
 .. figure:: ../images/setTopography.png
