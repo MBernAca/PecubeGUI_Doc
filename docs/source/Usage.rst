@@ -1,5 +1,5 @@
 =========
-RunPecube
+Usage
 =========
 
 .. _runPecube:
