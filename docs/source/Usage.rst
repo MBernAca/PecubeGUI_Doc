@@ -27,7 +27,7 @@ and thus navigate through their respective parameters. The right part of the int
   *Figure 3. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
-  The input parameters are gathered into categories as referenced in the Pecube’s user guide. All the parameters are sorted in *9* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Output*, *Isostasy*, *Inversion*, and *Miscellaneous* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appears describing the parameter.
+The input parameters are gathered into categories as referenced in the Pecube’s user guide. All the parameters are sorted in *9* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Output*, *Isostasy*, *Inversion*, and *Miscellaneous* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appears describing the parameter.
   
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI. For a detail description of the parameters, please refer to the Pecube's user guide.
 
@@ -96,7 +96,7 @@ Thermal tab
 
 ==================================
 
-In the *Thermal tab*, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user is able to check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appears on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in [Reiners and Brandon (2006)]_ that accounts for the effect erosion rates on the thermal state of the crust.
+In the *Thermal tab*, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user is able to check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appears on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in [CIT2022]_ that accounts for the effect erosion rates on the thermal state of the crust.
 | Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7).
 
 
@@ -224,4 +224,4 @@ To do so, simply click on ‘Add 2D data…’, then a window appears that ask y
 
 
 
-.. [Reiners and Brandon (2006)] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
+.. [CIT2022] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
