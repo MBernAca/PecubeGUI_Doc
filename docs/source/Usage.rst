@@ -179,7 +179,7 @@ Run a Pecube model
 Plotting results
 ----------------
 
-In that section, I provide an overview of the graphical part of PecubeGUI. There, you can plot results from your Pecube run. 
+In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
 
 Plot 2D data
 ------------
