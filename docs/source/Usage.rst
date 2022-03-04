@@ -182,6 +182,7 @@ Run a Pecube model
 | To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 9). A new window pops up. According to your Preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information is provided if the console is enabled (Figure 10B, ‘Show console” checked in Preferences).
 
 | PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the Production-diffusion model to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
+| Note that you can also choose to not run Pecube but only the Production-diffusion model to compute AHe ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 9).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
@@ -198,4 +199,18 @@ Plot 2D data
 
 ==================================
 
+In the current version, and depending on your input parameters, Pecube can output several files that you can then load into PecubeGUI to plot some results. These files are:
 
+*	*TimeTemperature.csv*: this file stores the thermal path of each sample location you provided, either by writing directly in a file in the ‘Data’ folder of your project, or by specifying the locations in PecubeGUI when want to predict specific AHe ages (see ‘Output parameters’ tab). For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
+*	*Graini_j*: This file stores the input parameters used for the production-diffusion model, and the resulting ages computed according to the thermal history provided.
+*	*43He.csv*: This file stores the 4He/3He ratio and the cumulated sum of released 3He for each grain. The data are stored in a way that every set of two columns is the prediction for one grain. This is highlighted by the grain’s number written after each column name (e.g., ‘43He_step0001’)
+To be able to plot 2D data in PecubeGUI, first switch to the graphic output window by clicking on ‘show ouput’ (see Figure 1, n°5). You should see the window shown in Figure 11. On the left side, you will find two tabs: ‘Data’ and ‘Properties’. The first tab enables to load new data. 
+
+| To be able to plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1, n°5). You should see the window shown in Figure 12. On the left-hand side, you will find two tabs: ‘Data’ and ‘Properties’. The first tab enables to load new data. 
+
+
+.. figure:: ../images/Chart_window.png
+  :scale: 30
+  :align: center
+  
+  *Figure 12. Chart's window.*
