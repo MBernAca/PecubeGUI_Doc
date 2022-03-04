@@ -89,19 +89,21 @@ In this tab (Figure 6) you can provide all the parameters controlling the time e
 | The default value for each parameter is also automatically provided. 
 | The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
 
+
 Thermal tab
 -------------------
 
 ==================================
 
 In the *Thermal tab*, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user is able to check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appears on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in Reiners and Brandon (2006) that accounts for the effect erosion rates on the thermal state of the crust.
-| Moreover, the user can provide the specific heat capacity (J.kg\ :up:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7).
+| Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7).
 
 .. figure:: ../images/Geotherm.png
   :scale: 30
   :align: center
   
   *Figure 7. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
+
 
 Tectonic tab
 -------------------
