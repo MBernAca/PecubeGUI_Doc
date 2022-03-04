@@ -150,16 +150,22 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*Grains characteristics*: when checking this box, a new window opens. It shows a table in which you can change the size of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically.
 *	*4He/3He predictions*: allows to predict 4He/3He profile for each grain. When check, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the external routine to simulate a degassing experiment and compute 4He/3He ratios. The heat is in °C and the duration in hours. 
 By default, the same heating schedule is used for each grain. If you want to set a heating schedule for each grain, check “Set sample specific”. Then, you will be allowed to provide a heating schedule for each grain, with the grain number provided (e.g., “Heating_2, Duration_2”).
-*	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 9). 
+*	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 10). 
 
 .. note::
-  **Important!** When finished to provide all the parameters you need to click on “save samples file…” (Figure 8).
+  **Important!** When finished to provide all the parameters you need to click on “save samples file…” (Figure 9).
   This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project.
   It stores the parameters for He age prediction that the external routine will read (see the Sample_specific file description).
   The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
   This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
 
 The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
+
+.. figure:: ../images/Sample_location.png
+  :scale: 50
+  :align: center
+  
+  *Figure 10. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
 
 
 ------------------
