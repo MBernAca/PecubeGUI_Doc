@@ -179,9 +179,13 @@ The remaining tabs do not need details description. Simply fill the text boxes w
 Run a Pecube model
 ------------------
 
-| To run a Pecube model, simply click on “Run Pecube” at the bottom of the window (Figure 7). A new window pops up. According to your Preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information is provided if the console is enabled (Figure 10B, ‘Show console” checked in Preferences).
+| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 9). A new window pops up. According to your Preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information is provided if the console is enabled (Figure 10B, ‘Show console” checked in Preferences).
 
-| PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the external routine to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
+| PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the Production-diffusion model to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
+
+.. note::
+  When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
+  
 
 ----------------
 Plotting results
