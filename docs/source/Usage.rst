@@ -152,6 +152,13 @@ By default, the same heating schedule is used for each grain. If you want to set
 The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
 
 
+------------------
+Run a Pecube model
+------------------
+
+| To run a Pecube model, simply click on “Run Pecube” at the bottom of the window (Figure 7). A new window pops up. According to your Preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information is provided if the console is enabled (Figure 10B, ‘Show console” checked in Preferences).
+
+| PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the external routine to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
 
 ----------------
 Plotting results
