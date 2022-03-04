@@ -218,7 +218,5 @@ To be able to plot 2D data in PecubeGUI, first switch to the graphic output wind
   
 To do so, simply click on ‘Add 2D data…’, then a window appears that ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above.
 
-.. note::
-  if you are using PecubeGUI without having loaded any Pecube project, and you try to load any file that is not in the list above, the first time you will load the file nothing will happen. In reality, PecubeGUI loaded the old input parameters, and some data are now available for plotting in ‘Further data…’ (see Figure 11), such as age-elevation relationship(s).
   
   
