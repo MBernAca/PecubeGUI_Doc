@@ -94,6 +94,14 @@ Thermal tab
 
 ==================================
 
+In the *Thermal tab*, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user is able to check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appears on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in Reiners and Brandon (2006) that accounts for the effect erosion rates on the thermal state of the crust.
+| Moreover, the user can provide the specific heat capacity (J.kg\ :up:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7).
+
+.. figure:: ../images/Geotherm.png
+  :scale: 30
+  :align: center
+  
+  *Figure 7. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
 
 Tectonic tab
 -------------------
@@ -101,13 +109,13 @@ Tectonic tab
 ==================================
 
 |  This tab is related to the “Tectonic parameters” in the Pecube user guide. The tab comprises text boxes in the upper part and two tables at the bottom. To provide the input parameters, the tab is working as follow. You need to provide values for the input parameters “nfault”, “npoint”, and “nstep”. When provided, the size of the two tables will automatically adjust to provide the relevant parameters for the fault geometry (if any fault defined) and the kinematic of the model. 
-| An example of inputs taking “EXMP4” in Pecube user guide as an example, is shown in Figure 6.
+| An example of inputs taking “EXMP4” in Pecube user guide as an example, is shown in Figure 8.
 
 .. figure:: ../images/Tectonic_tab.png
   :scale: 30
   :align: center
   
-  *Figure 7. "Tectonic" tab where to provide parameters related to kinematic of rock uplift. The "EXMP4" in the Pecube's user guide is used as an example of input.*
+  *Figure 8. "Tectonic" tab where to provide parameters related to kinematic of rock uplift. The "EXMP4" in the Pecube's user guide is used as an example of input.*
   
 | When finishing to provide all three previous parameters, the tables updated. We see here that the first table on the left allows to set the geometry of the two faults, and the second one on the right, to define the fault kinematics (i.e., the negative values define an inverse fault, see Pecube user guide for more details). For each table the cells are sorted according to the fault (i.e., as shown by the fault name “*fault 1*, *fault 2*, …, *fault_n*”), to help the user to provide the characteristics of each. One can also decide to not define faults. In that case, “nfault” needs to be set to one and “npoint” to “-1”. Then, the number of steps (nstep) defines the kinematic of the entire model (uniform uplift). 
 
@@ -117,7 +125,7 @@ Output tab
 
 ==================================
 
-This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 7). The first part (i.e., “Compute ages”) let you choose between three options:
+This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 9). The first part (i.e., “Compute ages”) let you choose between three options:
 *	*none*: Pecube will not predict any thermochronological ages
 *	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and choose the thermochronological system you are interested to use. 
 *	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the external routine. This has to be done in the “Data parameters” tab in the “Data folder” text box. In the current version, only the AHe system can be selected.
@@ -126,7 +134,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   :scale: 30
   :align: center
   
-  *Figure 8. "Output" tab where to define the thermochronometers to use. Here, the example is made with sample specific prediction for the (U-Th)/He on apatite system.*
+  *Figure 9. "Output" tab where to define the thermochronometers to use. Here, the example is made with sample specific prediction for the (U-Th)/He on apatite system.*
   
 | If you chose the “sample specific” option, then when clicking on “Age AHe” check box (the only one available in the current version) a new window will pop up (Figure 8). 
 | This window shows extra parameters for the computation of AHe ages. These extra parameters include:
