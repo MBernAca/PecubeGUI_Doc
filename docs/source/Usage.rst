@@ -152,7 +152,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*Number of samples*: choose the number of sample locations for which you want to compute ages. When providing the value of this parameter, the table below is automatically updated to account for the number of samples. In this table, you must provide the latitude and longitude of the sample’s locations as well as the number of grains (i.e., ages) to predict at that location. 
 *	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 11). It provides a way to check for your sample location.
 *	*Grains characteristics*: when checking this box, a new window opens (Figure 10). It shows a table in which you can change the size (radius) of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. In the current version, the grain is assumed spherical. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 10), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number you desire ("Number of layers", Figure 10). When finished to set the profile for the grain, click on "Save" to save the profile for that grain.
-*	*|\ :sup:`4`\He/\ :sup:`3`\He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
+*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
 
 .. important::
@@ -176,7 +176,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   
   *Figure 11. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
 
-The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
+The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label each parameter.
 
 
 ------------------
