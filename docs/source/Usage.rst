@@ -99,8 +99,6 @@ Thermal tab
 In the *Thermal tab*, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user is able to check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appears on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in [Reiners and Brandon(2006)]_ that accounts for the effect erosion rates on the thermal state of the crust.
 | Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7).
 
-..[Reiners and Brandon (2006)] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
-
 
 .. figure:: ../images/Geotherm.png
   :scale: 30
@@ -223,4 +221,7 @@ To be able to plot 2D data in PecubeGUI, first switch to the graphic output wind
 To do so, simply click on ‘Add 2D data…’, then a window appears that ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above.
 
   
-  
+
+
+
+.. [Reiners and Brandon (2006)] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
