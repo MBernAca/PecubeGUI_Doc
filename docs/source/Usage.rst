@@ -13,6 +13,7 @@ a widow pops up and ask you to provide the name of the new project (Figure *2*).
 you will be able to provide and set all the Pecube input parameters for your project.
   
 .. figure:: ../images/New_Project.png
+  :align: center
 
   *Figure 2. Enter a new project name. This window shows up when clicking on the "New input file" action.*
 
@@ -21,6 +22,7 @@ The window should look like the Figure *3*. On the top left, you could find and 
 and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
 
 .. figure:: ../images/Input_Parameters_interface.png
+  :align: center
 
   *Figure 3. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
@@ -78,7 +80,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 6) you can provide all the parameters controlling the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
+In this tab (Figure 6) you can provide all the parameters that control the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -87,7 +89,6 @@ In this tab (Figure 6) you can provide all the parameters controlling the time e
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
 | The default value for each parameter is also automatically provided. 
-| The following tabs named “Thermal parameters” and “Data parameters” have similar widgets as presented so far. For text boxes simply click to edit the new value of the parameter.
 
 
 Thermal tab
@@ -151,8 +152,8 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*4He/3He predictions*: allows to predict 4He/3He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute 4He/3He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 *	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 11). 
 
-.. note::
-  **Important!** When finished to provide all the parameters you need to click on “save samples file…” (Figure 9).
+.. important::
+  When finished to provide all the parameters you need to click on “save samples file…” (Figure 9).
   This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project.
   It stores the parameters for He age prediction that the external routine will read (see the Sample_specific file description).
   The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
