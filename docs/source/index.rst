@@ -30,4 +30,5 @@ Contents
    installation
    introduction
    Usage
+   Extra
    
