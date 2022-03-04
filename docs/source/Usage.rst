@@ -147,9 +147,9 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*D0*: the diffusivity parameter value for infinite temperature. The value updates according to the selected diffusion model. 
 *	*Number of iterations*: numbere of iterations for the Monte carlo algorithm.
 *	*Number of samples*: choose the number of sample locations you wish that Pecube provides outputs. When updating the value of this parameter, the table below is automatically updated to account for the number of samples. In this table, you must provide the latitude and longitude of the sample’s locations as well as the number of grains (i.e., ages) to predict at that location. 
-*	*Grains characteristics*: when checking this box, a new window opens. It shows a table in which you can change the size of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically.
+*	*Grains characteristics*: when checking this box, a new window opens (Figure 10). It shows a table in which you can change the size of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 10), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number we desire ("Number of layers", Figure 10).
 *	*4He/3He predictions*: allows to predict 4He/3He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute 4He/3He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
-*	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 10). 
+*	*Check sample locations*: Clicking this button will pop a window up where your surface topography is shown, with the sample locations provided (see example, Figure 11). 
 
 .. note::
   **Important!** When finished to provide all the parameters you need to click on “save samples file…” (Figure 9).
@@ -158,13 +158,20 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
   This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
 
-The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
+.. figure:: ../images/Grain_characteristics.png
+  :scale: 50
+  :align: center
+  
+  *Figure 10. Window that appears when checking the box "Grain characteristics" (Figure 9).*
+  
 
 .. figure:: ../images/Sample_location.png
   :scale: 50
   :align: center
   
-  *Figure 10. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
+  *Figure 11. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
+
+The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursors over the label each parameter.
 
 
 ------------------
