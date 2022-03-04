@@ -158,8 +158,9 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
   This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
 
+
 .. figure:: ../images/Grain_characteristics.png
-  :scale: 50
+  :scale: 30
   :align: center
   
   *Figure 10. Window that appears when checking the box "Grain characteristics" (Figure 9).*
