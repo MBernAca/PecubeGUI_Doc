@@ -198,6 +198,7 @@ Plotting results
 
 In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
 
+
 Plot 2D data
 ------------
 
@@ -222,7 +223,25 @@ To be able to plot 2D data in PecubeGUI, first switch to the graphic output wind
   
 To do so, simply click on ‘Add 2D data…’, then a window appears that ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above.
 
-  
+
+Visualize 3D data
+-----------------
+
+==================================
+
+| PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample location (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project folder. A new tab will appear with a 3D environment and the 3D model (Figure 13).
+| If you chose to predict ages at specific locations, those kocations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 13). On this tab, you have several options to set properties of the 3D model:
+
+*	*Data range*: set the range of data for the colorbar.
+*	*Current data*: list to choose the data to show (i.e., for the colormap).
+* *X, Y, Z scales*: to scale the 3D model in the x, y, and z, directions.
+* *Reset camera position*: reset the camera view to the initial position.
+* *Clear plot*: remove the 3D model from the 3D interface.
+* *Export image…*: save a screenshot of the 3D interface.
+*	*Show box*: to show the axes of the 3D model.
+*	*Show sample location(s)*: to show/hide sample locations within the 3D interface.
+
 
 ------------
 Bibliography
@@ -231,3 +250,4 @@ Bibliography
 .. [Reiners-and-Brandon-2006] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
 .. [Gautheron-et-al-2010] Gautheron, C., & Tassan-Got, L. (2010). A Monte Carlo approach to diffusion applied to noble gas/helium thermochronology. Chemical Geology, 273(3-4), 212-224.
 .. [Ketcham-2005] Ketcham, R. A. (2005). Forward and inverse modeling of low-temperature thermochronometry data. Reviews in mineralogy and geochemistry, 58(1), 275-314.
+.. [Sullivan-et-al-2019] Sullivan et al., (2019). PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK). Journal of Open Source Software, 4(37), 1450, https://doi.org/10.21105/joss.01450
