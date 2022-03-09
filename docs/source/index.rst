@@ -32,3 +32,10 @@ Contents
    Usage
    Extra
    
+
+Acknowledgment
+--------------
+
+PecubeGUI has been developped at the University of Potsdam within the COOLER_ ERC project led by Peter van der Beek.
+
+.. _COOLER: http://erc-cooler.eu/
