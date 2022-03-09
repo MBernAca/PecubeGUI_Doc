@@ -229,7 +229,7 @@ Visualize 3D data
 
 ==================================
 
-| PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample location (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
+| PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
 | To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project folder. A new tab will appear with a 3D environment and the 3D model (Figure 13).
 | If you chose to predict ages at specific locations, those kocations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 13). On this tab, you have several options to set properties of the 3D model:
 
