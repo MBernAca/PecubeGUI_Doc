@@ -1,9 +1,8 @@
-=====
-Extra
-=====
-
 .. _Extra:
 
+=================
+Extra information
+=================
 
 ------------------
 Sample_setting.txt
