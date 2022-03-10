@@ -245,6 +245,13 @@ Visualize 3D data
 *	*Show box*: to show the axes of the 3D model.
 *	*Show sample location(s)*: to show/hide sample locations within the 3D interface.
 
+.. figure:: ../images/3D_render.png
+  :scale: 30
+  :align: center
+  
+  *Figure 13. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+
+
 
 ------------
 Bibliography
