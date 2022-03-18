@@ -58,13 +58,13 @@ Topography tab
 | You are also able to provide a simple pre-spm history for the topographic evolution. For that purpose, click on “Pre-history” (Figure 4). You will be able to provide 4         parameters:
 
     *	*number of pre-steps*: how many steps for the pre-spm history do you want to provide topographic information
-    *	*uplift rate*: this will be spatially uniform and apply to all pre-history steps 
+    *	*uplift rate*: this will be spatially uniform and applied to all pre-history steps 
     *	*sea-level temperature*
     *	*atmospheric lapse rate*
 
 
 | PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset parameters the user will provide in the next steps (see :ref:`Time-evolution-tab`).
-| After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\data\SPM”. In the meantime, the name “SPM/” is automatically provided to the input parameters “Topography file name”, as well as the grid resolution (i.e., nx and ny, only work with iSOSIA files, Figure 3).
+| After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\data\SPM”. In the meantime, the name “SPM/” is automatically provided to the input parameters “Topography file name”, as well as the grid resolution (i.e., nx and ny, works only with iSOSIA files, Figure 3).
 
 .. figure:: ../images/setTopography.png
     :scale: 30
@@ -73,7 +73,7 @@ Topography tab
     *Figure 5. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button.*
 
 
-| When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For     simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 3). This will automatically convert the values to longitude and           latitude distances that can be read by Pecube. Finally, you are able to check the topography you provided by clicking on “Show topography” (Figure 3). A new tab then          appears on the right-hand side of the interface (Figure 5). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 5).
+| When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 3). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. Finally, you are able to check the topography you provided by clicking on “Show topography” (Figure 3). A new tab then appears on the right-hand side of the interface (Figure 5). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 5).
 
 .. _Time-evolution-tab:
 
@@ -82,7 +82,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 6) you can provide all the parameters that control the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 5). 
+In this tab (Figure 6) you can provide all the parameters that control the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 6). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -136,7 +136,7 @@ Output tab
 This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 9). The first part (i.e., “Compute ages”) let you choose between three options:
 
 *	*none*: Pecube will not predict any thermochronological ages
-*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and choose the thermochronological system you are interested to use. 
+*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
 *	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the Production-diffusion model. This has to be done in the *Data tab* in the “Data folder” text box. In the current version, only the AHe system can be selected. PecubeGUI uses the production-diffusion model developped by [Gautheron-et-al-2010]_.
 
 .. figure:: ../images/Compute_age.png
@@ -162,7 +162,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 .. important::
   When finished to provide all the parameters you need to click on “save samples file…” (Figure 9).
   This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project.
-  It stores the parameters for He age prediction that the Production-diffusion model will read (see the Sample_specific file description).
+  It stores the parameters for He age prediction the Production-diffusion model will read (see the Sample_specific file description).
   The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
   This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
 
@@ -180,7 +180,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   
   *Figure 11. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
 
-The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label each parameter.
+The remaining tabs do not need details description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label of each parameter.
 
 
 ------------------
