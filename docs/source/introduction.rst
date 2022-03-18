@@ -23,7 +23,7 @@ The numbers on Figure 1 give access to the followings:
 
   - *Preferences*:
       +	GUI theme: ‘Dark’ or ‘White’. Default is ‘Dark’.
-      + Show Console: allows to show a console when running Pecube, that shows some Pecube running outputs (see Figure 10).
+      + Show Console: allows to show a console when running Pecube, that shows some Pecube running outputs.
       
 3. **New input file**. Open a new Pecube project.
 
