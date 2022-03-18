@@ -7,8 +7,10 @@ Introduction
 Let's start here with a quick introduction of the interface.
 
 When opening PecubeGUI, a window will show up with a welcome message (Figure 1). This is the main window where you can access all the functionalities. Here, I give a brief overview of the access.
-  
-.. image:: ../images/Introduction.png
+
+.. figure:: ../images/Introduction.png
+    :scale: 30
+    :align: center
 
 The numbers on Figure 1 give access to the followings:
 
