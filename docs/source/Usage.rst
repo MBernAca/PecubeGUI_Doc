@@ -13,6 +13,7 @@ a widow pops up and ask you to provide the name of the new project (Figure *2*).
 you will be able to provide and set all the Pecube input parameters for your project.
   
 .. figure:: ../images/New_Project.png
+  :scale: 30
   :align: center
 
   *Figure 2. Enter a new project name. This window shows up when clicking on the "New input file" action.*
