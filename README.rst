@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+Welcome to PecubeGUI's Documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub template includes the files to build the documentation.
 
-Read the tutorial here:
+Read the Documentation here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://pecubegui-doc.readthedocs.io/en/latest/
