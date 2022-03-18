@@ -11,6 +11,8 @@ When opening PecubeGUI, a window will show up with a welcome message (Figure 1).
 .. figure:: ../images/Introduction.png
     :scale: 30
     :align: center
+    
+    *Figure 1. Main interface of PecubeGUI.*
 
 The numbers on Figure 1 give access to the followings:
 
