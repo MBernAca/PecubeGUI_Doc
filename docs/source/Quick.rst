@@ -4,6 +4,8 @@ Quick use of PecubeGUI
 
 .. _QuickPecube:
 
+This part aims to provide a quick overview on how to provide paramaters to run Pecube as is usually done with terminal. For more details about extended tools provided with PecubeGUI, please refer to :doc:`Usage`.
+
 ---------------------------
 Create a new Pecube project
 ---------------------------
