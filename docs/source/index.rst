@@ -29,7 +29,8 @@ Contents
 
    installation
    introduction
-   Usage
+   Quick use
+   Extended usage
    Extra
    
 
