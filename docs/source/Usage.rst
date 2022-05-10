@@ -212,7 +212,8 @@ Plot 2D data
 In the current version, and depending on your input parameters, Pecube can output several files that you can then load into PecubeGUI to plot some results. These files are:
 
 *	*TimeTemperature.csv*: this file stores the thermal path of each sample location you provided, either by writing directly in a file in the ‘Data’ folder of your project, or by specifying the locations in PecubeGUI when want to predict specific AHe ages (see ‘Output parameters’ tab). For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
-*	*Graini_j*: This file stores the input parameters used for the production-diffusion model, and the resulting ages computed according to the thermal history provided. You will find in this file: the thermal history of the sample, its age evolution, and the degassing fractions of \ :sup:`4`\He and \ :sup:`3`\He (if defined by the user, see :ref:`Output-tab`).
+*	*Graini_j*: This file stores the input parameters used for the production-diffusion model from Gautheron et al. (2010), and the resulting ages computed according to the thermal history provided. You will find in this file: the thermal history of the sample, its age evolution, and the degassing fractions of \ :sup:`4`\He and \ :sup:`3`\He (if defined by the user, see :ref:`Output-tab`). If the simpler production-diffusion (finite difference) model is used then the ages and 4He/3He data can be accessible from files "TimeAge.csv" and "43He.csv" respectively.
+* *CoolingRates.csv*: This file contains the time-temperature paths from all nodes in the model. This file is created if the option "Cooling rates" is checked (see :ref:`Output-tab`). This allow the user to plot a 2D map of cooling rates defining a temperature or time interval.
 * *PecubeXXX.vtk*: This file is located in the "VTK" directory of your project. If loaded for 2D data plot, a window will show up and ask you which data to plot from the file. You can extract, for instance, the 2D spatial distribution of the temperature at a specified depth, or extract the depth of an isotherm.
 * *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Output-tab`).
 
@@ -226,7 +227,8 @@ To be able to plot 2D data in PecubeGUI, first switch to the chart's window by c
   *Figure 12. Chart's window.*
   
   
-To do so, simply click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above.
+To do so, simply click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above. Another option is to plot data from the list below ("Further data", Figure 12). From here you could plot age-elevation profiles, time-temperature paths, 2D map of cooling rates, temperatures and ages on the surface topography. An example of each plot is shown in Figure 13 below.
+
 
 
 Visualize 3D data
