@@ -189,10 +189,10 @@ The remaining tabs do not need detailed description. Simply fill the text boxes 
 Run a Pecube model
 ------------------
 
-| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 9). A new window pops up. According to your Preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information is provided if the console is enabled (Figure 10B, "Show console” checked in Preferences).
+| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 9). A new window pops up. According to your preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (Figure 10A, ‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled (Figure 10B, "Show console” checked in Preferences).
 
-| PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the Production-diffusion model to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
-| Note that you can also choose to not run Pecube but only the Production-diffusion model to compute AHe ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 9).
+| PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the production-diffusion model to compute grain specifics AHe ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
+| Note that you can also choose to not run Pecube but only the production-diffusion model to compute AHe ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 9).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
