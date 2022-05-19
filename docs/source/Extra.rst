@@ -13,7 +13,7 @@ This file is located in the "data" directory of the Pecube's project main direct
 1. Number of samples
 2. Number of grains
 3. nx, ny, Lat0, Long0, :math:`{\delta}`lat, :math:`{\delta}`lon, nskip
-4. Diffusion model, D0, Ea, rmr0
+4. Ejection distances for alpha, Ejection, Diffusion model, D0, Ea, rmr0
 5. do 4He/He3 ?
 6. Number of events (Monte Carlo simulation)
 7. Zonation ?
