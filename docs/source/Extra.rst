@@ -14,11 +14,11 @@ This file is located in the "data" directory of the Pecube's project main direct
 2. Number of grains
 3. nx, ny, Lat0, Long0, :math:`{\delta}`lat, :math:`{\delta}`lon, nskip
 4. Ejection, Ejection distances for alpha, Diffusion model, D0, Ea, rmr0
-5. do 4He/He3 ?
+5. do 4He/He3 ? (yes = 1; no = 0)
 6. Number of events (Monte Carlo simulation)
-7. Zonation ?
+7. Zonation ? (yes = 1; no = 0)
 8. Number of grain for each sample (each following line is for one sample)
-9. Radius, U (ppm), Th (ppm) for each grain (each following line is for one grain)
+9. Radius, U (ppm), Th (ppm), observed age (Ma), error (Ma) for each grain (each following line is for one grain)
 10. Number of step heating
 11. Temperature (°C), Duration (hours) (each following line is for each step)
 12. Length of the zonation array
