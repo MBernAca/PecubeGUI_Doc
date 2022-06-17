@@ -123,7 +123,7 @@ Tectonic tab
 * faulting: vertical movement along fault(s)
 
 According to the option chosen, you will have access to different part of the tab. For a bloc uplift, you can define the magnitude of the uplift rate at each corner of the model domain (i.e., bottom left, bottom right, top left, and top right). The uplift history is defined by the number of step (i.e., 'nstep') and the time window defined in the table below. 
-When faulting is chosen, the button' 'set faults' is enabled. Clicking on it open a window where you can define your fault(s) geometry. You need to provide the number of faults ('nfaults'), the number of points defining each fault ('npoints'), and the coordinates of the two points that define the strike of the faults (see Pecube's documentation for more details). Then you can define the geometry of the fault(s) by setting the position of each points of the fault according to the position of strike of the fault. 
+When faulting is chosen, the button' 'set faults' is enabled. Clicking on it open a window where you can define your fault(s) geometry. You need to provide the number of faults ('nfaults'), the number of points defining each fault ('npoints'), and the coordinates of the two points that define the strike of the faults (see Pecube's documentation for more details). Then you can define the geometry of the fault(s) by setting the position and depth of each points of the fault according to the position of strike of the fault. 
 
 .. note::
   (1) To define the type of fault, we keep on the convention described in the Pecube's documentation. To define a thrust the velocity has to be negative, a positive velocity means a normal fault (i.e., 'velo' in the table).
