@@ -240,7 +240,7 @@ To be able to plot 2D data in PecubeGUI, first switch to the chart's window by c
 To do so, simply click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above. Another option is to plot data from the list below ("Further data", Figure 12). From here you could plot age-elevation profiles, date vs eU plots, time-temperature paths, 2D map of cooling rates, temperatures and ages on the surface topography. An example of each plot is shown in Figure 13 below.
 
 .. note::
-  To access data from the list, you need to have loaded at least one file with "Add 2D data..." from the project. PecubeGUI will then know the project from which you wish to plot data, and load the data you can load from that project in the list.
+  To access data from the list, you need to have loaded at least one file with "Add 2D data..." from the project. PecubeGUI will then know the project from which you wish to plot data, and load the data you can plot from that project in the list.
   
 
 
