@@ -99,9 +99,9 @@ Tectonic tab
   *Figure 5. "Tectonic" tab where to provide parameters related to kinematic of rock uplift. The "EXMP4" in the Pecube's user guide is used as an example of input.*
 
 
-.. _Output-tab:
+.. _Ages-tab:
 
-Output tab
+Ages tab
 -------------------
 
 ==================================
