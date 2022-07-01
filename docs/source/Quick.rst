@@ -110,7 +110,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 
 *	*none*: Pecube will not predict any thermochronological ages
 *	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
-*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the Production-diffusion model. This has to be done in the *Data tab* in the “Data folder” text box. In the current version, only the AHe system can be selected. PecubeGUI uses the production-diffusion model developped by [Gautheron-et-al-2010]_.
+*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the Production-diffusion model. This has to be done in the *Data tab* in the “Data folder” text box. In the current version, only the AHe and AFT systems can be selected. PecubeGUI uses the production-diffusion model developped by [Gautheron-et-al-2010]_.
 
 | Fore more details on how to provide parameters to predict ages at specific locations, see :doc:`Usage`.
 
