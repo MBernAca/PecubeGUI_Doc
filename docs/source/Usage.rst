@@ -136,9 +136,9 @@ Tectonic tab
   
   *Figure 8. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
-.. _Output-tab:
+.. _Ages-tab:
 
-Output tab
+Ages tab
 -------------------
 
 ==================================
@@ -147,13 +147,13 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 
 *	*none*: Pecube will not predict any thermochronological ages
 *	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
-*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the production-diffusion model. This has to be done in the *Data tab* in the “Data folder” text box. In the current version, only the AHe system can be selected. PecubeGUI uses either the production-diffusion model developped by [Gautheron-et-al-2010]_ or a simpler finite-difference model (see below).
+*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name where PecubeGUI will write some files that will be used by the production-diffusion model. This has to be done in the *Data tab* in the “Data folder” text box. In the current version, only the AHe and AFT systems can be selected. PecubeGUI uses either the production-diffusion model developped by [Gautheron-et-al-2010]_ or a simpler finite-difference model (see below).
 
-.. figure:: ../images/Compute_age.png
+.. figure:: ../images/Ages_Tab.png
   :scale: 30
   :align: center
   
-  *Figure 9. "Output" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
+  *Figure 9. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
 | If you chose the “sample specific” option, then when clicking on “Age AHe” check box (the only one available in the current version) a new window will pop up (Figure 9). 
 | This window shows extra parameters for the computation of AHe ages. These extra parameters include:
