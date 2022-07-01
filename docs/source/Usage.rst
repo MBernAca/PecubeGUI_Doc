@@ -182,14 +182,6 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
 
-.. important::
-  When finished to provide all the parameters you need to click on “save samples file…” (Figure 10).
-  This will create two files. The first one is named “sample_specific.txt” and can be found in the “data” folder of your current project.
-  It stores the parameters for He age prediction the production-diffusion model will read (see the Sample_specific file description).
-  The second one has the same name as the folder’s name provided in the Data parameters tab and stores the latitude and longitude of the sample’s locations.
-  This file is used in Pecube to output thermal histories of these locations (do not forget to check “save PTT paths” in the Output parameters tab).
-
-
 .. figure:: ../images/Grain_characteristics.png
   :scale: 30
   :align: center
