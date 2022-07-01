@@ -116,6 +116,7 @@ Data tab
 -------------------
 
 ==================================
+
 |In this tab you can provide the location of sample(s) where to extract the thermal paths, and compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`. You provide the name of the directory "Data folder" where the required file with the locations will be stored and fill in the table below (Figure 8) by providing at minima the number of samples, the latitude and longitude of the sample locations. You can provide the observed elevation and define the number of grain you want to predict for each sample. These information will be used in the :ref:`Ages-tab` to define the grain characteristics for the age computation of each thermochronometers. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
 
 .. figure:: ../images/Data_Tab.png
