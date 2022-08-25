@@ -92,6 +92,9 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
 | The default value for each parameter is also automatically provided. 
+| In the previous versions of Pecube, one could provide a topography as input and its evolution through time by varying the amplification and offset parameters. The topographic evolution function was as follow:
+.. math::
+    \frac{ \sum_{t=0}^{N}f(t,k) }{N}
 
 .. _Thermal-tab:
 
