@@ -93,7 +93,7 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
 
 | The default value for each parameter is also automatically provided. 
 | In the previous versions of Pecube, one could provide a topography as input and its evolution through time by varying the amplification and offset parameters. The topographic evolution function was as follow:
-| h:sub:`i` = offset:sub:`i` + topo_ref - (amplification:sub:`i` * (topo_ref - h:sub:`o`)
+| h\ :sub:`i`\ = offset\ :sub:`i`\ + topo_ref - (amplification\ :sub:`i`\ * (topo_ref - h\:sub:`o`\)
 
 .. _Thermal-tab:
 
