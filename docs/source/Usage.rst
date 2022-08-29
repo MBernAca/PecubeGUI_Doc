@@ -83,7 +83,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 6) you can provide all the parameters that control the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 6). 
+In this tab (Figure 6) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates to the value written in the parameter “ntime” (Figure 6). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -92,12 +92,12 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
 | The default value for each parameter is also automatically provided. 
-| In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters. The topographic evolution function was as follow:
-
+| In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters, and the following equation:
+|
 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  amplification\ :sub:`i`\  *  h\ :sub:`0`\
 
-
+|
 | The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the ammplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 7). The topographic evolution is now:
 
 
@@ -135,7 +135,7 @@ Data tab
 
 ==================================
 
-| In this tab you can provide the location of sample(s) where to extract the thermal paths, and compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`. You provide the name of the directory "Data folder" where the required file with the locations will be stored and fill in the table below (Figure 9) by providing at minima the number of samples, the latitude and longitude of the sample locations. You can provide the observed elevation and define the number of grain you want to predict for each sample. These information will be used in the :ref:`Ages-tab` to define the grain characteristics for the age computation of each thermochronometers. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
+| In this tab you can provide the location of sample(s) from where to extract the thermal paths, to compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`. You provide the name of the directory "Data folder name" where the required file with the locations will be stored and fill in the table below (Figure 9) by providing the number of samples, the latitude and longitude of the sample locations. You can provide the observed elevation and define the number of grain you want to predict for each sample. These information will be used in the :ref:`Ages-tab` to define the grain characteristics for the age computation of each thermochronometers. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
 
 
 .. figure:: ../images/Data_Tab.png
@@ -189,15 +189,15 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   
   *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
-| If you chose the “sample specific” option, then when clicking on “Age AHe” check box a new window will pop up (Figure 11). 
-| This window shows extra parameters for the computation of AHe ages. These extra parameters include:
+| If you chose the “sample specific” option, then when clicking on any thermochronometer check box a new window will pop up (Figure 11). 
+| This window shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*rmr0*: “The reduced length of the more-resistant apatite at the time-temperature conditions where the reduced length of the less-resistant apatite falls to zero” [Ketcham-2005]_. This parameter is used in the annealing computation of radiation damages. The default value is 0.79.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
 *	*Number of iterations*: number of events (i.e. atoms) for the Monte carlo simulation [Gautheron-et-al-2010]_.
-* *Alpha stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
+* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
 *	*Grains characteristics*: when checking this box, a new window opens (Figure 12). It shows a table in which you can change the size (radius) of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. In the current version, the grain is assumed spherical. You can also provide observed ages and associated error in the two last columns of the table. These data will be drawn in the output charts to compare with the predicted data. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 12), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number you desire ("Number of layers", Figure 12). When finished to set the profile for the grain, click on "Save" to save the profile for that grain.
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
