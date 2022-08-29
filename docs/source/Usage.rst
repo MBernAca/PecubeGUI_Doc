@@ -92,8 +92,19 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
     *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
 | The default value for each parameter is also automatically provided. 
-| In the previous versions of Pecube, one could provide a topography as input and its evolution through time by varying the amplification and offset parameters. The topographic evolution function was as follow:
-| h\ :sub:`i`\ = offset\ :sub:`i`\ + topo_ref - (amplification\ :sub:`i`\ * (topo_ref - h\:sub:`o`\)
+| In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters. The topographic evolution function was as follow:
+
+| h\ :sub:`i`\ = offset\ :sub:`i`\ + amplification\ :sub:`i`\ * h\ :sub:`0`\
+
+| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the ammplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 7). The topographic evolution is now:
+
+| h\ :sub:`i`\ = offset\ :sub:`i`\ + topo_ref - (amplification\ :sub:`i`\ * (topo_ref - h\ :sub:`0`\)
+
+.. figure:: ../images/TopoFunction.png
+    :scale: 30
+    :align: center
+
+    *Figure 7. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
 
 .. _Thermal-tab:
 
