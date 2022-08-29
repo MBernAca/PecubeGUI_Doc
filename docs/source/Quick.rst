@@ -54,7 +54,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 4) you can provide all the parameters that control the time evolution of the Pecube model (see Pecube user guide for more details). The particularity in PecubeGUI is that you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 4). 
+In this tab (Figure 4) you can provide all the parameters that control the time evolution of the Pecube model. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically adapts to the value written in the parameter “ntime” (Figure 4).  You can also set the reference elevation from which to scale the input topography.
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
