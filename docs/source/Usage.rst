@@ -89,7 +89,7 @@ In this tab (Figure 5) you can provide all the parameters that control the time 
     :scale: 30
     :align: center
 
-    *Figure 5. "Time evolution" tab where to provide the parameters related to the time evolution of the topography.*
+    *Figure 5. "Time evolution" tab where to provide the parameters related to the time evolution of the topography. In this example, the topography evolution is defined relative to the maximum elevation.*
 
 | The default value for each parameter is also automatically provided. 
 | In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters, according to the following equation:
