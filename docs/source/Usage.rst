@@ -9,23 +9,23 @@ Create a new Pecube project
 ---------------------------
 
 To create and run a new Pecube project, go to *New input file* or press *Crtl+N* (*3*, see :doc:`introduction`),
-a window pops up and asks you to provide the name of the new project (Figure *2*). After clicking the “Ok” button (Figure *2*),
-you will be able to provide and set all the Pecube input parameters for your project.
+a window pops up and asks you to provide the name of the new project (Figure *1*). After clicking the “Ok” button (Figure *2*),
+you will be able to provide and set all of the Pecube input parameters for your project.
   
 .. figure:: ../images/New_Project.png
   :scale: 60
   :align: center
 
-  *Figure 2. Enter a new project name. This window shows up when clicking on the "New input file" action.*
+  *Figure 1. Enter a new project name. This window shows up when clicking on the "New input file" action.*
 
 
-The window should look like the Figure *3*. On the top left, you could find and access all the projects you have loaded into the interface,
+The window should look like the Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
 and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
 
 .. figure:: ../images/Input_Parameters_interface.png
   :align: center
 
-  *Figure 3. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
+  *Figure 2. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
 The input parameters are gathered into categories as referenced in the Pecube’s user guide. All the parameters are sorted in *9* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Output*, *Isostasy*, *Inversion*, and *Miscellaneous* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appears describing the parameter.
@@ -51,7 +51,7 @@ Topography tab
     :width: 350
     :align: center
 
-    *Figure 4. Spm loader window.*
+    *Figure 3. Spm loader window.*
      
      
 | This window recovers some characteristics of your spm model, which are shown on the top for checking (works for iSOSIA models only). Then, you are asked to provide the starting and ending times of your model (in Ma), as well as the number of steps (i.e., the number of topographic files). The initial time is older than the end time. This is required as it will be used to automatically set the time values for the “Time evolution” tab.
@@ -71,7 +71,7 @@ Topography tab
     :scale: 30
     :align: center
 
-    *Figure 5. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button.*
+    *Figure 4. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button.*
 
 
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 3). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. Finally, you can check the topography you provided by clicking on “Show topography” (Figure 3). A new tab then appears on the right-hand side of the interface (Figure 5). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 5).
@@ -89,7 +89,7 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
     :scale: 30
     :align: center
 
-    *Figure 6. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
+    *Figure 5. "Time evolution" tab where to provide parameters related to the time evolution of the topography.*
 
 | The default value for each parameter is also automatically provided. 
 | In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters, and the following equation:
@@ -108,7 +108,7 @@ In this tab (Figure 6) you can provide all the parameters that control the time 
     :scale: 30
     :align: center
 
-    *Figure 7. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
+    *Figure 6. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
 
 
 .. _Thermal-tab:
@@ -126,7 +126,7 @@ Thermal tab
   :scale: 30
   :align: center
   
-  *Figure 8. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
+  *Figure 7. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
 
 .. _Data-tab:
 
@@ -142,7 +142,7 @@ Data tab
   :scale: 30
   :align: center
   
-  *Figure 9. "Data" tab where to provide the sample location(s) where to predict specific ages.*
+  *Figure 8. "Data" tab where to provide the sample location(s) where to predict specific ages.*
 
 
 Tectonic tab
@@ -168,7 +168,7 @@ Tectonic tab
   :scale: 30
   :align: center
   
-  *Figure 10. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
+  *Figure 9. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
 .. _Ages-tab:
 
@@ -187,7 +187,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   :scale: 30
   :align: center
   
-  *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
+  *Figure 10. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
 | If you chose the “sample specific” option, then when clicking on any thermochronometer check box a new window will pop up (Figure 11). 
 | This window shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
@@ -206,14 +206,14 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   :scale: 30
   :align: center
   
-  *Figure 12. Window that appears when checking the box "Grain characteristics" (Figure 10).*
+  *Figure 11. Window that appears when checking the box "Grain characteristics" (Figure 10).*
   
 
 .. figure:: ../images/Sample_location.png
   :scale: 50
   :align: center
   
-  *Figure 13. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
+  *Figure 12. Window that appears when clicking on "Check sample location". The surface topography of your model is shown with the location of your samples (white circles).*
 
 The remaining tabs do not need detailed description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label of each parameter.
 
@@ -258,7 +258,7 @@ To be able to plot 2D data in PecubeGUI, first switch to the chart's window by c
   :scale: 30
   :align: center
   
-  *Figure 14. Chart's window.*
+  *Figure 13. Chart's window.*
   
 For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above, and then click "Cancel". The list below will update and show you what kind of data you can plot. From there you could plot:
 
@@ -294,7 +294,7 @@ Visualize 3D data
   :scale: 30
   :align: center
   
-  *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+  *Figure 14. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
 
