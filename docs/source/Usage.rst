@@ -215,10 +215,10 @@ The remaining tabs do not need detailed description. Simply fill the text boxes 
 Run a Pecube model
 ------------------
 
-| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 11). A new window pops up. According to your preferences (cf. ‘2’, Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
+| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 10). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
 
 | PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the external routine to predict specific ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
-| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 11).
+| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 10).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
@@ -244,7 +244,7 @@ In the current version, and depending on your input parameters, Pecube can outpu
 * *PecubeXXX.vtk*: This file is located in the "VTK" directory of your project. If loaded for 2D data plot, a window will show up and ask you which data to plot from the file. You can extract, for instance, the 2D spatial distribution of the temperature at a specified depth, or extract the depth of an isotherm.
 * *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Ages-tab`).
 
-To be able to plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1, n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data.  
+To be able to plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data.  
 
 
 .. figure:: ../images/Chart_window.png
@@ -253,7 +253,7 @@ To be able to plot 2D data in PecubeGUI, first switch to the chart's window by c
   
   *Figure 13. Chart's window.*
   
-For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above, and then click "Cancel". The list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above, and then click "Cancel". The list below will update and show you what kind of data you can plot. From there you could plot:
 
 * *Age-elevation profiles*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, you will be asked to choose which of them you want to plot (can be all).
 * *date vs eU plots*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
@@ -271,7 +271,7 @@ Visualize 3D data
 ==================================
 
 | PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
-| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 15).
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 14).
 | If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 15). On this tab, you have several options to set properties of the 3D model:
 
 *	*Data range*: set the range of data for the colorbar.
