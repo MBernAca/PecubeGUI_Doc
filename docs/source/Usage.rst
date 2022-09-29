@@ -235,6 +235,12 @@ Plot 2D data
 ------------
 
 ==================================
+To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+
+* *Load project...*: load a Pecube input file to plot data from that project.
+* *Add 3D model...*: load a vtk file to render a 3D model.
+* *Remove data...*: remove one or several plots. To do so, on the plot list on the left-hand side of the interface, select the plot you wish to remove and click 'Remove data...'.
+* *Further data...*: a list of 2D data you can plot.
 
 In the current version, and depending on your input parameters, Pecube can output several files that you can then load into PecubeGUI to plot some results. These files are:
 
@@ -242,9 +248,7 @@ In the current version, and depending on your input parameters, Pecube can outpu
 *	*Graini_j*: stores the input parameters used for the production-diffusion model from Gautheron et al. (2010), and the resulting ages computed according to the thermal history provided. You will find in this file: the thermal history of the sample, its age evolution, and the degassing fractions of \ :sup:`4`\He and \ :sup:`3`\He (if defined by the user, see :ref:`Ages-tab`). If the simpler production-diffusion (finite difference) model is used then the ages and 4He/3He data are found in files "TimeAgeXXX.csv" and "43He.csv" respectively.
 * *CoolingRates.csv*: contains the time-temperature paths from all nodes in the model. This file is created if the option "Cooling rates" is checked (see :ref:`Ages-tab`). This allow the user to plot a 2D map of cooling rates defining a temperature or time interval.
 * *PecubeXXX.vtk*: This file is located in the "VTK" directory of your project. If loaded for 2D data plot, a window will show up and ask you which data to plot from the file. You can extract, for instance, the 2D spatial distribution of the temperature at a specified depth, or extract the depth of an isotherm.
-* *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Ages-tab`).
-
-To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data.  
+* *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Ages-tab`).  
 
 
 .. figure:: ../images/Chart_window.png
@@ -274,7 +278,9 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   |when plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot.     This misfit criteria is known as the likelihood (in fact log-likelihood) that is the probability to have the observed data according to the model predictions.
   The log-likelyhood is defined as:
   :math:`LL = -\frac{1}{pN} \sum_{j=1}^{N}(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`
-  Where p = 2 (assuming Gaussian distribution of errors), :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error  on the observed data j, and N the total number of observed data. The higher the value of LL, the better is the match between observed and predicted data. 
+  |Where p = 2 (assuming Gaussian distribution of errors), :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error  on the observed data j, and N the total number of observed data. The higher the value of LL, the better is the match between observed and predicted data. 
+  
+
 
 Visualize 3D data
 -----------------
