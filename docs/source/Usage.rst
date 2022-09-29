@@ -270,8 +270,9 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   
   *Figure 14. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
 
+.. note::
   when plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot. This misfit criteria is known as the likelihood (in fact log-likelihood) that is the probability to have the observed data according to the model predictions. The log-likelyhood is defined as:
-.. math:: LL = -\frac{1}{pN} \sum_{j=1}^{N}(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2
+  :math: LL = -\frac{1}{pN} \sum_{j=1}^{N}(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2
 Where p = 2 (assuming Gaussian distribution of errors), S^{obs}_j the observed data j and S^{pred}_j the predicted data j, \sigma_j the error on the observed data j, and N the total number of observed data. The higher the value of LL, the better is the match between observed and predicted data. 
 
 Visualize 3D data
