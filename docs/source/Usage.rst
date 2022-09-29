@@ -267,7 +267,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
 
 .. note::
   when plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot. This misfit criteria is known as the likelihood (in fact log-likelihood) that is the probability to have the observed data according to the model predictions. The log-likelyhood is defined as:
-.. math::  `LL = -\frac{1}{pN} \sum_{j=1}^{N}(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`
+ ::math::  `LL = -\frac{1}{pN} \sum_{j=1}^{N}(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`
 
 Visualize 3D data
 -----------------
