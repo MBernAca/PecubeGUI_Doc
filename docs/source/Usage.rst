@@ -242,6 +242,7 @@ To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on 
 * *Remove data...*: remove one or several plots. To do so, on the plot list on the left-hand side of the interface, select the plot you wish to remove and click 'Remove data...'.
 * *Further data...*: a list of 2D data you can plot.
 
+
 In the current version, and depending on your input parameters, Pecube can output several files that you can then load into PecubeGUI to plot some results. These files are:
 
 *	*TimeTemperature.csv*: stores the thermal path of each sample location you provided, either by writing directly in a file in the ‘Data’ directory of your project, or by specifying the locations in PecubeGUI when want to predict specific AHe ages (see ‘Output parameters’ tab). For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
