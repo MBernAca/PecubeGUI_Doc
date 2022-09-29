@@ -239,12 +239,12 @@ Plot 2D data
 In the current version, and depending on your input parameters, Pecube can output several files that you can then load into PecubeGUI to plot some results. These files are:
 
 *	*TimeTemperature.csv*: stores the thermal path of each sample location you provided, either by writing directly in a file in the ‘Data’ directory of your project, or by specifying the locations in PecubeGUI when want to predict specific AHe ages (see ‘Output parameters’ tab). For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
-*	*Graini_j*: stores the input parameters used for the production-diffusion model from Gautheron et al. (2010), and the resulting ages computed according to the thermal history provided. You will find in this file: the thermal history of the sample, its age evolution, and the degassing fractions of \ :sup:`4`\He and \ :sup:`3`\He (if defined by the user, see :ref:`Ages-tab`). If the simpler production-diffusion (finite difference) model is used then the ages and 4He/3He data are found in files "TimeAge.csv" and "43He.csv" respectively.
+*	*Graini_j*: stores the input parameters used for the production-diffusion model from Gautheron et al. (2010), and the resulting ages computed according to the thermal history provided. You will find in this file: the thermal history of the sample, its age evolution, and the degassing fractions of \ :sup:`4`\He and \ :sup:`3`\He (if defined by the user, see :ref:`Ages-tab`). If the simpler production-diffusion (finite difference) model is used then the ages and 4He/3He data are found in files "TimeAgeXXX.csv" and "43He.csv" respectively.
 * *CoolingRates.csv*: contains the time-temperature paths from all nodes in the model. This file is created if the option "Cooling rates" is checked (see :ref:`Ages-tab`). This allow the user to plot a 2D map of cooling rates defining a temperature or time interval.
 * *PecubeXXX.vtk*: This file is located in the "VTK" directory of your project. If loaded for 2D data plot, a window will show up and ask you which data to plot from the file. You can extract, for instance, the 2D spatial distribution of the temperature at a specified depth, or extract the depth of an isotherm.
 * *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Ages-tab`).
 
-To be able to plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data.  
+To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data.  
 
 
 .. figure:: ../images/Chart_window.png
@@ -253,17 +253,21 @@ To be able to plot 2D data in PecubeGUI, first switch to the chart's window by c
   
   *Figure 13. Chart's window.*
   
-For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Add 2D data…’, then a window appears and ask you to choose a csv file to search for some data to plot. You can load any of the files mentioned above, and then click "Cancel". The list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
-* *Age-elevation profiles*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, you will be asked to choose which of them you want to plot (can be all).
-* *date vs eU plots*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
-* *Age-distance*: plot ages against latitude of the model. Works only if you computed ages at specific locations. 
+* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
+* *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
+* *Age-distance*: plot ages along the latitude coordinates of the model. Works only if you computed ages at specific locations. 
 * *Tt paths*: plot the thermal path of each samples. Works only if you computed ages at specific locations. 
-* *4He/3He data*: plot either 4He/3He spectra or step ages profiles. Select the range of data you wish to plot from the table that pop up. 
+* *4He/3He data*: plot either 4He/3He spectra or step ages profiles. Select the range of data you wish to plot from the table that pop up. You are allowed to load observed data in the format "Rstep/Rbulk vs SumFe3He". 
 * *2D map of cooling rates*: compute cooling rates for all surface node of the model. You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
 * *2D map of temperatures*: plot the temperature/depth map at a certain depth/isotherm. To plot this map you will need to load one of the "PecubeXXX.vtk" file in the "VTK" directory of you pecube project. 
 * *2D map of Ages*: plot the ages at the surface of the model. Works only if you computed ages for all surface nodes! To plot this map you will need to load one of the "AgesXXX.vtk" file in the "VTK" directory of you pecube project. 
 
+
+.. note::
+  when plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot. This misfit criteria is known as the likelihood (in fact log-likelihood) that is the probability to have the observed data according to the model predictions. The log-likelyhood is defined as:
+.. math::  'LL = -\\frac{1}{pN} \sum_{j=1}^{N}(\\frac{S^obs_j - S^pred_j}{ \sigma_j})^2
 
 Visualize 3D data
 -----------------
@@ -271,7 +275,7 @@ Visualize 3D data
 ==================================
 
 | PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
-| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 14).
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 15).
 | If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 15). On this tab, you have several options to set properties of the 3D model:
 
 *	*Data range*: set the range of data for the colorbar.
@@ -287,7 +291,7 @@ Visualize 3D data
   :scale: 30
   :align: center
   
-  *Figure 14. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+  *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
 
