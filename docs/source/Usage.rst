@@ -235,6 +235,7 @@ Plot 2D data
 ------------
 
 ==================================
+
 To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
