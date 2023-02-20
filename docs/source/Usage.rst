@@ -73,6 +73,7 @@ Topography tab
 
 .. figure:: ../images/Folium.png
   :align: center
+  :scale: 60
 
   *Figure 4. Interactive map to extract a region of interest as a DEM.*
 
@@ -80,6 +81,7 @@ Topography tab
 
 .. figure:: ../images/BuildTopo.png
   :align: center
+  :scale: 60
 
   *Figure 5. Window to build a synthetic sinusoïdal topography.*
   
