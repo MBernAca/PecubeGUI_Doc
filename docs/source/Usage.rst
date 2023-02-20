@@ -22,13 +22,13 @@ you will be able to provide and set all of the Pecube input parameters for your 
 The window should look like the Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
 and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
 
-.. figure:: ../images/Input_Parameters_interface.png
+.. figure:: ../images/MainWindow.png
   :align: center
 
   *Figure 2. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
-The input parameters are gathered into categories similar to what is referenced in the Pecube’s user guide. All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Ages*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
+The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide. All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Ages*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
   
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI. For a detailed description of the parameters, please refer to the Pecube's user guide.
 
@@ -43,7 +43,7 @@ Topography tab
 
 
 | When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are shown, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
-| PecubeGUI offers the possibility to simply load topographic file(s) from (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), or (3) from a DEM (i.e., raster file '.tif'). For that purpose, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where files from iSOSIA [Egholm_et-al-2011]_ have been loaded.
+| PecubeGUI offers the possibility to simply load topographic file(s) from (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), (3) from a DEM file (i.e., raster file '.tif'), or (4) from a DEM extracted from an interactive map ("Get topo...", Fig. 2). You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a series of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011]_ have been loaded.
 
 
 .. figure:: ../images/spm_loader.png
@@ -66,15 +66,31 @@ Topography tab
 
 | PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset parameters you will provide in the next steps (see :ref:`Time-evolution-tab`).
 | After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\\data\\SPM”. In the meantime, the name “SPM/” is automatically provided to the input parameters “Topography file name”, as well as the grid resolution (i.e., nx and ny, works only with iSOSIA files, Figure 3).
+  
+| When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
+
+| Alternatively, you can extract a DEM from an interactive map including in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). Once the area draw, click on it to extract the coordinates, then close the window. The DEM can now be found in "your_current_project/data" directory with the name "topoRaster.tif". Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
+
+.. figure:: ../images/Folium.png
+  :align: center
+
+  *Figure 4. Interactive map to extract a region of interest as a DEM.*
+
+| You can also decide to build a simple sinusoïdal topography. For this purpose, click on "Build topo..." (Figure 2). A window pops up in which you can set the dimension and resolution of the synthetic topography as well as the amplitude and wavelength (Figure 5). When you are done, click on "Ok" and the topography will be automatically loaded within the interface.
+
+.. figure:: ../images/BuildTopo.png
+  :align: center
+
+  *Figure 5. Window to build a synthetic sinusoïdal topography.*
+  
+| Finally, you can check the topography you provided by clicking on “Show topography” (Figure 2). A new tab then appears on the right-hand side of the interface (Figure 6). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 6).
 
 .. figure:: ../images/setTopography.png
     :scale: 30
     :align: center
 
-    *Figure 4. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button. The topography is loaded from a DEM from the Rhone valley in Switzerland.*
+    *Figure 6. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button. The topography is loaded from a DEM from the Rhone valley in Switzerland.*
 
-
-| When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. Finally, you can check the topography you provided by clicking on “Show topography” (Figure 2). A new tab then appears on the right-hand side of the interface (Figure 4). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 4).
 
 .. _Time-evolution-tab:
 
@@ -83,13 +99,13 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 5) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates to the value written in the parameter “ntime” (Figure 5). 
+In this tab (Figure 7) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates to the value written in the parameter “ntime” (Figure 7). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
     :align: center
 
-    *Figure 5. "Time evolution" tab where to provide the parameters related to the time evolution of the topography. In this example, the topography evolution is defined relative to the maximum elevation.*
+    *Figure 7. "Time evolution" tab where to provide the parameters related to the time evolution of the topography. In this example, the topography evolution is defined relative to the maximum elevation.*
 
 | The default value for each parameter is also automatically provided. 
 | In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters, according to the following equation:
@@ -98,7 +114,7 @@ In this tab (Figure 5) you can provide all the parameters that control the time 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  amplification\ :sub:`i`\  *  h\ :sub:`0`\
 
 |
-| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the ammplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 6). The topographic evolution now follows:
+| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the ammplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 8). The topographic evolution now follows:
 
 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  topo_ref - [amplification\ :sub:`i`\  *  (topo_ref - h\ :sub:`0`\)]
@@ -108,7 +124,7 @@ In this tab (Figure 5) you can provide all the parameters that control the time 
     :scale: 30
     :align: center
 
-    *Figure 6. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
+    *Figure 8. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
 
 
 .. _Thermal-tab:
@@ -118,15 +134,15 @@ Thermal tab
 
 ==================================
 
-| In the :ref:`Thermal-tab`, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 7). A new tab will appear on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 7). The 1D steady-state geotherm is computed using the equation find in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
-| Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 7). Finally, the resulting surface heat flux is shown as a checking. 
+| In the :ref:`Thermal-tab`, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab will appear on the left-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9). The 1D steady-state geotherm is computed using the equation find in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
+| Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 9). Finally, the resulting surface heat flux is shown as a checking. 
 
 
 .. figure:: ../images/Geotherm.png
   :scale: 30
   :align: center
   
-  *Figure 7. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
+  *Figure 9. "Geotherm" tab where to provide parameters related to Thermal properties of the crust and the atmosphere.*
 
 .. _Data-tab:
 
@@ -135,14 +151,14 @@ Data tab
 
 ==================================
 
-| In this tab you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`, and/or to provide observed data. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 8) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of grains you want to define at each location. These information will be used in the :ref:`Ages-tab` to set the number of observations and/or grain characteristics for the computation of ages from each thermochronometers chosen. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
+| In this tab you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`, and/or to provide observed data. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of grains you want to define at each location. These information will be used in the :ref:`Ages-tab` to set the number of observations and/or grain characteristics for the computation of ages from each thermochronometers chosen. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
 
 
 .. figure:: ../images/Sample_location.png
   :scale: 30
   :align: center
   
-  *Figure 8. "Data" tab where to provide the sample location(s) where to predict specific ages and/or provide data. The extra window shows the location of the samples, here in the Sion area (data from Valla et al., 2012)*
+  *Figure 10. "Data" tab where to provide the sample location(s) where to predict specific ages and/or provide data. The extra window shows the location of the samples, here in the Sion area (data from Valla et al., 2012)*
 
 
 Tectonic tab
@@ -168,7 +184,7 @@ Tectonic tab
   :scale: 30
   :align: center
   
-  *Figure 9. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
+  *Figure 11. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
 .. _Ages-tab:
 
@@ -177,7 +193,7 @@ Ages tab
 
 ==================================
 
-This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 10). The first part (i.e., “Compute ages”) let you choose between three options:
+This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 12). The first part (i.e., “Compute ages”) let you choose between three options:
 
 *	*none*: Pecube will not predict any thermochronological ages
 *	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
@@ -187,9 +203,9 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   :scale: 30
   :align: center
   
-  *Figure 10. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
+  *Figure 12. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
-| When clicking on any thermochronometer check box a new tab will show on the righ-hand part of the interface (Figure 10). 
+| When clicking on any thermochronometer check box a new tab will show on the righ-hand part of the interface (Figure 12). 
 | This tab is where you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
@@ -198,7 +214,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
 *	*Number of iterations*: number of events (i.e. atoms) for the Monte carlo simulation [Gautheron-et-al-2010]_.
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
-*	*Grains characteristics*: when checking this box, a new window opens (Figure 11). It shows a table in which you can change the size (radius) of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. In the current version, the grain is assumed spherical. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 11), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number you desire ("Number of layers", Figure 11). When finished to set the profile for the grain, click on "Save" to save the profile for that grain (Zonation not yet available in the current version)
+*	*Grains characteristics*: when checking this box, a new window opens (Figure 13). It shows a table in which you can change the size (radius) of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. In the current version, the grain is assumed spherical. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 13), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number you desire ("Number of layers", Figure 13). When finished to set the profile for the grain, click on "Save" to save the profile for that grain (Zonation not yet available in the current version)
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
 
@@ -206,7 +222,7 @@ This tab enables the user to set the outputs he/she wants that Pecube provides a
   :scale: 30
   :align: center
   
-  *Figure 11. Window that appears when checking the box "Grain characteristics" (Figure 10).*
+  *Figure 13. Window that appears when checking the box "Grain characteristics" (Figure 10).*
 
 The remaining tabs do not need detailed description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label of each parameter.
 
@@ -215,10 +231,10 @@ The remaining tabs do not need detailed description. Simply fill the text boxes 
 Run a Pecube model
 ------------------
 
-| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 10). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
+| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 12). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
 
 | PecubeGUI first runs Pecube as usual, and if the option “sample specific” is set (cf, previous section), then PecubeGUI will run the external routine to predict specific ages. When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
-| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 10).
+| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 12).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
@@ -236,7 +252,7 @@ Plot 2D data
 
 ==================================
 
-To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
 * *Add 3D model...*: load a vtk file to render a 3D model.
@@ -257,11 +273,11 @@ In the current version, and depending on your input parameters, Pecube can outpu
   :scale: 30
   :align: center
   
-  *Figure 13. Chart's window.*
+  *Figure 14. Chart's window.*
   
-For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
-* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
+* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
 * *Age-distance*: plot ages along the latitude coordinates of the model. Works only if you computed ages at specific locations. 
 * *Tt paths*: plot the thermal path of each samples. Works only if you computed ages at specific locations. 
@@ -274,7 +290,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   :scale: 60
   :align: center
   
-  *Figure 14. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
+  *Figure 15. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot.
@@ -293,8 +309,8 @@ Visualize 3D data
 ==================================
 
 | PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
-| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 15).
-| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 15). On this tab, you have several options to set properties of the 3D model:
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 16).
+| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 16). On this tab, you have several options to set properties of the 3D model:
 
 *	*Data range*: set the range of data for the colorbar.
 *	*Current data*: list to choose the data to show (i.e., for the colormap).
@@ -309,7 +325,7 @@ Visualize 3D data
   :scale: 30
   :align: center
   
-  *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+  *Figure 16. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
 
