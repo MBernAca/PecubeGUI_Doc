@@ -265,7 +265,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
 
 * *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
-* *Age-distance*: plot ages along the latitude coordinates of the model. Works only if you computed ages at specific locations. 
+* *Age-comparison*: plot observed vs predicted ages.
 * *Tt paths*: plot the thermal path of each samples. Works only if you computed ages at specific locations. 
 * *4He/3He data*: plot either 4He/3He spectra or step ages profiles. Select the range of data you wish to plot from the table that pop up. You are allowed to load observed data in the format "Rstep/Rbulk vs SumFe3He". 
 * *2D map of cooling rates*: compute cooling rates for all surface node of the model. You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
