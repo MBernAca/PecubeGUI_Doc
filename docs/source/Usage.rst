@@ -300,7 +300,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   The log-likelyhood is defined following Braun et al. (2012):
   :math:`LL = -\sum_{j=1}^{N}(\frac{ln(2\pi)}{2}+ln(\sigma_j)+0.5(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`.
   
-  Where p = 2 (assuming Gaussian distribution of errors), :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error
+  Where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error
   on the observed data j, and N the total number of observed data. The higher the value of LL, the better is the match between observed and predicted data. 
   
 
