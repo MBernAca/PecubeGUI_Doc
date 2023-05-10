@@ -160,7 +160,7 @@ Data tab
   :scale: 30
   :align: center
   
-  *Figure 10. "Data" tab where to provide the sample location(s) where to predict specific ages and/or provide data. The extra window shows the location of the samples, here in the Sion area (data from Valla et al., 2012)*
+  *Figure 10. "Data" tab where to provide the sample location(s) and number of observations by thermochronometers. The extra window shows the location of the samples, here in the Rhone valley area (data from Valla et al., 2012)*
 
 
 Tectonic tab
