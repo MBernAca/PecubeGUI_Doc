@@ -153,7 +153,13 @@ Data tab
 
 ==================================
 
-| In this tab you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations when using the "sample specific" option in :ref:`Ages-tab`, and/or to provide observed data. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of grains you want to define at each location. These information will be used in the :ref:`Ages-tab` to set the number of observations and/or grain characteristics for the computation of ages from each thermochronometers chosen. Finally you can check for your sample location on the input topography by clicking on "Check sample locations".
+| The first part (i.e., “Compute ages”) let you choose between three options:
+
+*	*none*: Pecube will not predict any thermochronological ages
+*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
+*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. In the current version, grain-specific kinetics can only be provided for the AHe, AFT, and ZHE.
+
+| If you choose 'sample specific', you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of observation by thermochronometers you want to define at each location. Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
 
 
 .. figure:: ../images/Sample_location.png
@@ -161,6 +167,24 @@ Data tab
   :align: center
   
   *Figure 10. "Data" tab where to provide the sample location(s) and number of observations by thermochronometers. The extra window shows the location of the samples, here in the Rhone valley area (data from Valla et al., 2012)*
+
+After providing the number of observations, you can click on 'Show/update ages tab. A tab will open, where you can provide information for each thermochronometer (Figure 11). 
+
+.. figure:: ../images/Ages_Tab.png
+  :scale: 30
+  :align: center
+  
+  *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
+  
+
+| This tab is where you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
+
+*	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
+*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
+*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
+* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
+*	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the rmr0 kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
+*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
 
 Tectonic tab
@@ -187,46 +211,6 @@ Tectonic tab
   :align: center
   
   *Figure 11. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
-
-.. _Ages-tab:
-
-Ages tab
--------------------
-
-==================================
-
-This tab enables the user to set the outputs he/she wants that Pecube provides at the end of the model run (Figure 12). The first part (i.e., “Compute ages”) let you choose between three options:
-
-*	*none*: Pecube will not predict any thermochronological ages
-*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
-*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. For this option to work, you will need to provide a folder name (see :ref:`Data-tab`) where PecubeGUI will write some files that will be used by the model. In the current version, grain-specific kinetics can only be provided for the AHe thermochronometer. The user can also choose to predict for the AFT and ZHe systems, but the kinetic parameters apply for all grains (further development still need to be done). For the AHe system, PecubeGUI uses either the production-diffusion model developped by [Gautheron-et-al-2010]_ or a simpler finite-difference model (see below).
-
-.. figure:: ../images/Ages_Tab.png
-  :scale: 30
-  :align: center
-  
-  *Figure 12. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
-  
-| When clicking on any thermochronometer check box a new tab will show on the righ-hand part of the interface (Figure 12). 
-| This tab is where you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
-
-*	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
-*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
-*	*rmr0*: “The reduced length of the more-resistant apatite at the time-temperature conditions where the reduced length of the less-resistant apatite falls to zero” [Ketcham-2005]_. This parameter is used in the annealing computation of radiation damages. The default value is 0.79.
-*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
-*	*Number of iterations*: number of events (i.e. atoms) for the Monte carlo simulation [Gautheron-et-al-2010]_.
-* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
-*	*Grains characteristics*: when checking this box, a new window opens (Figure 13). It shows a table in which you can change the size (radius) of the grains, as well as their uranium and thorium concentration (in ppm). Default values are assigned automatically. In the current version, the grain is assumed spherical. The user can also provide zonation profile for each grain. For this purpose, simply check the box "Zonation" (Figure 13), and then you will be able to draw the zonation profile by adding and dragging points on the both curves representing uranium and thorium profiles. As the respective concentrations are averaged within layers in the grain, you need to provide the number you desire ("Number of layers", Figure 13). When finished to set the profile for the grain, click on "Save" to save the profile for that grain (Zonation not yet available in the current version)
-*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
-
-
-.. figure:: ../images/Grain_characteristics.png
-  :scale: 30
-  :align: center
-  
-  *Figure 13. Window that appears when checking the box "Grain characteristics" (Figure 10).*
-
-The remaining tabs do not need detailed description. Simply fill the text boxes with your new values. The details for each input parameters can be found in the Pecube user guide, and short descriptions can be seen when flying the mouse cursor over the label of each parameter.
 
 
 ------------------
