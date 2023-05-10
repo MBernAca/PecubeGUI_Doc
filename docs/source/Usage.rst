@@ -210,7 +210,7 @@ Tectonic tab
   :scale: 30
   :align: center
   
-  *Figure 11. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
+  *Figure 12. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
 
 ------------------
@@ -238,7 +238,7 @@ Plot 2D data
 
 ==================================
 
-To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
 * *Add 3D model...*: load a vtk file to render a 3D model.
@@ -259,9 +259,9 @@ In the current version, and depending on your input parameters, Pecube can outpu
   :scale: 30
   :align: center
   
-  *Figure 14. Chart's window.*
+  *Figure 13. Chart's window.*
   
-For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
 * *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
@@ -276,7 +276,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   :scale: 60
   :align: center
   
-  *Figure 15. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
+  *Figure 14. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot.
@@ -295,8 +295,8 @@ Visualize 3D data
 ==================================
 
 | PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
-| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 16).
-| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 16). On this tab, you have several options to set properties of the 3D model:
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 15).
+| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 15). On this tab, you have several options to set properties of the 3D model:
 
 *	*Data range*: set the range of data for the colorbar.
 *	*Current data*: list to choose the data to show (i.e., for the colormap).
@@ -311,7 +311,7 @@ Visualize 3D data
   :scale: 30
   :align: center
   
-  *Figure 16. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+  *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
 
