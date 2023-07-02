@@ -116,7 +116,7 @@ In this tab (Figure 7) you can provide all the parameters that control the time 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  amplification\ :sub:`i`\  *  h\ :sub:`0`\
 
 |
-| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the ammplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 8). The topographic evolution now follows:
+| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the amplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 8). The topographic evolution now follows:
 
 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  topo_ref - [amplification\ :sub:`i`\  *  (topo_ref - h\ :sub:`0`\)]
@@ -177,12 +177,12 @@ After providing the number of observations, you can click on 'Show/update ages t
   *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
 
-| This tab is where you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
+| Here you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
-* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). Only avalaible for the finite difference production-diffusion model.
+* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the rmr0 kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 
@@ -263,12 +263,12 @@ In the current version, and depending on your input parameters, Pecube can outpu
   
 For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
-* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
+* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
 * *Age-comparison*: plot observed vs predicted ages.
 * *Age transect*: plot observed and predicted ages along transect (Latitude, longitude, or projected).
 * *Tt paths*: plot the thermal path of each samples. Works only if you computed ages at specific locations. 
-* *4He/3He data*: plot either 4He/3He spectra or step ages profiles. Select the range of data you wish to plot from the table that pop up. You are allowed to load observed data in the format "Rstep/Rbulk vs SumFe3He". 
+* *4He/3He data*: plot either 4He/3He spectra or step ages profiles. 
 * *2D map of cooling rates*: compute cooling rates for all surface node of the model. You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
 * *2D map of temperatures*: plot the temperature/depth map at a certain depth/isotherm. To plot this map you will need to load one of the "PecubeXXX.vtk" file in the "VTK" directory of you pecube project. 
 * *2D map of Ages*: plot the ages at the surface of the model. Works only if you computed ages for all surface nodes! To plot this map you will need to load one of the "AgesXXX.vtk" file in the "VTK" directory of you pecube project. 
