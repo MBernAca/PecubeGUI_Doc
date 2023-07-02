@@ -28,9 +28,9 @@ and thus navigate through their respective parameters. The right part of the int
   *Figure 2. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
-The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide. All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Ages*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
+The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide. All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
   
-In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI. For a detailed description of the parameters, please refer to the Pecube's user guide.
+In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
 
 --------------------------
 Providing input parameters
@@ -43,7 +43,7 @@ Topography tab
 
 
 | When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are shown, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
-| PecubeGUI offers the possibility to simply load topographic file(s) from (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), (3) from a DEM file (i.e., raster file '.tif'), or (4) from a DEM extracted from an interactive map ("Get topo...", Fig. 2). You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a series of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011]_ have been loaded.
+| PecubeGUI offers the possibility to simply load topographic file(s) from: (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), (3) from a DEM file (i.e., raster file '.tif'), or (4) from a DEM extracted from an interactive map ("Get topo...", Fig. 2). You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
 
 
 .. figure:: ../images/spm_loader.png
@@ -69,7 +69,7 @@ Topography tab
   
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
 
-| Alternatively, you can extract a DEM from an interactive map including in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). Once the area draw, click on it to extract the coordinates, then close the window. The DEM can now be found in "your_current_project/data" directory with the name "topoRaster.tif". Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
+| Alternatively, you can extract a DEM from an interactive map included in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). After drawing the area of interest, click on it to extract the coordinates, then close the window. The DEM can now be found in "your_current_project/data" directory with the name "topoRaster.tif". Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
 .. figure:: ../images/Folium.png
   :align: center
