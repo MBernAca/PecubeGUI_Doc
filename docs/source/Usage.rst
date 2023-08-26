@@ -71,6 +71,11 @@ Topography tab
 
 | Alternatively, you can extract a DEM from an interactive map included in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). After drawing the area of interest, click on it to extract the coordinates, then close the window. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL1 (90 m resolution) hosted by OpenTopography. To be able to download the DEM you have to request a API-key from OpenTopography (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Once done, save the key is a text file nammed "OpenTopoKey.txt" and save it in the root directory of PecubeGUI (location of the "Pecube" directory). Then, you should be able to download the DEM when drawing a rectangle area in the interactive map. Once the DEM is downloaded, it can be found in "your_current_project/data/topoFolder" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
+.. important::
+If you use the DEM from the SRTM data hosted by OpenTopography, please use this citation: NASA Shuttle Radar Topography Mission (SRTM) (2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2022-11-18.
+With the in-text citation: NASA Shuttle Radar Topography Mission (2013)
+
+
 .. figure:: ../images/Folium.png
   :align: center
   :scale: 30
