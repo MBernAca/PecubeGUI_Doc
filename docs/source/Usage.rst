@@ -19,7 +19,7 @@ you will be able to provide and set all of the Pecube input parameters for your 
   *Figure 1. Enter a new project name. This window shows up when clicking on the "New input file" action.*
 
 
-The window should look like the Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
+The window should look like Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
 and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
 
 .. figure:: ../images/MainWindow.png
@@ -33,7 +33,7 @@ The input parameters are organised into categories similar to what is referenced
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
 
 --------------------------
-Providing input parameters
+Provide input parameters
 --------------------------
 
 Topography tab
@@ -42,7 +42,7 @@ Topography tab
 ==================================
 
 
-| When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are shown, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
+| When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are displayed, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
 | PecubeGUI offers the possibility to simply load topographic file(s) from: (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), (3) from a DEM file (i.e., raster file '.tif'), or (4) from a DEM extracted from an interactive map ("Get topo...", Fig. 2). You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
 
 
