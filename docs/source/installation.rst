@@ -1,17 +1,16 @@
 .. _installation:
 
 
-Get PecubeGUI
-=============
+Install PecubeGUI
+=================
 
+Get PecubeGUI
+-------------
 
 | PecubeGUI-beta is now available ! This version has been tested for bugs and stability, and is close to its first official release. However, you might still face some unnoticed crashes/bugs. If it happens, please do not hesitate to report it here:  https://github.com/MBernAca/PecubeGUI_Doc/issues.
 
 | We release this version to give the community a first appreciation of PecubeGUI. 
 
-
-Install PecubeGUI
-=================
 
 MacOS
 ---------
