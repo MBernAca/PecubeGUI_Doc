@@ -20,7 +20,7 @@ the :doc:`introduction` section for a quick overview of the interface.
 
 .. hint::
 
-   PecubeGUI-beta is now avalaible ! Get it now here: installation
+   PecubeGUI-beta is now avalaible ! Get it now here: :doc:`installation`
 
 Contents
 --------
