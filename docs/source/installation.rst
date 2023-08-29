@@ -22,7 +22,7 @@ An installation process window will appear, you just have to follow the steps.
 Windows
 -----------
 
-After downloading the PecubeGUI_installer.exe file, clicking on it will show an installation process. You just have to follow the instructions and PecubeGUI will be installed on your local machine.
+After downloading the PecubeGUI_installer.exe file, clicking on it will start an installation process. You just have to follow the instructions and PecubeGUI will be installed on your local machine.
 
 
 .. important::
