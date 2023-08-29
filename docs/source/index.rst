@@ -32,6 +32,7 @@ Contents
    introduction
    Quick
    Usage
+   Video tutorials
    Extra
    
 
