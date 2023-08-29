@@ -20,8 +20,7 @@ the :doc:`introduction` section for a quick overview of the interface.
 
 .. warning::
 
-   PecubeGUI is under active development and beta testing ! To date, it is not available for public sharing. You can have some news about the ongoing development here:
-   www.erc-cooler.eu
+   PecubeGUI-beta is now avalaible ! Get it now here: installation
 
 Contents
 --------
