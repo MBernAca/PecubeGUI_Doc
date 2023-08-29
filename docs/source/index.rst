@@ -18,7 +18,7 @@ contact: maxime.bernard@uni-potsdam.de
 Check out the :doc:`installation` to go through the installation process, and
 the :doc:`introduction` section for a quick overview of the interface.
 
-.. warning::
+.. hint::
 
    PecubeGUI-beta is now avalaible ! Get it now here: installation
 
