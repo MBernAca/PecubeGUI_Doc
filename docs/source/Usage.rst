@@ -47,7 +47,7 @@ Topography tab
 * a csv file containing one column of elevation
 * a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”)
 * a DEM file (i.e., raster file '.tif')
-* from a DEM extracted from an interactive map ("Get topo...", Fig. 2)
+* a DEM extracted from an interactive map ("Get topo...", Fig. 2)
 * You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). 
 
 For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
@@ -61,7 +61,7 @@ For the three first points, click on ‘load file(s)’ (Figure 2) will allow yo
     *Figure 3. Spm loader window.*
      
      
-| This window recovers some characteristics of your spm model, which are shown on the top for checking (works for iSOSIA models only). Then, you are asked to provide the starting and ending times of your model (in Ma), as well as the number of steps (i.e., the number of topographic files). The initial time is older than the end time. This is required as it will be used to automatically set the time values for the “Time evolution” tab.
+| This window recovers some characteristics of your spm model, which are shown on the top for checking (works for iSOSIA models only). Then, you are asked to provide the starting and ending times of your model (in Ma), as well as the number of steps (i.e., the number of topographic files). The initial time is older than the end time. This is required to automatically set the time values for the “Time evolution” tab.
 
 | You are also able to provide a simple pre-spm history for the topographic evolution. For that purpose, click on “Pre-history” (Figure 3). You will be able to provide 4 parameters:
 
@@ -76,7 +76,7 @@ For the three first points, click on ‘load file(s)’ (Figure 2) will allow yo
   
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
 
-| Alternatively, you can extract a DEM from an interactive map included in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). After drawing the area of interest, click on it to extract the coordinates, then close the window. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. To be able to download the DEM you have to request a API-key from OpenTopography (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Once done, save the key is a text file nammed "OpenTopoKey.txt" and save it in the root directory of PecubeGUI (location of the "Pecube" directory). Then, you should be able to download the DEM when drawing a rectangle area in the interactive map. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
+| Alternatively, you can extract a DEM from an interactive map included in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). After drawing the area of interest, click on it to extract the coordinates, then close the window. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. To be able to download the DEM you have to request a API-key from OpenTopography (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Once done, save the key in a text file named "OpenTopoKey.txt" and save it in the root directory of PecubeGUI (location of the "Pecube" directory). Then, you should be able to download the DEM when drawing a rectangle area in the interactive map. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
 
 .. important:: If you use the DEM from the SRTM data hosted by OpenTopography, please use this citation: NASA Shuttle Radar Topography Mission (SRTM) (2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2022-11-18. With the in-text citation: NASA Shuttle Radar Topography Mission (2013).
@@ -97,13 +97,13 @@ For the three first points, click on ‘load file(s)’ (Figure 2) will allow yo
 
   *Figure 5. Window to build a synthetic sinusoïdal topography.*
   
-| Finally, you can check the topography you provided by clicking on “Show topography” (Figure 2). A new tab then appears on the right-hand side of the interface (Figure 6). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. You are indeed able to visualize the evolution of the topography by grabbing and sliding the slide bar in “Set time evolution” (Figure 6).
+| Finally, you can check your input topography by clicking on “Show topography” (Figure 2). A new tab appears on the right-hand side of the interface (Figure 6). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. For this, simply by grab and drag the slide bar in “Set time evolution” (Figure 6).
 
 .. figure:: ../images/setTopography.png
     :scale: 30
     :align: center
 
-    *Figure 6. "Topography" tab with the topography shown on the left-hand side, after clicking the "Show topogaphy" button. The topography is loaded from a DEM from the Rhone valley in Switzerland.*
+    *Figure 6. "Topography" tab with the topography shown on the right-hand side, after clicking the "Show topogaphy" button. The topography is loaded from a DEM from the Rhone valley in Switzerland.*
 
 
 .. _Time-evolution-tab:
@@ -113,7 +113,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 7) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates to the value written in the parameter “ntime” (Figure 7). 
+In this tab (Figure 7) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates from the value written in the parameter “ntime” (Figure 7). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -148,9 +148,9 @@ Thermal tab
 
 ==================================
 
-| In the :ref:`Thermal-tab`, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab will appear on the right-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9, only for visual purposes). The 1D steady-state geotherm is computed using the equation found in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
+| In the :ref:`Thermal-tab`, you will find all the parameters to set the thermal properties of the crust and the atmosphere. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab appears on the right-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9, only for visual purposes). The 1D steady-state geotherm is computed using the equation found in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
 | Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The total heat production (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 9). Finally, the resulting surface heat flux is shown as a checking. 
-The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth. In the input parameters for pecube, the heat production rate will then be negative to inform pecube we want to use a non-uniform heat production rate.
+The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth. In the input parameters for pecube, the heat production rate will then be negative to inform pecube you want to use a non-uniform heat production rate.
 
 
 .. figure:: ../images/Geotherm.png
@@ -169,17 +169,17 @@ Data tab
 | The first part (i.e., “Compute ages”) let you choose between three options:
 
 *	*none*: Pecube will not predict any thermochronological ages
-*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. This option will enable you to check any boxes in the next part (i.e., “Thermochronological systems”) and to choose the thermochronological system you are interested to use. 
-*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user. In the current version, grain-specific kinetics can only be provided for the AHe, AFT, and ZHE.
+*	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. 
+*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user.
 
-| If you choose 'sample specific', you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of observation by thermochronometers you want to define at each location. Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
+| If you choose 'sample specific', you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of observation for each thermochronometers. Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
 
 
 .. figure:: ../images/Sample_location.png
   :scale: 30
   :align: center
   
-  *Figure 10. "Data" tab where to provide the sample location(s) and number of observations by thermochronometers. The extra window shows the location of the samples, here in the Rhone valley area (data from Valla et al., 2012)*
+  *Figure 10. "Data" tab where to provide the sample location(s) and number of observations for each thermochronometers. The extra window shows the location of the samples, here in the Rhone valley area (data from Valla et al., 2012)*
 
 After providing the number of observations, you can click on 'Show/update ages tab. A tab will open, where you can provide information for each thermochronometer (Figure 11). 
 
@@ -290,7 +290,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   :scale: 60
   :align: center
   
-  *Figure 14. An example of an age-elevation plot. Here, AHe ages are predicted (colored triangle) and compared against observed ages from the Sion area (black triangle). The log-likelyhood (LL)value is -1.616.*
+  *Figure 14. An example of an age-elevation plot. Here, AHe and AFT ages are predicted and compared against observations from the Rhone valley area.*
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot.
