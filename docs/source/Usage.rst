@@ -43,7 +43,14 @@ Topography tab
 
 
 | When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are displayed, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
-| PecubeGUI offers the possibility to simply load topographic file(s) from: (1) a csv file containing one column of elevation, (2) a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”), (3) from a DEM file (i.e., raster file '.tif'), or (4) from a DEM extracted from an interactive map ("Get topo...", Fig. 2). You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
+| PecubeGUI offers the possibility to simply load topographic file(s) from: 
+* a csv file containing one column of elevation
+* a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”)
+* a DEM file (i.e., raster file '.tif')
+* from a DEM extracted from an interactive map ("Get topo...", Fig. 2)
+* You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). 
+
+For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
 
 
 .. figure:: ../images/spm_loader.png
