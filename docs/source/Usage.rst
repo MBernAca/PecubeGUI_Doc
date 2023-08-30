@@ -328,7 +328,6 @@ Visualize 3D data
   *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
-
 ----------
 References
 ----------
