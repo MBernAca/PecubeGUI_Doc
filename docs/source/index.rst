@@ -32,6 +32,19 @@ Contents
    Extra
    
 
+Provide suggestions
+-------------------
+
+If you have any suggestion to improve the use of PecubeGUI, please you are very welcome ! Simply pull a request here:
+https://github.com/MBernAca/PecubeGUI_Doc/pulls
+
+Bug report
+----------
+
+If you face a bug or a PecubeGUI crash, please feel free to report it here: 
+https://github.com/MBernAca/PecubeGUI_Doc/issues
+
+
 Acknowledgment
 --------------
 
