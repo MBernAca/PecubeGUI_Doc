@@ -29,6 +29,7 @@ Contents
    Quick
    Usage
    Video tutorials
+   Examples
    Extra
    
 
