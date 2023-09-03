@@ -12,7 +12,7 @@ PeGUI
   includes AFT data for demonstration. 
 
 | We see here that we fairly reproduce the AFT and AHe ages from the Visp area.
-  We also reproduce the 4He/3He spectrum from sample VIS-07 located at the valley bottom. 
+  We also fairly reproduce the 4He/3He spectrum from sample VIS-07 located at the valley bottom. 
   However, the predictions are off from observations in the Sion area. 
   This is due to the simplified topographic scenario used here, where incision of valley starts everywhere at the same time. 
   However, the data might be more consistent with a headward propagation of glacial erosion as inferred from [Sternai-et-al-2013]_. 
