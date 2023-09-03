@@ -19,3 +19,4 @@ PeGUI
 
 
 References:
+.. [Sternai_et-al-2013] Sternai, P., Herman, F., Valla, P. G., & Champagnac, J. D. (2013). Spatial and temporal variations of glacial erosion in the Rhône valley (Swiss Alps): Insights from numerical modeling. Earth and Planetary Science Letters, 368, 119-131.
