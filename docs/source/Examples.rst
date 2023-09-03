@@ -19,6 +19,7 @@ PeGUI
 
 
 References:
+
 .. [Sternai-et-al-2013] Sternai, P., Herman, F., Valla, P. G., & Champagnac, J. D. (2013). Spatial and temporal variations of glacial erosion in the Rhône valley (Swiss Alps): Insights from numerical modeling. Earth and Planetary Science Letters, 368, 119-131.
 
 .. [Valla-et-al-2012] Valla, P. G., van der Beek, P. A., Shuster, D. L., Braun, J., Herman, F., Tassan‐Got, L., & Gautheron, C. (2012). Late Neogene exhumation and relief development of the Aar and Aiguilles Rouges massifs (Swiss Alps) from low‐temperature thermochronology modeling and 4He/3He thermochronometry. Journal of Geophysical Research: Earth Surface, 117(F1).
