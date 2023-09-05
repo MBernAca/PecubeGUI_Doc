@@ -22,7 +22,7 @@ You can download the package on this page: https://www.erc-cooler.eu/portfolio-M
 To use PecubeGUI on macOS, first install the pakage by clicking on the PecubeGUI.pkg.
 An installation process window will appear, you just have to follow the steps.
 
-..note:
+.. note::
  When trying to open the package, the system might complain saying it cannot open it because it is not registered in the Apple Store. To circumvent this, just roght click on the package, click 'open', and accept to open anyway (after the warning).
 
 
