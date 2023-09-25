@@ -6,7 +6,7 @@ Video tutorials
 
 | In this section, you will find video tutorials on how to use PecubeGUI, its functionalities, and many more !
 
-.. notes::
+.. note::
 
  If you do not have access to youtube, you can find the videos here: http://erc-cooler.eu/portfolio-Maxime_PecubeGUI_Tutos.html
 
