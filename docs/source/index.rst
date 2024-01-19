@@ -10,7 +10,7 @@ PecubeGUI is distributed under a GNU license that allows anyone to make modifica
 distribution has the same license. However, for the sake of having an official and single version, if you provide any changes and
 wish to distribute your version, please contact us so that we can integrate your changes in the official version.
 
-contact: maxime.bernard@uni-potsdam.de
+contact: maxime.bernard@unil.ch
 
 Check out the :doc:`installation` to go through the installation process, and
 the :doc:`introduction` section for a quick overview of the interface.
