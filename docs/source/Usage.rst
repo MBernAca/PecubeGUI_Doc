@@ -76,19 +76,10 @@ For the three first points, click on ‘load file(s)’ (Figure 2) will allow yo
   
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
 
-| Alternatively, you can extract a DEM from an interactive map included in the interface. Click on "Get topo..." button will show the map in which you can draw a rectangle area of your region of interest (Figure 4). After drawing the area of interest, click on it to extract the coordinates, then close the window. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. To be able to download the DEM you have to request a API-key from OpenTopography (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Once done, save the key in a text file named "OpenTopoKey.txt" and save it in the root directory of PecubeGUI (location of the "Pecube" directory). Then, you should be able to download the DEM when drawing a rectangle area in the interactive map. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
-
-.. warning:: The interactive map option is currently disabled as issues arised when compiling the application into an executable. This will be fixed in a further release.
+| Alternatively, you can extract a DEM from OpenTopography. To do so, you will need first to request an API key from OpenTopography website (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Then copy your key in a text file, name it "OpenTopoKey.txt", and put the file in the root directory of PecubeGUI application (i.e., the same location than the Pecube directory). To dowload a dem of you region of interest (ROI), provide the coordinates and resolution of the topography in the "Topography" tab (i.e., nx, ny, longitude0, latitude0, dx, dy). Click on "Get topo..." button will then extract the DEM. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. According to the size of you ROI it can take few second to download. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
 .. important:: If you use the DEM from the SRTM data hosted by OpenTopography, please use this citation: NASA Shuttle Radar Topography Mission (SRTM) (2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2022-11-18. With the in-text citation: NASA Shuttle Radar Topography Mission (2013).
 
-
-
-.. figure:: ../images/Folium.png
-  :align: center
-  :scale: 30
-
-  *Figure 4. Interactive map to extract a region of interest as a DEM.*
 
 | You can also decide to build a simple sinusoïdal topography. For this purpose, click on "Build topo..." (Figure 2). A window pops up in which you can set the dimension and resolution of the synthetic topography as well as the amplitude and wavelength (Figure 5). When you are done, click on "Ok" and the topography will be automatically loaded within the interface.
 
