@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
-import sphinx_rtd_theme
+
 project = 'PecubeGUI'
 copyright = '2022, Maxime Bernard'
 author = 'Maxime Bernard'
