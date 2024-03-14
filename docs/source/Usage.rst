@@ -280,6 +280,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
 * *2D map of cooling rates*: compute cooling rates for all surface node of the model. You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
 * *2D map of temperatures*: plot the temperature/depth map at a certain depth/isotherm. To plot this map you will need to load one of the "PecubeXXX.vtk" file in the "VTK" directory of you pecube project. 
 * *2D map of Ages*: plot the ages at the surface of the model. Works only if you computed ages for all surface nodes! To plot this map you will need to load one of the "AgesXXX.vtk" file in the "VTK" directory of you pecube project. 
+* *Inversion results*: plot the result of inversion. Three plot options are possible: 1) 2D parameter space, plot parameter X vs parameter Y in scatter plot where colors represent the misfit value. This option is enabled when running the sampling stage of the Neighborhood Algorithm (included in Pecube). The two other options 2) 2D parameter space + 1D PDF, and 3) 1 PDF single parameter, can only be used if the second stage (i.e., the appraisal stage) of the Neighborhood Algorithm has been run and the file "nab.out" is in the "NA" directory of your Pecube project.
 
 .. figure:: ../images/Age_elevation.png
   :scale: 60
