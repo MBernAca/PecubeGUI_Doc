@@ -221,6 +221,15 @@ Tectonic tab
   *Figure 12. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
 
+Inversion tab
+--------------------
+| In this tab, you will find parameters to (i) control the inversion procedure, or (ii) to use Pecube in Batch mode. The latter has been introduced with the development of the Pecube interface. Pecube Batch mode is useful to explore the effect of one parameter on e.g. resulting age-elevation profiles (so far this is the only option). In this mode, Pecube run a couple of models by changing the value of one parameter that the user specified as a range instead of a single value (i.e., using "min value: max value") with a single Pecube project. To use the Batch mode, select "batch" in the section "Choose inversion mode" and "Inversion mode:". Then, you can provide the number of intervals you wish to divide the range of the parameter values that you set. For instance, suppose a model designed as a bloc uplift with a single phase. One wish to investigate the effect of the exhumation rate in the resulting age-elevation profile. In this case, set the velocity (in Tectonic tab) to e.g., 0.2:2 km/Myr and then in inversion tab set the number of intervals to e.g., 4. Runing Pecube will launch 4 models whith uplift rate values of [0.2, 0.65, 1.10, 1.55, 2.0] km/Myr. Once the run is finished, go to the plotting area and load the Pecube project. Then, in the list of plots (see section "plot 2D data" below), you can plot "batch results and choose the chart you wish to plot with which thermochronometer. Plotting for instance the age-elevation profiles will show all the predicted age-elevation relationship related to each uplift rate value (i.e., [0.2, 0.65, 1.10, 1.55, 2.0]) on a single plot.
+
+Alternatively, one can choose to run PEcube in inversion mode. Pecube is coupled with the Neighborhood algorithm [Sambridge-et-al-1999]_ that manages the inversion procedure. One use Pecube in inversion mode to search for a range or a combination of parameter values that optimizes the fit to the data (i.e., or that minimizes the misfit). 
+
+
+==================================
+
 ------------------
 Run a Pecube model
 ------------------
@@ -332,5 +341,6 @@ References
 .. [Reiners-and-Brandon-2006] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
 .. [Gautheron-et-al-2010] Gautheron, C., & Tassan-Got, L. (2010). A Monte Carlo approach to diffusion applied to noble gas/helium thermochronology. Chemical Geology, 273(3-4), 212-224.
 .. [Ketcham-2005] Ketcham, R. A. (2005). Forward and inverse modeling of low-temperature thermochronometry data. Reviews in mineralogy and geochemistry, 58(1), 275-314.
+.. [Sambridge-et-al-1999] Sambridge, M. (1999). Geophysical inversion with a neighbourhood algorithm—I. Searching a parameter space. Geophysical journal international, 138(2), 479-494.
 .. [Sullivan-et-al-2019] Sullivan et al., (2019). PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK). Journal of Open Source Software, 4(37), 1450, https://doi.org/10.21105/joss.01450
 .. [Piper-2021] Piper, M. (2021). CSDMS Topography data component (Version 0.3.1) [Computer software]. https://doi.org/10.5281/zenodo.4608653
