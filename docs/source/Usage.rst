@@ -82,21 +82,21 @@ For the three first points, clicking on ‘load file(s)’ (Figure 2) will allow
 .. important:: If you use the DEM from the SRTM data hosted by OpenTopography, please use this citation: NASA Shuttle Radar Topography Mission (SRTM) (2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2022-11-18. With the in-text citation: NASA Shuttle Radar Topography Mission (2013).
 
 
-| You can also decide to build a simple sinusoïdal topography. For this purpose, click on "Build topo..." (Figure 2). A window pops up in which you can set the dimension and resolution of the synthetic topography as well as the amplitude and wavelength (Figure 5). When you are done, click on "Ok" and the topography will be automatically loaded within the interface.
+| You can also decide to build a simple sinusoïdal topography. For this purpose, click on "Build topo..." (Figure 2). A window pops up in which you can set the dimension and resolution of the synthetic topography as well as the amplitude, wavelength, and a phase shift (Figure 5). When you are done, click on "Ok" and the topography will be automatically loaded within the interface.
 
 .. figure:: ../images/BuildTopo.png
   :align: center
   :scale: 30
 
-  *Figure 5. Window to build a synthetic sinusoïdal topography.*
+  *Figure 5. Window showing up when clicking on 'build topo..." (Figure 2) to build a synthetic sinusoïdal topography.*
   
-| Finally, you can check your input topography by clicking on “Show topography” (Figure 2). A new tab appears on the right-hand side of the interface (Figure 6). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. For this, simply by grab and drag the slide bar in “Set time evolution” (Figure 6).
+| Finally, you can check your input topography by clicking on “Show topography” (Figure 2). A new tab appears on the right-hand side of the interface (Figure 6). This tab serves to visualize the topography and check your topography history as provided in the :ref:`Time-evolution-tab`. For this, simply grab and drag the slide bar in “Set time evolution” (Figure 6).
 
 .. figure:: ../images/setTopography.png
     :scale: 30
     :align: center
 
-    *Figure 6. "Topography" tab with the topography shown on the right-hand side, after clicking the "Show topogaphy" button. The topography is loaded from a DEM from the Rhone valley in Switzerland.*
+    *Figure 6. "Topography" tab with the topography shown on the right-hand side, after clicking the "Show topogaphy" button. Here, the topography is loaded from a DEM from the Rhone valley in Switzerland.*
 
 
 .. _Time-evolution-tab:
