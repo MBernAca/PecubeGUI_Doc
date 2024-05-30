@@ -9,14 +9,14 @@ Create a new Pecube project
 ---------------------------
 
 To create and run a new Pecube project, go to *New input file* or press *Crtl+N* (*3*, see :doc:`introduction`),
-a window pops up and asks you to provide the name of the new project (Figure *1*). After clicking the “Ok” button (Figure *2*),
-you will be able to provide and set all of the Pecube input parameters for your project.
+a window pops up and asks you to provide the name of the new project (Figure *1*). Pecube requires that the project name be 5 characters length.
+After clicking the “Ok” button (Figure *2*), you will be able to provide and set all of the Pecube input parameters for your project.
   
 .. figure:: ../images/New_Project.png
   :scale: 60
   :align: center
 
-  *Figure 1. Enter a new project name. This window shows up when clicking on the "New input file" action.*
+  *Figure 1. Enter a new project name. This window shows up when clicking on the "New input file" action button.*
 
 
 The window should look like Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
@@ -28,7 +28,7 @@ and thus navigate through their respective parameters. The right part of the int
   *Figure 2. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
-The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide. All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
+The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide (in 'Pecube/docs/Pecube.pdf'). All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
   
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
 
@@ -44,13 +44,13 @@ Topography tab
 
 | When providing the project name, you will automatically be directed to the first tab that shows the "Topography" parameters (Figure 2). All the default values of the input parameters are displayed, so that you do not need to provide them if you want to keep these default values. If you wish to change a parameter, simply click on the text box, and write your value. 
 | PecubeGUI offers the possibility to simply load topographic file(s) from: 
-* a csv file containing one column of elevation
+* a txt file containing one column of elevation
 * a serie of output files from a spm to be read by Pecube (see Pecube user guide – “Topography parameters”)
 * a DEM file (i.e., raster file '.tif')
-* a DEM extracted from an interactive map ("Get topo...", Fig. 2)
+* a DEM extracted OpenTopography ("Get topo...", Fig. 2)
 * You can also choose to build a simple sinusoïdal topography ('Build topo...", Fig. 2). 
 
-For the three first points, click on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
+For the three first points, clicking on ‘load file(s)’ (Figure 2) will allow you to select the file(s) to load. A window pops up. The figure 3 shows an example where a serie of files has been loaded from a spm like iSOSIA [Egholm_et-al-2011].
 
 
 .. figure:: ../images/spm_loader.png
@@ -76,7 +76,7 @@ For the three first points, click on ‘load file(s)’ (Figure 2) will allow yo
   
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
 
-| Alternatively, you can extract a DEM from OpenTopography. To do so, you will need first to request an API key from OpenTopography website (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Then copy your key in a text file, name it "OpenTopoKey.txt", and put the file in the root directory of PecubeGUI application (i.e., the same location than the Pecube directory). To dowload a dem of you region of interest (ROI), provide the coordinates and resolution of the topography in the "Topography" tab (i.e., nx, ny, longitude0, latitude0, dx, dy). Click on "Get topo..." button will then extract the DEM. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. According to the size of you ROI it can take few second to download. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
+| Alternatively, you can extract a DEM from OpenTopography. To do so, you will need first to request an API key from OpenTopography website (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Then copy your key in a text file, name it "OpenTopoKey.txt", and put the file in the root directory of PecubeGUI application (i.e., the same location than the Pecube directory). To download a DEM of you region of interest (ROI), provide the coordinates and resolution of the topography in the "Topography" tab (i.e., nx, ny, longitude 0, latitude 0, Δlon, Δlat). Click on "Get topo..." button will then extract the DEM. This option use the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. According to the size of you ROI it can take few second to download. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
 
 .. important:: If you use the DEM from the SRTM data hosted by OpenTopography, please use this citation: NASA Shuttle Radar Topography Mission (SRTM) (2013). Shuttle Radar Topography Mission (SRTM) Global. Distributed by OpenTopography. https://doi.org/10.5069/G9445JDF. Accessed: 2022-11-18. With the in-text citation: NASA Shuttle Radar Topography Mission (2013).
