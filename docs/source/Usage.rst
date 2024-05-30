@@ -106,7 +106,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 7) you can provide all the parameters that control the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates from the value written in the parameter “ntime” (Figure 7). 
+In this tab (Figure 7) you can provide all the parameters controlling the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates from the value written in the parameter “ntime” (Figure 7). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -121,7 +121,7 @@ In this tab (Figure 7) you can provide all the parameters that control the time 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  amplification\ :sub:`i`\  *  h\ :sub:`0`\
 
 |
-| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the amplification and offset parameters. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 8). The topographic evolution now follows:
+| The formulation of the above equation has been modified in PecubeGUI to allow for choosing the reference elevation from which to apply the relief amplification factor. One can now choose to have the sea level, minimum, maximum, or mean elevation as a reference (see Figure 8). The topographic evolution now follows:
 
 
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  topo_ref - [amplification\ :sub:`i`\  *  (topo_ref - h\ :sub:`0`\)]
@@ -131,7 +131,7 @@ In this tab (Figure 7) you can provide all the parameters that control the time 
     :scale: 30
     :align: center
 
-    *Figure 8. Reference elevations from which to compute the topographic evolution. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
+    *Figure 8. Reference elevations from which to apply the relief amplification factor. These references are A) sea level, B) minimum, C) maximum, D) mean elevation.*
 
 
 .. _Thermal-tab:
