@@ -185,15 +185,31 @@ After providing the number of observations, you can click on 'Show/update ages t
   *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
 
-| Here you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. These extra parameters include for e.g., (U-Th)/he based thermochronometer:
+| Here you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. 
+
+Apatite (U-Th)/He (AHe)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/he thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). 
-*	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the rmr0 kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
+*	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the fission track annealing kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 
+Apatite fission track (AFT)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the "AFT" section, the variable input parameters are:
+
+* *Annealing model*: the model for annealing of fission tracks ([Ketcham-2007]_)
+* *Use FTL*: option to use fission track length in the misfit calculation (for inversion mode)
+* *Kinetic parameter*: the kinetic parameter to use to compute annealing and initial fission track length. The options are Dpar (µm), Cl (apfu), OH (apfu), Cl (wt %), rmr0
+* *Density reduction in standard*: the ratio between spontaneous and induced track lengths in the standard used for calibration (Default: Durango).
+* *Table of observations*: Within this table you can provide the observed (central) ages and their uncertainties, along with the kinetic value for each apatite group, and the mean fission track length (MFTL) with the standard deviation value associated. The two last observations are not mandatory.
+
+| In the current version of Pecube, the annealing model is restricted to the [Ketcham-2007] model. For the MFTL, only the c-axis projected value are predicted. As such, the user has to provide the observed c-axis projected MFTL in the table. The inital track length is calculated based on the kinetic parameter value according to [Carlson-1999]_.
 
 Tectonic tab
 -------------------
@@ -341,9 +357,11 @@ References
 ----------
 
 .. [Egholm_et-al-2011] Egholm, D. L., Knudsen, M. F., Clark, C. D., & Lesemann, J. E. (2011). Modeling the flow of glaciers in steep terrains: The integrated second‐order shallow ice approximation (iSOSIA). Journal of Geophysical Research: Earth Surface, 116(F2).
+.. [Carlson-1999] Carlson, W. D., Donelick, R. A., & Ketcham, R. A. (1999). Variability of apatite fission-track annealing kinetics: I. Experimental results. American mineralogist, 84(9), 1213-1223.
 .. [Reiners-and-Brandon-2006] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
 .. [Gautheron-et-al-2010] Gautheron, C., & Tassan-Got, L. (2010). A Monte Carlo approach to diffusion applied to noble gas/helium thermochronology. Chemical Geology, 273(3-4), 212-224.
 .. [Ketcham-2005] Ketcham, R. A. (2005). Forward and inverse modeling of low-temperature thermochronometry data. Reviews in mineralogy and geochemistry, 58(1), 275-314.
+.. [Ketcham-2007] Ketcham, R. A., Carter, A., Donelick, R. A., Barbarand, J., & Hurford, A. J. (2007). Improved modeling of fission-track annealing in apatite. American Mineralogist, 92(5-6), 799-810.
 .. [Sambridge-et-al-1999] Sambridge, M. (1999). Geophysical inversion with a neighbourhood algorithm—I. Searching a parameter space. Geophysical journal international, 138(2), 479-494.
 .. [Sullivan-et-al-2019] Sullivan et al., (2019). PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK). Journal of Open Source Software, 4(37), 1450, https://doi.org/10.21105/joss.01450
 .. [Piper-2021] Piper, M. (2021). CSDMS Topography data component (Version 0.3.1) [Computer software]. https://doi.org/10.5281/zenodo.4608653
