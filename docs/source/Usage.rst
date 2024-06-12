@@ -237,7 +237,7 @@ For the Ar-Ar themochronometric systems (BAr, MAr, KAr, HAr), the sections are s
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
 
- Default values for Ea and D0 are from [Grove_and_Harrison-1996]_ (BAr), [Hames-and-Bowring-1994]_ (MAr), [Harrison-1981]_ (HAr), and [Lovera-et-al-1991]_ (KAr).
+| Default values for Ea and D0 are from [Grove_and_Harrison-1996]_ (BAr), [Hames-and-Bowring-1994]_ (MAr), [Harrison-1981]_ (HAr), and [Lovera-et-al-1991]_ (KAr).
 
 
 Tectonic tab
