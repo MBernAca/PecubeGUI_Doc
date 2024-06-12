@@ -286,6 +286,12 @@ Inversion tab
 * *Number of cells to resample*: Number of Voronoi cells to resample at the start of each iteration. The NA algorithm will sample the nth Voronoi cells showing the lowest misfit. The ratio between the *number of cells to resample* and the *sample size for all other iteration* set the exploration efficiency of the parameter space by the algorithm. A ratio of 50-90% is usely recommanded, where the higher the ratio the more explorative is the algorithm (see [Braun-et-al-2012]_ for more details).
 
 
+| The last section of the tabs enables to set and control the misfit function used for inversion. The inversion procedure compares the predictions with the observed data through a misfit function (i.e., to minimize). The user can choose the misfit function to use:
+
+* *Chi-squared*: 
+
+:math: `\phi = (\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`
+
 ==================================
 
 ------------------
