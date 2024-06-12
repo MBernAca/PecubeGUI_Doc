@@ -195,7 +195,7 @@ The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
-* *stopping distances*: stopping distances for alpha particules from Farley et al. (1999) or Ketcham et al. (2011). 
+* *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
 *	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the fission track annealing kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 
@@ -210,6 +210,35 @@ In the "AFT" section, the variable input parameters are:
 * *Table of observations*: Within this table you can provide the observed (central) ages and their uncertainties, along with the kinetic value for each apatite group, and the mean fission track length (MFTL) with the standard deviation value associated. The two last observations are not mandatory.
 
 | In the current version of Pecube, the annealing model is restricted to the [Ketcham-2007] model. For the MFTL, only the c-axis projected value are predicted. As such, the user has to provide the observed c-axis projected MFTL in the table. The inital track length is calculated based on the kinetic parameter value according to [Carlson-1999]_.
+
+
+Zircon (U-Th)/He (ZHe)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the "ZHe" section, the input parameters comprise:
+
+* *Diffusion model*: the helium diffusion model. Two models are included so far: [Reiners-et-al-2004]_ and [Guenthner-et-al-2013]_, The latter account for the radiation damages effect on helium diffusion.
+*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
+*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
+* *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
+*	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm, only used in the Guenthner diffusion model). In the current version, the grain is assumed spherical. 
+
+
+Zircon fission track (ZFT)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The "ZFT" section is relatively simple and in the current version does not allow for many choices. The annealing model is based on a zero-damaged zircon from [Rahn-et-al-2004]. The input parameter only include:
+
+*	*Table of observations*: The table includes the observed ages and their uncertainties used to plot observed vs predicted ages.
+
+Ar-Ar systems (BAr, KAr, MAr, HAr)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For the Ar-Ar themochronometric systems (BAr, MAr, KAr, HAr), the sections are similar and relatively simple:
+
+*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
+*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
+
+ Default values for Ea and D0 are from [Grove_and_Harrison-1996]_ (BAr), [Hames-and-Bowring-1994]_ (MAr), [Harrison-1981]_ (HAr), and [Lovera-et-al-1991]_ (KAr).
+
 
 Tectonic tab
 -------------------
@@ -358,10 +387,17 @@ References
 
 .. [Egholm_et-al-2011] Egholm, D. L., Knudsen, M. F., Clark, C. D., & Lesemann, J. E. (2011). Modeling the flow of glaciers in steep terrains: The integrated second‐order shallow ice approximation (iSOSIA). Journal of Geophysical Research: Earth Surface, 116(F2).
 .. [Carlson-1999] Carlson, W. D., Donelick, R. A., & Ketcham, R. A. (1999). Variability of apatite fission-track annealing kinetics: I. Experimental results. American mineralogist, 84(9), 1213-1223.
-.. [Reiners-and-Brandon-2006] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
 .. [Gautheron-et-al-2010] Gautheron, C., & Tassan-Got, L. (2010). A Monte Carlo approach to diffusion applied to noble gas/helium thermochronology. Chemical Geology, 273(3-4), 212-224.
+.. [Grove-and-Harrison-1996] Grove, M., & Harrison, T. M. (1996). 40Ar* diffusion in Fe-rich biotite. American Mineralogist, 81(7-8), 940-951.
+.. [Guenthner-et-al-2013] Guenthner, W. R., Reiners, P. W., Ketcham, R. A., Nasdala, L., & Giester, G. (2013). Helium diffusion in natural zircon: Radiation damage, anisotropy, and the interpretation of zircon (U-Th)/He thermochronology. American Journal of Science, 313(3), 145-198.
+.. [Hames-and-Bowring-1994] Hames, W. E., & Bowring, S. A. (1994). An empirical evaluation of the argon diffusion geometry in muscovite. Earth and Planetary Science Letters, 124(1-4), 161-169.
+.. [Harrison-1981] Mark Harrison, T. (1982). Diffusion of 40 Ar in hornblende. Contributions to Mineralogy and Petrology, 78, 324-331.
 .. [Ketcham-2005] Ketcham, R. A. (2005). Forward and inverse modeling of low-temperature thermochronometry data. Reviews in mineralogy and geochemistry, 58(1), 275-314.
 .. [Ketcham-2007] Ketcham, R. A., Carter, A., Donelick, R. A., Barbarand, J., & Hurford, A. J. (2007). Improved modeling of fission-track annealing in apatite. American Mineralogist, 92(5-6), 799-810.
+.. [Lovera-et-al-1991] Lovera, O. M., Richter, F. M., & Harrison, T. M. (1991). Diffusion domains determined by 39Ar released during step heating. Journal of Geophysical Research: Solid Earth, 96(B2), 2057-2069.
+.. [Rahn-et-al-2004] Rahn, M. K., Brandon, M. T., Batt, G. E., & Garver, J. I. (2004). A zero-damage model for fission-track annealing in zircon. American Mineralogist, 89(4), 473-484.
+.. [Reiners-et-al-2004] Reiners, P. W., Spell, T. L., Nicolescu, S., & Zanetti, K. A. (2004). Zircon (U-Th)/He thermochronometry: He diffusion and comparisons with 40Ar/39Ar dating. Geochimica et cosmochimica acta, 68(8), 1857-1887.
+.. [Reiners-and-Brandon-2006] Reiners, P. W., & Brandon, M. T. (2006). Using thermochronology to understand orogenic erosion. Annu. Rev. Earth Planet. Sci., 34, 419-466.
 .. [Sambridge-et-al-1999] Sambridge, M. (1999). Geophysical inversion with a neighbourhood algorithm—I. Searching a parameter space. Geophysical journal international, 138(2), 479-494.
 .. [Sullivan-et-al-2019] Sullivan et al., (2019). PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK). Journal of Open Source Software, 4(37), 1450, https://doi.org/10.21105/joss.01450
 .. [Piper-2021] Piper, M. (2021). CSDMS Topography data component (Version 0.3.1) [Computer software]. https://doi.org/10.5281/zenodo.4608653
