@@ -294,13 +294,16 @@ where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted
 
 * *Misfit_CorrectedChi*: 
   :math:`\phi_2 = \sum_{j=1}^{N}(\frac{\phi_1}{N - N_d - 1})`.
-where :math: `N_d` is the number of inverted parameters.
+where :math:`N_d` is the number of inverted parameters.
 
 * *L2-norm*:
   :math:`\phi_3 = \sqrt{\phi_1}`.
 
 * *L1-norm*:
-  :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))
+  :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))`.
+
+
+|
 
 ==================================
 
