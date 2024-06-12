@@ -303,7 +303,7 @@ where :math:`N_d` is the number of inverted parameters.
   :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))`.
 
 
-|
+| In addition to the misfit function, you can manually control the weight each thermochronometer data will have in the misfit calculation. For this, click on *Misfit weight Age:* and a new window appears. Inside, each thermochronometric system is shown with a box where you can set the weight for the thermochronometer. Default values are 1, decreasing the value reduces the weight for the thermochronometer, increasing the value increases the weight.
 
 ==================================
 
