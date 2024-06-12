@@ -290,7 +290,13 @@ Inversion tab
 
 * *Chi-squared*: 
 
-:math: `\phi = (\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`
+:math: `\phi_1 = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j}))^2`.
+where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error on the observed data j, and N the total number of observed data.
+
+* *Misfit_CorrectedChi*: 
+
+:math: `\phi_2 = \sum_{j=1}^{N}(\frac{\phi_1}{N - N_d - 1})`
+where :math: `N_d` is the number of inverted parameters.
 
 ==================================
 
