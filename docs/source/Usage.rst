@@ -289,7 +289,7 @@ Inversion tab
 | The last section of the tabs enables to set and control the misfit function used for inversion. The inversion procedure compares the predictions with the observed data through a misfit function (i.e., to minimize). The user can choose the misfit function to use:
 
 * *Chi-squared* (default): 
-  :math:`\phi_1 = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j}))^2`.
+  :math:`\phi_1 = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2)`.
 where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error on the observed data j, and N the total number of observed data.
 
 * *Misfit_CorrectedChi*: 
@@ -376,7 +376,7 @@ For each Pecube project, the data you can plot will be listed in "Further data..
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit value between predicted and observed data is shown on the plot for each thermochronometer.
-  The misfit value is the chi-squared, defined as: :math:`\phi = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j}))^2`.
+  The misfit value is the chi-squared, defined as: :math:`\phi = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2)`.
   The log likelihood value is also shown and is the probability to have the observed data according to the model predictions.
   The log-likelyhood is defined following Braun et al. (2012):
   :math:`LL = -\sum_{j=1}^{N}(\frac{ln(2\pi)}{2}+ln(\sigma_j)+0.5(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`.
