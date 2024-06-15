@@ -372,7 +372,7 @@ For each Pecube project, the data you can plot will be listed in "Further data..
   :scale: 60
   :align: center
   
-  *Figure 14. An example of PecubeGUI output. The first plot is the predicted and observed age vs elevation relationship for  AHe and AFT ages from the Rhone valley area, while the second is the "age comparison" plot where predictions are compared with observation. In this plot, the misfit value for each thermochronometer is shown.*
+  *Figure 14. An example of PecubeGUI output. The first plot is the predicted and observed age vs elevation relationship for  AHe and AFT ages from the Mont Blanc area, while the second is the "age comparison" plot where predictions are compared with observation. In this plot, the misfit value for each thermochronometer is shown.*
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit value between predicted and observed data is shown on the plot for each thermochronometer.
