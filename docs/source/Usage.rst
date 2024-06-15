@@ -327,26 +327,26 @@ Plotting results
 In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
 
 
-Plot 2D data
+Plot 1D data
 ------------
 
 ==================================
 
-To plot 2D data in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+To plot modelling results in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
-* *Add 3D model...*: load a vtk file to render a 3D model.
+* *Add 3D model...*: load a vtk file to visualize a 3D model.
 * *Remove data...*: remove one or several plots. To do so, on the plot list on the left-hand side of the interface, select the plot you wish to remove and click 'Remove data...'.
-* *Further data...*: a list of 2D data you can plot.
+* *Further data...*: a list of data you can plot.
 
 
 In the current version, and depending on your input parameters, Pecube can output several files. These files are:
 
 *	*CompareAge.csv*: This file contains the predicted and observed ages as well as sample ID and coordinates.
-*	*TimeTemperature.csv*: stores the thermal path of each sample location you provided, either by writing directly in a file in the ‘Data’ directory of your project, or by specifying the locations in PecubeGUI when want to predict specific AHe ages (see ‘Output parameters’ tab). For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
-* *CoolingRates.csv*: contains the time-temperature paths from all nodes in the model. This file is created if the option "Cooling rates" is checked (see :ref:`Ages-tab`). This allow the user to plot a 2D map of cooling rates defining a temperature or time interval.
+*	*TimeTemperature.csv*: stores the thermal path of each sample location you provided. For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
+* *CoolingRates.csv*: contains the time-temperature paths from all nodes in the model (work in *for all node* mode, see :ref:`Data-tab`). This file is created if the option "Cooling rates" is checked (see "Output tab"). This allow the user to plot a 2D map of cooling rates defining a temperature or time interval.
 * *PecubeXXX.vtk*: This file is located in the "VTK" directory of your project. If loaded for 2D data plot, a window will show up and ask you which data to plot from the file. You can extract, for instance, the 2D spatial distribution of the temperature at a specified depth, or extract the depth of an isotherm.
-* *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Ages-tab`).  
+* *AgeXXX.vtk*:  This file is located in the "VTK" directory of your project.  If loaded for 2D data plot, you can choose to plot the 2D spatial distribution of the erosion rate or the predicted ages, at the surface of the Pecube model (only with the "for all nodes" option, see :ref:`Data-tab`).  
 
 
 .. figure:: ../images/Chart_window.png
@@ -355,18 +355,18 @@ In the current version, and depending on your input parameters, Pecube can outpu
   
   *Figure 13. Chart's window.*
   
-For each Pecube project, the 2D data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
-* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
-* *Date-eU*: plot ages against effective uranium. Works only if you computed AHe ages at specific locations. 
+* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with the observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
+* *Date-eU*: plot ages against effective uranium. Works only if you computed AHe or ZHe ages at specific locations. 
 * *Age-comparison*: plot observed vs predicted ages.
-* *Age transect*: plot observed and predicted ages along transect (Latitude, longitude, or projected).
-* *Tt paths*: plot the thermal path of each samples. Works only if you computed ages at specific locations. 
+* *Age transect*: plot observed and predicted ages along a transect (Latitude, longitude, or projected).
+* *Tt paths*: plot the thermal path of each sample. Works only if you computed ages at specific locations. 
 * *4He/3He data*: plot either 4He/3He spectra or step ages profiles. 
-* *2D map of cooling rates*: compute cooling rates for all surface node of the model. You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
+* *2D map of cooling rates*: compute cooling rates for all surface node of the model (work only if mode *for all nodes", see :ref:`Data-tab`). You will be asked to define the temperature or time range on which you wish to calculate the cooling rates, as well as the interpolation method you want to use.
 * *2D map of temperatures*: plot the temperature/depth map at a certain depth/isotherm. To plot this map you will need to load one of the "PecubeXXX.vtk" file in the "VTK" directory of you pecube project. 
 * *2D map of Ages*: plot the ages at the surface of the model. Works only if you computed ages for all surface nodes! To plot this map you will need to load one of the "AgesXXX.vtk" file in the "VTK" directory of you pecube project. 
-* *Inversion results*: plot the result of inversion. Three plot options are possible: 1) 2D parameter space, plot parameter X vs parameter Y in scatter plot where colors represent the misfit value. This option is enabled when running the sampling stage of the Neighborhood Algorithm (included in Pecube). The two other options 2) 2D parameter space + 1D PDF, and 3) 1 PDF single parameter, can only be used if the second stage (i.e., the appraisal stage) of the Neighborhood Algorithm has been run and the file "nab.out" is in the "NA" directory of your Pecube project.
+* *Inversion results*: plot the result of inversion. Four options are available: 1) Misfit evolution: plot the misfit value over each model run, 2) 2D parameter space: plot parameter X vs parameter Y in scatter plot where colors represent the misfit value. This option is enabled when running the sampling stage of the Neighborhood Algorithm (included in Pecube), 3) 2D parameter space + 1D PDF: similar to the previous point but with PDF shown for each parameter, and 4) PDF single parameter: show only the PDF for one parameter.
 
 .. figure:: ../images/Age_elevation.png
   :scale: 60
@@ -375,8 +375,9 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   *Figure 14. An example of an age-elevation plot. Here, AHe and AFT ages are predicted and compared against observations from the Rhone valley area.*
 
 .. note::
-  When plotting predictions from specific locations, and if observed data are provided, a misfit criteria between predicted and observed data is shown on the plot.
-  This misfit criteria is known as the likelihood (in fact log-likelihood) that is the probability to have the observed data according to the model predictions.
+  When plotting predictions from specific locations, and if observed data are provided, a misfit value between predicted and observed data is shown on the plot for each thermochronometer.
+  The misfit value is the chi-squared, defined as: :math:`\phi = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j}))^2`.
+  The log likelihood value is also shown and is the probability to have the observed data according to the model predictions.
   The log-likelyhood is defined following Braun et al. (2012):
   :math:`LL = -\sum_{j=1}^{N}(\frac{ln(2\pi)}{2}+ln(\sigma_j)+0.5(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`.
   
@@ -385,7 +386,7 @@ For each Pecube project, the 2D data you can plot will be listed in "Further dat
   
 
 
-Visualize 3D data
+Visualize 3D models
 -----------------
 
 ==================================
