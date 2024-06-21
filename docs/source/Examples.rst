@@ -11,7 +11,7 @@ The effect of relief changes on the age-elevation relationship and apparent exhu
 
 | To explore the effect of a change in relief on the AER, we design a synthetic topography with a topographic wavelength of 50 km, and a present-day topography amplitude of 2 km. For the exhumation and topography development history, we assume a constant tectonic uplift rate started 50 Ma up to present-day. We further assume that a topographic relief exists at the start of the model and is in steady-state until 3 Ma, where the relief change to the present-day topography (i.e., 2 km amplitude). We use Pecube in batch mode to explore a range of paleo-relief (i.e., before 3 Ma) ranging from 0 to x3 the present-day relief.
 
-| To setup the Pecube model, create a new project and in the\ *Topography_tab*\ (:doc:`Extra`), click on “build topo…”. A window appears, where you can design a sinusoidal topography. The extent of the model is chosen to be 100x50 km with a horizontal resolution of 500 m. The topography is setup is shown in Figure 1.1.
+| To setup the Pecube model, create a new project and in the \ *Topography_tab*\ (:doc:`Usage`), click on “build topo…”. A window appears, where you can design a sinusoidal topography. The extent of the model is chosen to be 100x50 km with a horizontal resolution of 500 m. The topography is setup is shown in Figure 1.1.
 
 .. figure:: ../images/buildtopo_Syn01.png
     :height: 268
@@ -20,7 +20,7 @@ The effect of relief changes on the age-elevation relationship and apparent exhu
 
     *Figure 1.1. Setup for the synthetic topography.*
 
-| Once you click on the ‘Ok’ button (Figure 1.1), the window closes, and the topography is directly loaded within the interface. You can check the input topography by clicking ‘show topography’ in the ‘topography” tab. To speed the computation of the models up you can set nskip = 3. Then, move to the ‘Time evolution’ tab to setup the topography evolution scenario. Two stages are required (ntime = 2, Figure 1.2). We set the reference elevation to ‘sea-level’ (Figure 1.2) and provide the topography history as described above (Figure 1.2), with a specification for the relief amplification factor where we provide a range of value from 0 to x3 times the final topographic relief (Figure 1.2). 
+| Once you click on the ‘Ok’ button (Figure 1.1), the window closes, and the topography is directly loaded within the interface. You can check the input topography by clicking ‘show topography’ in the ‘topography” tab. To speed the computation of the models up you can set nskip = 3. Then, move to the \ *Time evolution*\ tab (:doc:`Usage`) to setup the topography evolution scenario. Two stages are required (ntime = 2, Figure 1.2). We set the reference elevation to ‘sea-level’ (Figure 1.2) and provide the topography history as described above (Figure 1.2), with a specification for the relief amplification factor where we provide a range of value from 0 to x3 times the final topographic relief (Figure 1.2). 
 
 .. figure:: ../images/TimeEvolution_Syn01.png
     :height: 268
@@ -40,7 +40,7 @@ The effect of relief changes on the age-elevation relationship and apparent exhu
 
     *Figure 1.3. Provide synthetic samples locations and set thermochronometers.*
 
-| In a next step, we set the tectonic scenario in the “Tectonic” tab (Figure 1.4). We consider a uniform bloc uplift and a constant uplift rate of 0.3 km/Myr since 50 Ma. Finally, to run Pecube in batch mode, set the inversion mode to “batch” in the “Inversion tab”. Then, we set the number of intervals to 3 to explore a range of paleo-relief from 0 to x3 with a step of 1. To run the batch, click on “Run Pecube”.
+| In a next step, we set the tectonic scenario in the \ *Tectonic*\ tab (Figure 1.4, :doc:`Usage`). We consider a uniform bloc uplift and a constant uplift rate of 0.3 km/Myr since 50 Ma. Finally, to run Pecube in batch mode, set the inversion mode to “batch” in the \ *Inversion tab*\ (:doc:`Usage`). Then, we set the number of intervals to 3 to explore a range of paleo-relief from 0 to x3 with a step of 1. To run the batch, click on “Run Pecube”.
 Once the run has finished, the resulting age-elevation profiles can be plotted. Switch to the chart part of the interface and load the Pecube project. In the list of plots, find and click on “Batch results”. Doing this open a window asking you to choose the type of plot and the thermochronometers you wish to show. The resulting age-elevation profiles are shown in Figure 1.5.
 
 .. figure:: ../images/Tectonic_Syn01.png
