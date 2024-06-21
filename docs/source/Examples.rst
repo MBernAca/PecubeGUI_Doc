@@ -11,7 +11,7 @@ The effect of relief changes on the age-elevation relationship and apparent exhu
 
 | To explore the effect of a change in relief on the AER, we design a synthetic topography with a topographic wavelength of 50 km, and a present-day topography amplitude of 2 km. For the exhumation and topography development history, we assume a constant tectonic uplift rate started 50 Ma up to present-day. We further assume that a topographic relief exists at the start of the model and is in steady-state until 3 Ma, where the relief change to the present-day topography (i.e., 2 km amplitude). We use Pecube in batch mode to explore a range of paleo-relief (i.e., before 3 Ma) ranging from 0 to x3 the present-day relief.
 
-| To setup the Pecube model, create a new project and in the :ref:`Topography-Tab`_ tab, click on “build topo…”. A window appears, where you can design a sinusoidal topography. The extent of the model is chosen to be 100x50 km with a horizontal resolution of 500 m. The topography is setup is shown in Figure 1.1.
+| To setup the Pecube model, create a new project and in the *Topography_tab* (:doc:`Extra`), click on “build topo…”. A window appears, where you can design a sinusoidal topography. The extent of the model is chosen to be 100x50 km with a horizontal resolution of 500 m. The topography is setup is shown in Figure 1.1.
 
 .. figure:: ../images/buildtopo_Syn01.png
     :height: 268
