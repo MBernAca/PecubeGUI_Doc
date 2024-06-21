@@ -53,8 +53,8 @@ Once the run has finished, the resulting age-elevation profiles can be plotted. 
 | A first observation is that most of the apparent exhumation rate (AER) overestimate the input tectonic uplift rate of 0.3 km/Myr for the three thermochronometers. Only the models considering an increase of relief from 3 Ma to present-day (i.e., R = 0.0, Figure 1.5) show AER = 0.3 km/Myr for the three thermochronometers. This is because all thermochronometers passed through their closure temperature before 3 Ma when the topography and resulting isotherm are flat. Considering a steady-state topography along the 50 Ma exhumation (i.e., R= 1.0, Figure 1.5) leads to overestimate the true exhumation (E = 0.3 km/Myr) for the three thermochronometers although the difference decreases for higher-temperature thermochronometers (AERAHe = 0.7 km/Myr, AERAFT = 0.52 km/Myr, AERZHe = 0.4 km/Myr). The overestimated of the exhumation rate from the low-temperature thermochronometers is a direct consequence of the perturbation of isotherms below the finite topography. This perturbation decreases exponentially with depth (Braun et al., 2002).
 
 .. figure:: ../images/Batch_results_Syn01.png
-    :height: 268
-    :width: 350
+    :height: 400
+    :width: 400
     :align: center
 
     *Figure 1.5. Predicted age-elevation profiles for various change of relief (R).*
