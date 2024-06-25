@@ -17,7 +17,7 @@ MacOS
 
 Two packages exist for PecubeGUI-beta on MacOs. For MacOs with Apple chip M1 or M2, and for MacOS with intel chip. For the latter, PecubeGUI only work for Os version >11 (BigSur).
 
-You can download the package on this page: http://erc-cooler.eu/portfolio-Maxime_PecubeGUI.html 
+To access the last version of PecubeGUI, please contact: maxime.bernard@unil.ch 
 
 To use PecubeGUI on macOS, first install the pakage by clicking on the PecubeGUI.pkg.
 An installation process window will appear, you just have to follow the steps.
