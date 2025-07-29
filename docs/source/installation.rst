@@ -37,8 +37,6 @@ An installation process window will appear, you just have to follow the steps.
 Windows
 -----------
 
-You can download the package on this page: http://erc-cooler.eu/portfolio-Maxime_PecubeGUI.html
-
 After downloading the PecubeGUI_installer.exe file, clicking on it will start an installation process. You just have to follow the instructions and PecubeGUI will be installed on your local machine.
 
 
