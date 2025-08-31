@@ -166,8 +166,7 @@ Data tab
 
 | Choosing 'sample specific' allows to provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. The user provides the name of the directory in "Data folder name" where the required file with the locations and observations will be stored. Then, the table below needs to be filled by providing the number of samples (Figure 10), and their respective coordinates (latitude and longitude), elevation, and the number of observation for each thermochronometers.
 
-.. warning::
-The ID of a sample must not include space !
+.. warning:: The ID of a sample must not include space !
 
 Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
 
