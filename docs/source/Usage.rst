@@ -258,7 +258,7 @@ Tectonic tab
 
 .. note::
   (1) To define the type of fault, we keep on the convention described in the Pecube's documentation. To define a thrust the velocity has to be negative, a positive velocity means a normal fault (i.e., 'velo' in the table).
-  (2) The order you define the position of the points of the fault(s) matters. The convention is that the fault geometry is defined to the right of the strike of the fault (see Pecube's documentation for more details)
+  (2) The order you define the position of the geometry points of the fault(s) matters. The convention is that the rock advection is set on the bloc to the right-hand side of the fault (see Pecube's documentation for more details)
 
 .. figure:: ../images/Tectonic_tab.png
   :scale: 30
