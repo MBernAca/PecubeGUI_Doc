@@ -168,7 +168,7 @@ Data tab
 
 .. warning:: The ID of a sample must not include space !
 
-Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
+Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded with 'nskip' parameter) by clicking on 'Check sample elevations'.
 
 
 .. figure:: ../images/Sample_location.png
@@ -186,18 +186,18 @@ After providing the number of observations, you can click on 'Show/update ages t
   *Figure 11. "Ages" tab where to define the thermochronometers to use. Here, the example is made with sample specific predictions for the apatite (U-Th)/He system.*
   
 
-| Here you can provide observations (ages with errors), and shows extra parameters for the computation of grain-specific ages. 
+| Here you can provide observations (ages with uncertainties), and show extra parameters for the computation of grain-specific ages. 
 
 Apatite (U-Th)/He (AHe)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/he thermochronometer:
+The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
-*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. The same heating schedule is used for each grain. 
+*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the fission track annealing kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 
 Apatite fission track (AFT)
@@ -246,11 +246,11 @@ Tectonic tab
 
 ==================================
 
-| This tab is related to the “Tectonic parameters” in the Pecube user guide. At the top of the tab you have to choose between three options:
+| This tab is related to the “Tectonic parameters” in the Pecube user guide. At the top of the tab three options are available:
 
 * no uplift: compute the effect of topographic change only on thermal field 
 * bloc uplift: vertically uniform movement of the entire domain
-* faulting: slip rate along fault(s)
+* faulting: rock advection along fault(s)
 
 | According to the option chosen, you will have access to different part of the tab. For a bloc uplift, you can define the magnitude of the uplift rate at each corner of the model domain (i.e., bottom left, bottom right, top left, and top right). The uplift history is defined by the number of step (i.e., 'nstep') and the time window defined in the table below. 
 
