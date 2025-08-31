@@ -141,10 +141,9 @@ Thermal tab
 
 ==================================
 
-| In the :ref:`Thermal-tab`, you will find all the parameters to set the thermal properties of the crust and the atmosphere of your model. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab appears on the right-hand side of the interface, where the geotherm is shown. Additionnaly, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9, only for visual purposes). The 1D steady-state geotherm is computed using the equation found in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
+| The :ref:`Thermal-tab` gathers all the parameters to set the thermal properties of the crust and the atmosphere of a Pecube model. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab appears on the right-hand side of the interface, where the geotherm is shown. In addition, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9, only for visual purposes). The 1D steady-state geotherm is computed using the equation found in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
 | Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The equivalent heat production rate (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 9). Finally, the resulting surface heat flux is shown as a checking. 
-The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth. In the input parameters for pecube, the heat production rate will then be negative to inform pecube you want to use a non-uniform heat production rate.
-
+The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth.
 
 .. figure:: ../images/Geotherm.png
   :scale: 30
@@ -163,10 +162,12 @@ Data tab
 
 *	*none*: Pecube will not predict any thermochronological ages
 *	*for all nodes*: Pecube will predict thermochronological ages for all nodes at the surface of the Pecube model. 
-*	*sample specific*: Pecube will predict thermochronological ages only for specific sample locations provided by the user.
+*	*sample specific*: Pecube will predict thermochronological ages only at specific sample locations provided by the user.
 
-| If you choose 'sample specific', you can provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. You provide the name of the directory "Data folder name" where the required file with the locations and observations will be stored and fill in the table below (Figure 10) by providing the number of samples, and their respective coordinates (latitude and longitude), elevation, and the number of observation for each thermochronometers.
-Warning: the ID of a sample must not include space !
+| Choosing 'sample specific' allows to provide the location of sample(s) from where to extract the thermal paths to compute ages at these specific locations. The user provides the name of the directory in "Data folder name" where the required file with the locations and observations will be stored. Then, the table below needs to be filled by providing the number of samples (Figure 10), and their respective coordinates (latitude and longitude), elevation, and the number of observation for each thermochronometers.
+.. warning::
+The ID of a sample must not include space !
+
 Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded wit 'nskip' parameters) by clicking on 'Check sample elevations'.
 
 
