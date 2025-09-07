@@ -52,3 +52,8 @@ Acknowledgment
 The first version of PecubeGUI has been developed at the University of Potsdam within the COOLER_ ERC project led by Peter van der Beek.
 
 .. _COOLER: http://erc-cooler.eu/
+
+How to cite
+------------
+
+ If you use PecubeGUI for your research please cite: M. Bernard, P. van der Beek, J. Braun, X. Robert, C. Colleps, K. Gallagher, W. Guenthner, J. Amalberti, & I. Wapenhans. (2023). PecubeGUI-beta. Zenodo. https://doi.org/10.5281/zenodo.8362721
