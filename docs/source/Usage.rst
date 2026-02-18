@@ -208,7 +208,7 @@ Apatite 4He/3He thermochronometry
   :scale: 30
   :align: center
   
-  *Figure 12. Providing observed 4He/3He profile within PecubeGUI. see main text for details.*
+  *Figure 12. Providing observed \ :sup:`4`\He/\ :sup:`3`\He profile within PecubeGUI. see main text for details.*
 
 Apatite fission track (AFT)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
