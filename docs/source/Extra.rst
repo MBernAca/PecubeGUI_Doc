@@ -1,15 +1,17 @@
 .. _Extra:
 
-===========================
-Input parameters for Pecube
-===========================
 
-| Pecube directory is accompanied by an excel spreadsheet "Pecube_parameters_list.xlsx" where all input parameters are referenced along with their description and default values. This file can be found in Pecube -> Docs directory.
 
 
 =================
 Extra information
 =================
+
+---------------------------
+Input parameters for Pecube
+---------------------------
+
+| Pecube directory is accompanied by an excel spreadsheet "Pecube_parameters_list.xlsx" where all input parameters are referenced along with their description and default values. This file can be found in Pecube -> Docs directory.
 
 ------------------
 Sample_setting.txt
