@@ -193,12 +193,22 @@ Apatite (U-Th)/He (AHe)
 
 The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
 
-*	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
-*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
-*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
+*	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation-damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
+*	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). Ea is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
+*	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value is updated according to the diffusion model selected. 
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
-*	*4He/3He predictions*: allows to predict \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. 
+*	*4He/3He predictions*: enables prediction of \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the fission track annealing kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
+
+Apatite 4He/3He thermochronometry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Enabling \ :sup:`4`\He/\ :sup:`3`\He prediction opens a window from which to provide observed spectra (Figure 12). The window starts with an information text explaining how to provide each spectrum. The steps are: 1. Select the grain from wich to provide an observed 4He/3He profile, 2. Set the number of heating steps, 3. Provide the heating schedule (optional), time is in hours and temperature in Celsius degree. 4. Provide the cumulative sum of fractional 3He (F3He) with the associated uncertainty (Error F). 5. Provide the 4He/3He ratio (i.e., Rs/Rb: Rstep/Rbulk) with its associated uncertainty (Error R). 6. Click on ‘add grain’ to add the 4He/3He profile for the selected grain. The grain’s ID is shown on the list in 7. To remove a 4He/3He profile for a grain, select the targeted grain on the list in 7 and click on “Remove grain” (8). Once, all 4He/3He profiles for targeted grain are provided click on the Ok button to save the profiles. The input file with 4He/3He data is then saved in your Pecube project folder “Project_name/data/data_folder_name/He43_data.csv”.
+
+.. figure:: ../images/He43_Tab.png
+  :scale: 30
+  :align: center
+  
+  *Figure 12. Providing observed 4He/3He profile within PecubeGUI. see main text for details.*
 
 Apatite fission track (AFT)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -264,7 +274,7 @@ Tectonic tab
   :scale: 30
   :align: center
   
-  *Figure 12. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
+  *Figure 13. "Tectonic" tab where to provide parameters related to kinematic of rock uplift.*
 
 
 Inversion tab
@@ -312,10 +322,10 @@ where :math:`N_d` is the number of inverted parameters.
 Run a Pecube model
 ------------------
 
-| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 12). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
+| To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 13). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
 
 | When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
-| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 12, this option is diabled temporarily).
+| Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 13, this option is diabled temporarily).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
@@ -333,7 +343,7 @@ Plot 1D data
 
 ==================================
 
-To plot modelling results in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 13. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+To plot modelling results in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
 * *Add 3D model...*: load a vtk file to visualize a 3D model.
@@ -354,11 +364,11 @@ In the current version, and depending on your input parameters, Pecube can outpu
   :scale: 30
   :align: center
   
-  *Figure 13. Chart's window.*
+  *Figure 14. Chart's window.*
   
-For each Pecube project, the data you can plot will be listed in "Further data..." (Figure 13). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
+For each Pecube project, the data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
-* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with the observed data you provided. Then you will be free to show/hide data as you wish (see Figure 14).
+* *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with the observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe or ZHe ages at specific locations. 
 * *Age-comparison*: plot observed vs predicted ages.
 * *Age transect*: plot observed and predicted ages along a transect (Latitude, longitude, or projected).
@@ -373,7 +383,7 @@ For each Pecube project, the data you can plot will be listed in "Further data..
   :scale: 60
   :align: center
   
-  *Figure 14. An example of PecubeGUI output. The first plot is the predicted and observed age vs elevation relationship for  AHe and AFT ages from the Mont Blanc area, while the second is the "age comparison" plot where predictions are compared with observation. In this plot, the misfit value for each thermochronometer is shown.*
+  *Figure 15. An example of PecubeGUI output. The first plot is the predicted and observed age vs elevation relationship for  AHe and AFT ages from the Mont Blanc area, while the second is the "age comparison" plot where predictions are compared with observation. In this plot, the misfit value for each thermochronometer is shown.*
 
 .. note::
   When plotting predictions from specific locations, and if observed data are provided, a misfit value between predicted and observed data is shown on the plot for each thermochronometer.
@@ -393,8 +403,8 @@ Visualize 3D models
 ==================================
 
 | PecubeGUI offers a 3D interactive interface where to visualize 3D models alongside with sample locations (if defined). The 3D interface is handling with pyvista [Sullivan-et-al-2019]_, which is an open-source package to read and manage vtk files. 
-| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 15).
-| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 15). On this tab, you have several options to set properties of the 3D model:
+| To load a 3D model, click on “Add 3D model…” and select your vtk file from your Pecube project directory. A new tab will appear with a 3D environment and the 3D model (Figure 16).
+| If you chose to predict ages at specific locations, those locations will be automatically loaded with your 3D model. However, you can show/hide them by checking the box “show sample location(s)” on the properties tab (left side of the window, see Figure 16). On this tab, you have several options to set properties of the 3D model:
 
 *	*Data range*: set the range of data for the colorbar.
 *	*Current data*: list to choose the data to show (i.e., for the colormap).
@@ -409,7 +419,7 @@ Visualize 3D models
   :scale: 30
   :align: center
   
-  *Figure 15. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
+  *Figure 16. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
 ----------
