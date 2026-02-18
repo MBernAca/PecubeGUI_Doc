@@ -208,7 +208,7 @@ Apatite 4He/3He thermochronometry
   :scale: 30
   :align: center
   
-  *Figure 12. Providing observed \ :sup:`4`\He/\ :sup:`3`\He profile within PecubeGUI. see main text for details.*
+  *Figure 12. Providing observed 4He/3He profile within PecubeGUI. see main text for details.*
 
 Apatite fission track (AFT)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -286,9 +286,9 @@ Inversion tab
 * (i) control the inversion procedure
 * (ii) to use Pecube in Batch mode. 
 
-| The latter has been introduced with the development of the Pecube interface. Pecube *Batch mode* is useful to explore the effect of a single parameter on e.g. resulting age-elevation profiles. In this mode, Pecube run a couple of models by changing the value of a single parameter specified by the user as a range instead of a single value (i.e., using "min value: max value") within a single Pecube project. To use Pecube in *Batch mode*, select "batch" in the section "Choose inversion mode" and "Inversion mode:". Then, provide the number of intervals you wish to divide the range of the parameter values that you set. For instance, suppose a model designed as a bloc uplift with a single stage. One wish to investigate the effect of the exhumation rate in the resulting age-elevation profile. In this case, set the velocity (in Tectonic tab) to e.g., 0.2:2 km/Myr and then in inversion tab set the number of intervals to e.g., 4. Runing Pecube will launch 5 models with uplift rate values of [0.2, 0.65, 1.10, 1.55, 2.0] km/Myr. Once the run is finished, go to the plotting area and load the Pecube project. In the list of plots (see section "plot 2D data" below), you can choose "batch results" and choose the chart you wish to plot with the thermochronometer. Plotting for instance the age-elevation profiles will show all the predicted age-elevation relationships related to each uplift rate value (i.e., [0.2, 0.65, 1.10, 1.55, 2.0]) on a single plot.
+| Pecube Batch mode has been introduced with the development of the PecubeGUI interface. Pecube *Batch mode* is useful to explore the effect of a single parameter on e.g. resulting age-elevation profiles. In this mode, Pecube run a couple of models by changing the value of a single parameter specified by the user as a range instead of a single value (i.e., using "min value: max value") within a single Pecube project. To use Pecube in *Batch mode*, select "batch" in section "Choose inversion mode -> Inversion mode:". Then, provide the number of intervals you wish to divide the parameter range values to. For instance, suppose a model designed as a bloc uplift with a single stage. One wish to investigate the effect of the exhumation rate in the resulting age-elevation profile. In this case, set the velocity (in Tectonic tab) to e.g., 0.2:2 km/Myr, then in "inversion tab" set the number of intervals to e.g., 4. Runing Pecube will launch 5 models with uplift rate values of [0.2, 0.65, 1.10, 1.55, 2.0] km/Myr. Once Pecube simulation is finished, go to the plotting area and load the Pecube project. In the list of available plots (see section "plot 2D data" below), you can choose "batch results" and choose to plot of interest. Plotting for instance the age-elevation profiles will show all the predicted age-elevation relationships related to each uplift rate value (i.e., [0.2, 0.65, 1.10, 1.55, 2.0]) on a single plot.
 
-| Alternatively, one can choose to run Pecube in inversion mode. Pecube is coupled with the Neighborhood algorithm [Sambridge-et-al-1999]_ that manages the inversion procedure. One uses Pecube in inversion mode to search for a range or a combination of parameter values that optimizes the fit to the data (i.e., or that minimizes the misfit). The controlling parameters for the NA algorithm are listed in the "Iteration performance" sub-section. These are:
+| Alternatively, one can choose to run Pecube in inversion mode. Pecube is coupled with the Neighborhood algorithm [Sambridge-et-al-1999]_ that manages the inversion procedure. The inversion mode of Pecube is used to search for a range or a combination of parameter values that optimizes the fit to the data (i.e., or that minimizes the misfit). Controlling parameters for the NA algorithm are listed in the sub-section "Iteration performance" of PecubeGUI. These are:
 
 * *Number of cores*: set the number of thread to use during the inversion (= number of forward models to run in parallel). This is used to run the command *mpiexec -np n bin/PecubeMPI.sh NAME*, where np is the number of cores/threads.
 * *Maximum number of iterations*: the maximum number of iteration you want to perform. One iteration correspond to a set of pecube forward models (see after).
@@ -303,7 +303,7 @@ Inversion tab
   :math:`\phi_1 = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2)`.
 where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error on the observed data j, and N the total number of observed data.
 
-* *Misfit_CorrectedChi*: 
+* *Reduced Chi-squared*: 
   :math:`\phi_2 = \sum_{j=1}^{N}(\frac{\phi_1}{N - N_d - 1})`.
 where :math:`N_d` is the number of inverted parameters.
 
@@ -311,7 +311,7 @@ where :math:`N_d` is the number of inverted parameters.
   :math:`\phi_3 = \sqrt{\phi_1}`.
 
 * *L1-norm*:
-  :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))`.
+  :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))`. In the current Pecube version, L1-norm is automatically set to calculate misfit in \ :sup:`4`\He/\ :sup:`3`\He data, regardless the misfit function chosen to calculate misfit for all other thermochronometers.
 
 
 | In addition to the misfit function, you can manually control the weight each thermochronometer data will have in the misfit calculation. For this, click on *Misfit weight Age:* and a new window appears. Inside, each thermochronometric system is shown with a box where you can set the weight for the thermochronometer. Default values are 1, decreasing the value reduces the weight for the thermochronometer, increasing the value increases the weight.
