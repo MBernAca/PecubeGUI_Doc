@@ -1,7 +1,6 @@
 ###################
-Active developments
+Active Developments
 ###################
-
 
 .. _developments:
 
@@ -9,7 +8,6 @@ Active developments
 
 PecubeGUI
 *********
-
 
 *Installation*
 --------------
@@ -21,7 +19,7 @@ PecubeGUI
 
 .. rst-class:: section-header
 
-Pecube 
+Pecube
 ******
 
 *Trapped-charge predictions*
