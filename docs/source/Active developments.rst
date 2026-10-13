@@ -13,6 +13,8 @@ PecubeGUI
 *Installation*
 --------------
 
+==================================
+
 | A new installation method is currently under development for the PecubeGUI package. Pecube and its graphical user interface will be installable through pip and/or a conda-forge environment. This new approach will simplify both the installation of the user interface and the installation and compilation of Pecube itself.
 |
 | **Scheduled release:** November-December 2026.
@@ -24,6 +26,8 @@ Pecube
 
 *Trapped-charge predictions*
 ----------------------------
+
+==================================
 
 | The implementation of trapped-charge (TC) dating techniques in Pecube is currently under active development. TC techniques provides the temporal resolution to constrain Quaternary-scale rock exhumation and landscape evolution. By coupling trapped-charge kinetics with the thermal histories predicted by Pecube, modeled ages can be directly compared with observed luminescence and ESR data.
 |
@@ -42,6 +46,8 @@ Pecube
 
 *IGM-Pecube coupling*
 ---------------------
+
+============================================
 
 | Pecube's code will be reformated as a modular fortran library to enable coupling Pecube with any landscape evolution model. Within the year 2027, Pecube will be coupled with the glacial landscape evolution model IGM (Jouvet and Cordonnier, 2023) within the Swiss National fundation funded project "How (do) glaciers buzzsaw?" (grant number: 10008344).
 |
