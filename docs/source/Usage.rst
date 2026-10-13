@@ -4,14 +4,14 @@ Extended usage
 
 .. _runPecube:
 
+
 .. rst-class:: section-header
 
 Create a new Pecube project
 ***************************
 
-To create and run a new Pecube project, go to *New input file* or press *Crtl+N* (*3*, see :doc:`introduction`),
-a window pops up and asks you to provide the name of the new project (Figure *1*). Pecube requires that the project name be 5 characters length.
-After clicking the “Ok” button (Figure *2*), you will be able to provide and set all of the Pecube input parameters for your project.
+| To create and run a new Pecube project, go to *New input file* or press *Crtl+N* (*3*, see :doc:`introduction`), a window pops up and asks you to provide the name of the new project (Figure *1*). Pecube requires that the project name be 5 characters length.
+| After clicking the “Ok” button (Figure *2*), you will be able to provide and set all of the Pecube input parameters for your project.
   
 .. figure:: ../images/New_Project.png
   :scale: 60
@@ -20,8 +20,7 @@ After clicking the “Ok” button (Figure *2*), you will be able to provide and
   *Figure 1. Enter a new project name. This window shows up when clicking on the "New input file" action button.*
 
 
-The window should look like Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface,
-and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
+| The window should look like Figure *2*. On the top left, you could find and access all the projects you have loaded into the interface, and thus navigate through their respective parameters. The right part of the interface will host extra input parameters described in the next sections.
 
 .. figure:: ../images/MainWindow.png
   :align: center
@@ -29,9 +28,10 @@ and thus navigate through their respective parameters. The right part of the int
   *Figure 2. Tab to set up the input parameters for Pecube. On the top left, you can check the name of your project (here: ‘PeGUI’)*
   
   
-The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide (in 'Pecube/docs/Pecube.pdf'). All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
-  
-In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
+| The input parameters are organised into categories similar to what is referenced in the Pecube’s user guide (in 'Pecube/docs/Pecube.pdf'). All the parameters are sorted in *8* categories: *Topography*, *Time evolution*, *Thermal*, *Data*, *Tectonic*, *Isostasy*, *Inversion*, and *Output* parameters. For more details on the meaning of each input parameter please refer to the Pecube’s user guide. However, you could access to a short description of each parameter by simply flying the mouse cursor over the parameter labels. After one second a text should appear and describe the parameter.
+| 
+|In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
+
 
 .. rst-class:: section-header
 
@@ -108,7 +108,7 @@ Time evolution tab
 
 ==================================
 
-In this tab (Figure 7) you can provide all the parameters controlling the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates from the value written in the parameter “ntime” (Figure 7). 
+| In this tab (Figure 7) you can provide all the parameters controlling the time evolution of the input topography. In PecubeGUI you can provide the time evolution parameters (cf. “time_topo”,” amplification”, “offset”, and “output”) by filling in the table or by copying/pasting values from an excel file to the table. The number of rows in the table automatically updates from the value written in the parameter “ntime” (Figure 7). 
 
 .. figure:: ../images/Time_Evolution.png
     :scale: 30
@@ -119,7 +119,6 @@ In this tab (Figure 7) you can provide all the parameters controlling the time e
 | The default value for each parameter is also automatically provided. 
 | In the previous versions of Pecube, one could provide a topography as input and set its evolution through time by varying the amplification and offset parameters, according to the following equation:
 |
-
 | h\ :sub:`i`\ = offset\ :sub:`i`\  +  amplification\ :sub:`i`\  *  h\ :sub:`0`\
 
 |
@@ -145,7 +144,7 @@ Thermal tab
 
 | The :ref:`Thermal-tab` gathers all the parameters to set the thermal properties of the crust and the atmosphere of a Pecube model. In PecubeGUI, the user can check for the 1D steady-state geotherm by simply clicking on "Show Geotherm" (Figure 9). A new tab appears on the right-hand side of the interface, where the geotherm is shown. In addition, the user can check the influence of the erosion rate on the geotherm by providing values in "Mean erosion rate" (Figure 9, only for visual purposes). The 1D steady-state geotherm is computed using the equation found in [Reiners-and-Brandon-2006]_ that accounts for the effect of erosion rates on the thermal state of the crust.
 | Moreover, the user can provide the specific heat capacity (J.kg\ :sup:`-1`\.K\ :sup:`-1`\) and the radioactive heat production (µW.m\ :sup:`-3`\). The equivalent heat production rate (°C.Myr\ :sup:`-1`\) will automatically be updated (Figure 9). Finally, the resulting surface heat flux is shown as a checking. 
-The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth.
+| The user can also set a non-uniform heat production rate. An exponential decrease of heat production rate with depth can be specified by checking the box "use e-folding HP". A small window pops up where you can provide the heat production rate and the e-folding depth.
 
 .. figure:: ../images/Geotherm.png
   :scale: 30
@@ -170,7 +169,7 @@ Data tab
 
 .. warning:: The ID of a sample must not include space !
 
-Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded with 'nskip' parameter) by clicking on 'Check sample elevations'.
+| Finally you can check for your sample location on the input topography by clicking on "Check sample locations", as well as the predicted elevation of the samples on the input DEM (potentially degraded with 'nskip' parameter) by clicking on 'Check sample elevations'.
 
 
 .. figure:: ../images/Sample_location.png
@@ -179,7 +178,7 @@ Finally you can check for your sample location on the input topography by clicki
   
   *Figure 10. "Data" tab where to provide the sample location(s) and number of observations for each thermochronometers. The extra window shows the location of the samples, here in the Rhone valley area (data from Valla et al., 2012)*
 
-After providing the number of observations, you can click on 'Show/update ages tab. A tab will open, where you can provide information for each thermochronometer (Figure 11). 
+| After providing the number of observations, you can click on 'Show/update ages tab. A tab will open, where you can provide information for each thermochronometer (Figure 11). 
 
 .. figure:: ../images/Ages_Tab.png
   :scale: 30
@@ -190,10 +189,11 @@ After providing the number of observations, you can click on 'Show/update ages t
 
 | Here you can provide observations (ages with uncertainties), and show extra parameters for the computation of grain-specific ages. 
 
+
 Apatite (U-Th)/He (AHe)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
+| The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
 
 *	*Diffusion model*: the helium diffusion model to use. The options are the Farley et al. (2000), Shuster et al. (2006), and the radiation-damage models from Gautheron et al. (2009), Flowers et al. (2009, RDAAM) and Willett et al. (2017, ADAM).
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). Ea is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
@@ -214,7 +214,7 @@ Apatite 4He/3He thermochronometry
 
 Apatite fission track (AFT)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the "AFT" section, the variable input parameters are:
+| In the "AFT" section, the variable input parameters are:
 
 * *Annealing model*: the model for annealing of fission tracks ([Ketcham-2007]_)
 * *Use FTL*: option to use fission track length in the misfit calculation (for inversion mode)
@@ -224,10 +224,9 @@ In the "AFT" section, the variable input parameters are:
 
 | In the current version of Pecube, the annealing model is restricted to the [Ketcham-2007] model. For the MFTL, only the c-axis projected value are predicted. As such, the user has to provide the observed c-axis projected MFTL in the table. The inital track length is calculated based on the kinetic parameter value according to [Carlson-1999]_.
 
-
 Zircon (U-Th)/He (ZHe)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the "ZHe" section, the input parameters comprise:
+| In the "ZHe" section, the input parameters comprise:
 
 * *Diffusion model*: the helium diffusion model. Two models are included so far: [Reiners-et-al-2004]_ and [Guenthner-et-al-2013]_, The latter account for the radiation damages effect on helium diffusion.
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
@@ -235,17 +234,15 @@ In the "ZHe" section, the input parameters comprise:
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm, only used in the Guenthner diffusion model). In the current version, the grain is assumed spherical. 
 
-
 Zircon fission track (ZFT)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The "ZFT" section is relatively simple and in the current version does not allow for many choices. The annealing model is based on a zero-damaged zircon from [Rahn-et-al-2004]. The input parameter only include:
+| The "ZFT" section is relatively simple and in the current version does not allow for many choices. The annealing model is based on a zero-damaged zircon from [Rahn-et-al-2004]. The input parameter only include:
 
 *	*Table of observations*: The table includes the observed ages and their uncertainties used to plot observed vs predicted ages.
 
 Ar-Ar systems (BAr, KAr, MAr, HAr)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For the Ar-Ar themochronometric systems (BAr, MAr, KAr, HAr), the sections are similar and relatively simple:
+| For the Ar-Ar themochronometric systems (BAr, MAr, KAr, HAr), the sections are similar and relatively simple:
 
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
 *	*D0*: the diffusivity parameter value for infinite temperature (cm\ :sup:`2`\.s\ :sup:`-1`\). The value updates according to the selected diffusion model. 
@@ -298,7 +295,6 @@ Inversion tab
 * *Sample size for all other iteration*: number of Pecube forward models to run in all other iterations.
 * *Number of cells to resample*: Number of Voronoi cells to resample at the start of each iteration. The NA algorithm will sample the nth Voronoi cells showing the lowest misfit. The ratio between the *number of cells to resample* and the *sample size for all other iteration* set the exploration efficiency of the parameter space by the algorithm. A ratio of 50-90% is usely recommanded, where the higher the ratio the more explorative is the algorithm (see [Braun-et-al-2012]_ for more details).
 
-
 | The last section of the tabs enables to set and control the misfit function used for inversion. The inversion procedure compares the predictions with the observed data through a misfit function (i.e., to minimize). The user can choose the misfit function to use:
 
 * *Chi-squared* (default): 
@@ -315,10 +311,10 @@ where :math:`N_d` is the number of inverted parameters.
 * *L1-norm*:
   :math:`\phi_4 = \sum_{j=1}^{N}((\frac{abs(S^{obs}_j - S^{pred}_j}{ \sigma_j}))`. In the current Pecube version, L1-norm is automatically set to calculate misfit in \ :sup:`4`\He/\ :sup:`3`\He data, regardless the misfit function chosen to calculate misfit for all other thermochronometers.
 
-
 | In addition to the misfit function, you can manually control the weight each thermochronometer data will have in the misfit calculation. For this, click on *Misfit weight Age:* and a new window appears. Inside, each thermochronometric system is shown with a box where you can set the weight for the thermochronometer. Default values are 1, decreasing the value reduces the weight for the thermochronometer, increasing the value increases the weight.
 
 ==================================
+
 
 .. rst-class:: section-header
 
@@ -333,13 +329,14 @@ Run a Pecube model
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
-  
+
+
 .. rst-class:: section-header
 
 Plotting results
 ****************
 
-In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
+| In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
 
 
 Plot 1D data
@@ -347,7 +344,7 @@ Plot 1D data
 
 ==================================
 
-To plot modelling results in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
+| To plot modelling results in PecubeGUI, first switch to the chart's window by clicking on ‘show ouput’ (see Figure 1 in "Introduction", n°5). You should see the window shown in Figure 14. On the left-hand side, you will find two tabs: *Data* and *Properties*. The first tab enables to load new data:
 
 * *Load project...*: load a Pecube input file to plot data from that project.
 * *Add 3D model...*: load a vtk file to visualize a 3D model.
@@ -355,7 +352,7 @@ To plot modelling results in PecubeGUI, first switch to the chart's window by cl
 * *Further data...*: a list of data you can plot.
 
 
-In the current version, and depending on your input parameters, Pecube can output several files. These files are:
+| In the current version, and depending on your input parameters, Pecube can output several files. These files are:
 
 *	*CompareAge.csv*: This file contains the predicted and observed ages as well as sample ID and coordinates.
 *	*TimeTemperature.csv*: stores the thermal path of each sample location you provided. For this file to be created, you also need to check ‘save PTT paths’ in the ‘Output parameters’ tab.
@@ -370,7 +367,7 @@ In the current version, and depending on your input parameters, Pecube can outpu
   
   *Figure 14. Chart's window.*
   
-For each Pecube project, the data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
+| For each Pecube project, the data you can plot will be listed in "Further data..." (Figure 14). However, you first need to tell PecubeGUI which pecube project you want to work with. To do so, click on ‘Load project…’, then a window appears and ask you to choose an input file corresponding to the Pecube project you desire to plot from. After loading the input file, the list below will update and show you what kind of data you can plot. From there you could plot:
 
 * *Age-elevation*: the ages plotted against elevation. If you computed ages for all surface nodes of the model, then you will be asked to choose at which time step(s) you want to plot data. If you computed ages at specific locations and for several thermochronometers, all of them will be plotted along with the observed data you provided. Then you will be free to show/hide data as you wish (see Figure 15).
 * *Date-eU*: plot ages against effective uranium. Works only if you computed AHe or ZHe ages at specific locations. 
