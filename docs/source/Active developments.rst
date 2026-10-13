@@ -19,6 +19,16 @@ PecubeGUI
 |
 | **Scheduled release:** November-December 2026.
 
+
+*NAB Pecube Python*
+-------------------
+
+==================================
+
+| The appraisal stage of the Neighbourhood Algorithm (NA) will be implemented and made available in PecubeGUI. The python package *neighpy* (https://neighpy.readthedocs.io/en/latest/, by Augie Marignier) will be implemented. The apprasail stage of NA enable inferring Bayesian quantities (e.g., Posterior probability distribution of model parameters) from NA-Pecube inversion.
+|
+| **Scheduled release:** November-December 2026.
+
 .. rst-class:: section-header
 
 Pecube
