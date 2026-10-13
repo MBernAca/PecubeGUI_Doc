@@ -190,7 +190,7 @@ Data tab
 | Here you can provide observations (ages with uncertainties), and show extra parameters for the computation of grain-specific ages. 
 
 
-^**Apatite (U-Th)/He (AHe)**
+**Apatite (U-Th)/He (AHe)**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
