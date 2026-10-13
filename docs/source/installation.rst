@@ -65,4 +65,4 @@ Linux
 How to cite
 ------------
 
- If you use PecubeGUI for your research please cite: M. Bernard, P. van der Beek, J. Braun, X. Robert, C. Colleps, K. Gallagher, W. Guenthner, J. Amalberti, & I. Wapenhans. (2023). PecubeGUI-beta. Zenodo. https://doi.org/10.5281/zenodo.8362721
+ If you use PecubeGUI for your research please cite:  Bernard, M., van der Beek, P., Colleps, C., Robert, X., Gallagher, K., Guenthner, W., Amalberti, J., and King, G. E.: PecubeGUI: a user interface for the Pecube thermal-kinematic model and advanced low-temperature thermochronometer predictions, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2026-2286, 2026.
