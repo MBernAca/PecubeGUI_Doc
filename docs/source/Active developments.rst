@@ -1,12 +1,9 @@
-===================
-Active developments
-===================
+# Active developments
+
 
 .. _developments:
 
-------
-Pecube
-------
+## Pecube
 
 ### Trapped-charge predictions
 
