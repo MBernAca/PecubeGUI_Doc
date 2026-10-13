@@ -9,7 +9,7 @@ Active developments
 Pecube 
 ******
 
-Trapped-charge predictions
+*Trapped-charge predictions
 --------------------------
 
 | The implementation of trapped-charge (TC) dating techniques in Pecube is currently under active development.
@@ -28,7 +28,7 @@ the near-surface thermal history of rocks and sediments over timescales ranging 
 | The integration of these methods within Pecube will provide a unified framework for modeling both trapped-charge and conventional thermochronometric systems,
 enabling improved constraints on recent exhumation rates, transient erosion events, and the thermal evolution of the shallow crust during the Quaternary.
 
-IGM-Pecube coupling
+*IGM-Pecube coupling
 -------------------
 
 | Pecube's code will be reformated as a modular fortran library to enable coupling Pecube with any landscape evolution model. Within the year 2027,
