@@ -4,8 +4,10 @@ Active Developments
 
 .. _developments:
 
-PecubeGUI
-*********
+.. rst-class:: section-header
+
+    PecubeGUI
+    *********
 
 
 *Installation*
