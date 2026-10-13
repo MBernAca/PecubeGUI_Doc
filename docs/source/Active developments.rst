@@ -5,15 +5,16 @@ Active developments
 
 .. _developments:
 
-.. admonition:: PecubeGUI
-    :class: section-header
+PecubeGUI
+*********
 
-    *Installation*
-    --------------
-    
-    | A new installation method is currently under development for the PecubeGUI package. Pecube and its graphical user interface will be installable through pip and/or a conda-forge environment. This new approach will simplify both the installation of the user interface and the installation and compilation of Pecube itself.
-    |
-    | **Scheduled release:** November-December 2026.
+
+*Installation*
+--------------
+
+| A new installation method is currently under development for the PecubeGUI package. Pecube and its graphical user interface will be installable through pip and/or a conda-forge environment. This new approach will simplify both the installation of the user interface and the installation and compilation of Pecube itself.
+|
+| **Scheduled release:** November-December 2026.
 
 
 
