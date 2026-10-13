@@ -5,10 +5,11 @@ Active developments
 
 .. _developments:
 
+.. rst-class:: section-header
 
-.. admonition::
-  PecubeGUI 
-  text
+PecubeGUI
+*********
+
 
 *Installation*
 --------------
