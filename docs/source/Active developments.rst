@@ -6,8 +6,8 @@ Active Developments
 
 .. rst-class:: section-header
 
-    PecubeGUI
-    *********
+PecubeGUI
+*********
 
 
 *Installation*
