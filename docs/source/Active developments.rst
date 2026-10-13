@@ -10,11 +10,11 @@ Active developments
 PecubeGUI
 *********
 
-
 *Installation*
 --------------
 
-| A new installation method is currently under developments for the PecubeGUI package. Pecube and the user interface, will be installed via Pip and/or conda-forge environment. This new approach
+| A new installation method is currently under developments for the PecubeGUI package. Pecube and the user interface,
+will be installed via Pip and/or conda-forge environment. This new approach
 will simplify both the installation of the user interface but also the installation of Pecube as well as its compilation.
 
 | Scheduled release: November-December 2026.
