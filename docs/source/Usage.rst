@@ -190,7 +190,7 @@ Data tab
 | Here you can provide observations (ages with uncertainties), and show extra parameters for the computation of grain-specific ages. 
 
 
-Apatite (U-Th)/He (AHe)
+^**Apatite (U-Th)/He (AHe)**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | The "AHe" section show all the kinetic parameters related to the apatite (U-Th)/He thermochronometer:
@@ -202,8 +202,8 @@ Apatite (U-Th)/He (AHe)
 *	*4He/3He predictions*: enables prediction of \ :sup:`4`\He/\ :sup:`3`\He profiles for each grain. When checked, a new window opens. Within this window, you can provide your heating schedule, with the number of steps, or let the default heating schedule. This will be used in the diffusion model to simulate a degassing experiment and compute \ :sup:`4`\He/\ :sup:`3`\He ratios. The heat is in °C and the duration in hours. 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm), and the fission track annealing kinetic parameters (only for Flowers et al. (2009) and Gautheron et al. (2009) diffusion models). In the current version, the grain is assumed spherical. 
 
-Apatite 4He/3He thermochronometry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Apatite 4He/3He thermochronometry**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  Enabling \ :sup:`4`\He/\ :sup:`3`\He prediction opens a window from which to provide observed spectra (Figure 12). The window starts with an information text explaining how to provide each spectrum. The steps are: 1. Select the grain from wich to provide an observed \ :sup:`4`\He/\ :sup:`3`\He profile, 2. Set the number of heating steps, 3. Provide the heating schedule (optional), time is in hours and temperature in Celsius degree. 4. Provide the cumulative sum of fractional 3He (F3He) with the associated uncertainty (Error F). 5. Provide the 4He/3He ratio (i.e., Rs/Rb: Rstep/Rbulk) with its associated uncertainty (Error R). 6. Click on ‘add grain’ to add the \ :sup:`4`\He/\ :sup:`3`\He profile for the selected grain. The grain’s ID is shown on the list in 7. To remove a \ :sup:`4`\He/\ :sup:`3`\He profile for a grain, select the targeted grain on the list in 7 and click on “Remove grain” (8). Once, all 4He/3He profiles for targeted grain are provided click on the Ok button to save the profiles. The input file with \ :sup:`4`\He/\ :sup:`3`\He data is then saved in your Pecube project folder “Project_name/data/data_folder_name/He43_data.csv”.
 
 .. figure:: ../images/He43_tab.png
@@ -212,8 +212,8 @@ Apatite 4He/3He thermochronometry
   
   *Figure 12. Providing observed 4He/3He profile within PecubeGUI. see main text for details.*
 
-Apatite fission track (AFT)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Apatite fission track (AFT)**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | In the "AFT" section, the variable input parameters are:
 
 * *Annealing model*: the model for annealing of fission tracks ([Ketcham-2007]_)
@@ -224,7 +224,7 @@ Apatite fission track (AFT)
 
 | In the current version of Pecube, the annealing model is restricted to the [Ketcham-2007] model. For the MFTL, only the c-axis projected value are predicted. As such, the user has to provide the observed c-axis projected MFTL in the table. The inital track length is calculated based on the kinetic parameter value according to [Carlson-1999]_.
 
-Zircon (U-Th)/He (ZHe)
+**Zircon (U-Th)/He (ZHe)**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | In the "ZHe" section, the input parameters comprise:
 
@@ -234,14 +234,14 @@ Zircon (U-Th)/He (ZHe)
 * *stopping distances*: stopping distances for alpha particules from Farley et al. (1996) or Ketcham et al. (2011). 
 *	*Table of observations*: The table includes the observed ages and their uncertainties, the size (radius) of the grains, their uranium and thorium concentration (in ppm, only used in the Guenthner diffusion model). In the current version, the grain is assumed spherical. 
 
-Zircon fission track (ZFT)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Zircon fission track (ZFT)**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | The "ZFT" section is relatively simple and in the current version does not allow for many choices. The annealing model is based on a zero-damaged zircon from [Rahn-et-al-2004]. The input parameter only include:
 
 *	*Table of observations*: The table includes the observed ages and their uncertainties used to plot observed vs predicted ages.
 
-Ar-Ar systems (BAr, KAr, MAr, HAr)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Ar-Ar systems (BAr, KAr, MAr, HAr)**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | For the Ar-Ar themochronometric systems (BAr, MAr, KAr, HAr), the sections are similar and relatively simple:
 
 *	*Ea*: The activation energy (kJ.mol\ :sup:`-1`\). This is automatically updated according to the selected diffusion model, but it can be changed at the user’s discretion.
