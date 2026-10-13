@@ -1,4 +1,6 @@
-.section-header > :is(h1,h2,h3):first-child {
+.section-header > .section-title,
+.section-header > h2,
+.section-header > h1 {
     background-color: #d9edf7;
     border-left: 6px solid #31708f;
     padding: 12px;
