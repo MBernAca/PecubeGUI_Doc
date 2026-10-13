@@ -1,12 +1,16 @@
-<h1> Active developments </h1>
+###################
+Active developments
+###################
 
 
 .. _developments:
 
-<h2> Pecube </h2>
+******
+Pecube 
+******
 
-<h3> Trapped-charge predictions </h3>
-
+Trapped-charge predictions
+==========================
 
 | The implementation of trapped-charge (TC) dating techniques in Pecube is currently under active development.
 TC techniques provides the temporal resolution to constrain Quaternary-scale rock exhumation and landscape evolution. By coupling trapped-charge kinetics with the thermal histories predicted by Pecube,
