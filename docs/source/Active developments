@@ -20,12 +20,16 @@ the near-surface thermal history of rocks and sediments over timescales ranging 
 
 |Three trapped-charge systems are being incorporated into Pecube:
 
-Thermoluminescence (TL), which measures light emitted during laboratory heating as trapped charges are released.
-Optically and Infrared Stimulated Luminescence (OSL/IRSL), which use optical stimulation to quantify trapped-charge populations.
-Electron Spin Resonance (ESR), which measures trapped charges through their paramagnetic signatures.
+* *Thermoluminescence (TL)*, which measures light emitted during laboratory heating as trapped charges are released.
+* *Optically and Infrared Stimulated Luminescence (OSL/IRSL)*, which use optical stimulation to quantify trapped-charge populations.
+* *Electron Spin Resonance (ESR)*, which measures trapped charges through their paramagnetic signatures.
 
-The integration of these methods within Pecube will provide a unified framework for modeling both trapped-charge and conventional thermochronometric systems, enabling improved constraints on recent exhumation rates, transient erosion events, and the thermal evolution of the shallow crust during the Quaternary.
+| The integration of these methods within Pecube will provide a unified framework for modeling both trapped-charge and conventional thermochronometric systems,
+enabling improved constraints on recent exhumation rates, transient erosion events, and the thermal evolution of the shallow crust during the Quaternary.
 
 ------------------
 IGM-Pecube coupling
 ------------------
+
+| Pecube's code will be reformated as a modular fortran library to enable coupling Pecube with any landscape evolution model. Within the year 2027,
+Pecube will be coupled with the glacial landscape evolution model IGM (Jouvet and Cordonnier, 2023) within the Swiss National fundation funded project "How (do) glaciers buzzsaw?" (grant number: 10008344).
