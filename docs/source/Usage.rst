@@ -1,12 +1,13 @@
-==============
+##############
 Extended usage
-==============
+##############
 
 .. _runPecube:
 
----------------------------
+.. rst-class:: section-header
+
 Create a new Pecube project
----------------------------
+***************************
 
 To create and run a new Pecube project, go to *New input file* or press *Crtl+N* (*3*, see :doc:`introduction`),
 a window pops up and asks you to provide the name of the new project (Figure *1*). Pecube requires that the project name be 5 characters length.
@@ -32,9 +33,10 @@ The input parameters are organised into categories similar to what is referenced
   
 In the following, I provide a description of all the tabs, and how to provide the input parameters in PecubeGUI.
 
---------------------------
+.. rst-class:: section-header
+
 Provide input parameters
---------------------------
+************************
 
 Topography tab
 --------------
@@ -62,7 +64,7 @@ For the three first points, clicking on ‘load file(s)’ (Figure 2) will allow
      
      
 | This window recovers some characteristics of your spm model, which are shown on the top for checking (works for iSOSIA models only). Then, you are asked to provide the starting and ending times of your model (in Ma), as well as the number of steps (i.e., the number of topographic files). The initial time is older than the end time. This is required to automatically set the time values for the “Time evolution” tab.
-
+|
 | You are also able to provide a simple pre-spm history for the topographic evolution. For that purpose, click on “Pre-history” (Figure 3). You will be able to provide 4 parameters:
 
     *	*number of pre-steps*: how many steps for the pre-spm history you want to provide topographic information
@@ -73,9 +75,9 @@ For the three first points, clicking on ‘load file(s)’ (Figure 2) will allow
 
 | PecubeGUI will start from the first topographic file provided and interpolate back the pre-spm topographic history according to the amplitude and offset parameters you will provide in the next steps (see :ref:`Time-evolution-tab`).
 | After clicking the “Ok” button, the files will be copied and pasted into “your_current_project_path\\data\\SPM”. In the meantime, the name “SPM/” is automatically provided to the input parameters “Topography file name”, as well as the grid resolution (i.e., nx and ny, works only with iSOSIA files, Figure 3).
-  
+|
 | When loading a synthetic numerical model, you can let the latitude and longitude to zero. However, you need to provide the stepping distance in x (Δlon) and y (Δlat). For simplicity, you can provide the values in km and then click on ‘Convert to lat/long’ button (Figure 2). This will automatically convert the values to longitude and latitude distances that can be read by Pecube. 
-
+|
 | Alternatively, you can extract a DEM from OpenTopography. To do so, you will need first to request an API key from OpenTopography website (`request api key <https://opentopography.org/blog/introducing-api-keys-access-opentopography-global-datasets>`_ ). Then copy your key in a text file, name it "OpenTopoKey.txt", and put the file in the root directory of PecubeGUI application (i.e., the same location than the Pecube directory). To download a DEM of your region of interest (ROI), provide the coordinates of the bottom left corner of the topography and its resolution in the "Topography" tab (i.e., nx, ny, longitude 0, latitude 0, Δlon, Δlat). Click on "Get topo..." button will then extract the DEM. This option uses the python package bmi_topography [Piper-2021]_ to download the DEM from the SRTMGL3 (90 m resolution) hosted by OpenTopography. According to the size of your ROI it can take few second to download. Once the DEM is downloaded, it can be found in "your_current_project/data/" directory. Click on "load file(s)" (Figure 2) to load the DEM within the interface. 
 
 
@@ -287,7 +289,7 @@ Inversion tab
 * (ii) to use Pecube in Batch mode. 
 
 | Pecube Batch mode has been introduced with the development of the PecubeGUI interface. Pecube *Batch mode* is useful to explore the effect of a single parameter on e.g. resulting age-elevation profiles. In this mode, Pecube run a couple of models by changing the value of a single parameter specified by the user as a range instead of a single value (i.e., using "min value: max value") within a single Pecube project. To use Pecube in *Batch mode*, select "batch" in section "Choose inversion mode -> Inversion mode:". Then, provide the number of intervals you wish to divide the parameter range values to. For instance, suppose a model designed as a bloc uplift with a single stage. One wish to investigate the effect of the exhumation rate in the resulting age-elevation profile. In this case, set the velocity (in Tectonic tab) to e.g., 0.2:2 km/Myr, then in "inversion tab" set the number of intervals to e.g., 4. Runing Pecube will launch 5 models with uplift rate values of [0.2, 0.65, 1.10, 1.55, 2.0] km/Myr. Once Pecube simulation is finished, go to the plotting area and load the Pecube project. In the list of available plots (see section "plot 2D data" below), you can choose "batch results" and choose to plot of interest. Plotting for instance the age-elevation profiles will show all the predicted age-elevation relationships related to each uplift rate value (i.e., [0.2, 0.65, 1.10, 1.55, 2.0]) on a single plot.
-
+|
 | Alternatively, one can choose to run Pecube in inversion mode. Pecube is coupled with the Neighborhood algorithm [Sambridge-et-al-1999]_ that manages the inversion procedure. The inversion mode of Pecube is used to search for a range or a combination of parameter values that optimizes the fit to the data (i.e., or that minimizes the misfit). Controlling parameters for the NA algorithm are listed in the sub-section "Iteration performance" of PecubeGUI. These are:
 
 * *Number of cores*: set the number of thread to use during the inversion (= number of forward models to run in parallel). This is used to run the command *mpiexec -np n bin/PecubeMPI.sh NAME*, where np is the number of cores/threads.
@@ -318,22 +320,24 @@ where :math:`N_d` is the number of inverted parameters.
 
 ==================================
 
-------------------
+.. rst-class:: section-header
+
 Run a Pecube model
-------------------
+******************
 
 | To run a Pecube model, simply click on “Run Pecube” above the tabs (Figure 13). A new window pops up. According to your preferences (cf. ‘2’, "Introduction" Figure 1) the latter will only show a progress bar of the Pecube run (‘Show console’ unchecked in Preferences) or additional information are provided if the console is enabled ("Show console” checked in Preferences).
-
+|
 | When the console is allowed to be shown, the state of the runs is written within it. At the end of the Pecube run, this window displays ‘Pecube run is finished!’ and you can click on the ‘Ok’ button to close the window.
+|
 | Note that you can also choose to not run Pecube but only the external routine to predict ages for sample-specific locations from an old Pecube project. This is useful when one wants to use e.g., another radiation damage model and do not want to run Pecube again. To do so, simply click on "Compute ages" (Figure 13, this option is diabled temporarily).
 
 .. note::
   When several projects are opened, the consoles are gathered in a single window to have a quick overview of all the running simulations.
   
+.. rst-class:: section-header
 
-----------------
 Plotting results
-----------------
+****************
 
 In that section, I provide an overview of the chart part of PecubeGUI. There, you can plot results from your Pecube run. 
 
@@ -398,7 +402,7 @@ For each Pecube project, the data you can plot will be listed in "Further data..
 
 
 Visualize 3D models
------------------
+-------------------
 
 ==================================
 
