@@ -5,4 +5,6 @@
     border-left: 6px solid #31708f;
     padding: 12px;
     border-radius: 5px;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
