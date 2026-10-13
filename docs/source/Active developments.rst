@@ -5,6 +5,8 @@ Active developments
 
 .. _developments:
 
+.. rst-class:: section-header
+
 PecubeGUI
 *********
 
@@ -17,6 +19,7 @@ PecubeGUI
 | **Scheduled release:** November-December 2026.
 
 
+.. rst-class:: section-header
 
 Pecube 
 ******
