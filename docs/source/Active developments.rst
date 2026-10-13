@@ -7,7 +7,7 @@ Active developments
 
 
 .. admonition:: PecubeGUI 
-
+  text
 
 *Installation*
 --------------
