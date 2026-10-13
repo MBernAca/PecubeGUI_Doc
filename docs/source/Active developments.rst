@@ -18,8 +18,6 @@ Active developments
 
 .. rst-class:: section-header
 
-.. container::
-
     Pecube 
     ******
 
