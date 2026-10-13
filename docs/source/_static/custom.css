@@ -1,4 +1,4 @@
-.section-header h1 {
+.section-header > h2:first-child  {
     background-color: #d9edf7;
     border-left: 6px solid #31708f;
     padding: 12px;
