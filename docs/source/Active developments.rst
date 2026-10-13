@@ -1,5 +1,5 @@
 ###################
-Active Developments
+Active developments
 ###################
 
 .. _developments:
