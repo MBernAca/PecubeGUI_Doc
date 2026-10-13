@@ -17,6 +17,7 @@ PecubeGUI
 |
 | **Scheduled release:** November-December 2026.
 
+.. rst-class:: section-header
 
 Pecube
 ******
