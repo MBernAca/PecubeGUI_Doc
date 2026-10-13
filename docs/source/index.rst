@@ -1,14 +1,10 @@
 Welcome to PecubeGUI's documentation!
 =====================================
 
-**PecubeGUI** is a graphical user interface for Pecube designed to help the Pecube's users
-to provide their input parameters. PecubeGUI also offers extended options enabling to check the input topography, fault geometry, and geotherm. Latest diffusion kinetic models for
-apatite and zircon (U-Th)/He thermochronometry are also included.
-Finally, PecubeGUI is specifically designed to plot model predictions coming from Pecube's output files (see documentation).
+| **PecubeGUI** is a graphical user interface for Pecube designed to help the Pecube's users to provide their input parameters. PecubeGUI also offers extended options enabling to check the input topography, fault geometry, and geotherm. Latest diffusion kinetic models for apatite and zircon (U-Th)/He thermochronometry are also included.
+| Finally, PecubeGUI is specifically designed to plot model predictions coming from Pecube's output files (see documentation).
 
-PecubeGUI is distributed under a GNU license that allows anyone to make modifications and share, as long as the 
-distribution has the same license. However, for the sake of having an official and single version, if you provide any changes and
-wish to distribute your version, please contact us so that we can integrate your changes in the official version.
+| PecubeGUI is distributed under a GNU license that allows anyone to make modifications and share, as long as the distribution has the same license. However, for the sake of having an official and single version, if you provide any changes and wish to distribute your version, please contact us so that we can integrate your changes in the official version.
 
 contact: maxime.bernard@unil.ch
 
@@ -21,6 +17,8 @@ the :doc:`introduction` section for a quick overview of the interface.
 
 Contents
 --------
+
+=================================
 
 .. toctree::
 
@@ -37,11 +35,15 @@ Contents
 Provide suggestions
 -------------------
 
+===============================
+
 If you have any suggestion to improve the use of PecubeGUI, please you are very welcome ! Simply pull a request here:
 https://github.com/MBernAca/PecubeGUI_Doc/pulls
 
 Bug report
 ----------
+
+===============================
 
 If you face a bug or a PecubeGUI crash, please feel free to report it here: 
 https://github.com/MBernAca/PecubeGUI_Doc/issues
@@ -50,11 +52,15 @@ https://github.com/MBernAca/PecubeGUI_Doc/issues
 Acknowledgment
 --------------
 
+=================================
+
 The first version of PecubeGUI has been developed at the University of Potsdam within the COOLER_ ERC project led by Peter van der Beek.
 
 .. _COOLER: http://erc-cooler.eu/
 
 How to cite
 ------------
+
+================================
 
  If you use PecubeGUI for your research please cite: M. Bernard, P. van der Beek, J. Braun, X. Robert, C. Colleps, K. Gallagher, W. Guenthner, J. Amalberti, & I. Wapenhans. (2023). PecubeGUI-beta. Zenodo. https://doi.org/10.5281/zenodo.8362721
