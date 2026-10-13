@@ -27,6 +27,7 @@ the near-surface thermal history of rocks and sediments over timescales ranging 
 
 | The integration of these methods within Pecube will provide a unified framework for modeling both trapped-charge and conventional thermochronometric systems,
 enabling improved constraints on recent exhumation rates, transient erosion events, and the thermal evolution of the shallow crust during the Quaternary.
+| to know more about trapped-charge techniques: https://www.sciencedirect.com/science/article/pii/S0009254116304004
 
 *IGM-Pecube coupling
 -------------------
