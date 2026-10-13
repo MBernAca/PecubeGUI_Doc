@@ -7,19 +7,23 @@ Install PecubeGUI
 Get PecubeGUI
 -------------
 
-| PecubeGUI-beta is now available ! This version has been tested for bugs and stability, and is close to its first official release. However, you might still face some unnoticed crashes/bugs. If it happens, please do not hesitate to report it here:  https://github.com/MBernAca/PecubeGUI_Doc/issues.
+===============================
 
+| PecubeGUI-beta is now available ! This version has been tested for bugs and stability, and is close to its first official release. However, you might still face some unnoticed crashes/bugs. If it happens, please do not hesitate to report it here:  https://github.com/MBernAca/PecubeGUI_Doc/issues.
+|
 | We release this version to give the community a first appreciation of PecubeGUI. 
 
 
 MacOS
 ---------
 
-Two packages exist for PecubeGUI-beta on MacOs. For MacOs with Apple chip M1 or M2, and for MacOS with intel chip. For the latter, PecubeGUI only work for Os version >11 (BigSur).
+=============================
 
-To access the last version of PecubeGUI, please contact: maxime.bernard@unil.ch 
-
-To use PecubeGUI on macOS, first install the pakage by clicking on the PecubeGUI.pkg.
+| Two packages exist for PecubeGUI-beta on MacOs. For MacOs with Apple chip M1 or M2, and for MacOS with intel chip. For the latter, PecubeGUI only work for Os version >11 (BigSur).
+|
+| To access the last version of PecubeGUI, please contact: maxime.bernard@unil.ch 
+|
+| To use PecubeGUI on macOS, first install the pakage by clicking on the PecubeGUI.pkg.
 An installation process window will appear, you just have to follow the steps.
 
 .. note::
@@ -36,6 +40,8 @@ An installation process window will appear, you just have to follow the steps.
 
 Windows
 -----------
+
+=================================
 
 After downloading the PecubeGUI_installer.exe file, clicking on it will start an installation process. You just have to follow the instructions and PecubeGUI will be installed on your local machine.
 
@@ -59,10 +65,14 @@ After downloading the PecubeGUI_installer.exe file, clicking on it will start an
 Linux
 -----------
 
+============================================
+
  PecubeGUI is not available for linux systems yet...
 
 
 How to cite
 ------------
 
- If you use PecubeGUI for your research please cite:  Bernard, M., van der Beek, P., Colleps, C., Robert, X., Gallagher, K., Guenthner, W., Amalberti, J., and King, G. E.: PecubeGUI: a user interface for the Pecube thermal-kinematic model and advanced low-temperature thermochronometer predictions, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2026-2286, 2026.
+=========================================
+
+| If you use PecubeGUI for your research please cite:  Bernard, M., van der Beek, P., Colleps, C., Robert, X., Gallagher, K., Guenthner, W., Amalberti, J., and King, G. E.: PecubeGUI: a user interface for the Pecube thermal-kinematic model and advanced low-temperature thermochronometer predictions, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2026-2286, 2026.
