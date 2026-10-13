@@ -8,7 +8,6 @@ Active developments
 .. rst-class:: section-header
 
 .. container::
-
     PecubeGUI
     *********
 
@@ -24,7 +23,6 @@ Active developments
 .. rst-class:: section-header
 
 .. container::
-
     Pecube 
     ******
 
