@@ -1,7 +1,4 @@
-.section-header h2,
-.section-header h3,
-.section-header h4,
-.section-header p {
+.section-header > h2 {
     background-color: #d9edf7;
     border-left: 6px solid #31708f;
     padding: 12px;
