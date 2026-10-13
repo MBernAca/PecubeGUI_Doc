@@ -19,7 +19,7 @@ modeled ages can be directly compared with observed luminescence and ESR data.
 The trapped-charge population evolves through time as charges are both captured and released, with the rate of charge loss controlled by temperature. As a result, these systems record
 the near-surface thermal history of rocks and sediments over timescales ranging from thousands to millions of years.
 
-|Three trapped-charge systems are being incorporated into Pecube:
+| Three trapped-charge systems are being incorporated into Pecube:
 
 * *Thermoluminescence (TL)*, which measures light emitted during laboratory heating as trapped charges are released.
 * *Optically and Infrared Stimulated Luminescence (OSL/IRSL)*, which use optical stimulation to quantify trapped-charge populations.
