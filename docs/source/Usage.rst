@@ -423,7 +423,7 @@ Visualize 3D models
   *Figure 16. 3D viewer in PecubeGUI. An example is shown where the surface temperature is shown on the topography alongside with the sample locations that have been defined (see output tab).*
 
 
-----------
+
 References
 ----------
 .. [Braun-et-al-2012] Braun, J., Van Der Beek, P., Valla, P., Robert, X., Herman, F., Glotzbach, C., ... & Prigent, C. (2012). Quantifying rates of landscape evolution and tectonic processes by thermochronology and numerical modeling of crustal heat transport using PECUBE. Tectonophysics, 524, 1-28.
