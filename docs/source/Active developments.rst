@@ -1,11 +1,11 @@
-# Active developments
+<h1> Active developments </h1>
 
 
 .. _developments:
 
-## Pecube
+<h2> Pecube </h2>
 
-### Trapped-charge predictions
+<h3> Trapped-charge predictions </h3>
 
 
 | The implementation of trapped-charge (TC) dating techniques in Pecube is currently under active development.
@@ -24,7 +24,7 @@ the near-surface thermal history of rocks and sediments over timescales ranging 
 | The integration of these methods within Pecube will provide a unified framework for modeling both trapped-charge and conventional thermochronometric systems,
 enabling improved constraints on recent exhumation rates, transient erosion events, and the thermal evolution of the shallow crust during the Quaternary.
 
-### IGM-Pecube coupling
+<h3> IGM-Pecube coupling </h3>
 
 | Pecube's code will be reformated as a modular fortran library to enable coupling Pecube with any landscape evolution model. Within the year 2027,
 Pecube will be coupled with the glacial landscape evolution model IGM (Jouvet and Cordonnier, 2023) within the Swiss National fundation funded project "How (do) glaciers buzzsaw?" (grant number: 10008344).
