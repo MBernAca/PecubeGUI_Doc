@@ -5,9 +5,9 @@ Active developments
 
 .. _developments:
 
-*********
-PecubeGUI 
-*********
+
+.. admonition:: PecubeGUI 
+
 
 *Installation*
 --------------
