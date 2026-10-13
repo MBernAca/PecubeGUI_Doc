@@ -389,14 +389,14 @@ Plot 1D data
 .. note::
   | When plotting predictions from specific locations, and if observed data are provided, a misfit value between predicted and observed data is shown on the plot for each thermochronometer.
   | The misfit value is the chi-squared, defined as:
-  |
+  
   :math:`\phi = \sum_{j=1}^{N}((\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2)`.
-  |
+  
   | The log likelihood value is also shown and is the probability to have the observed data according to the model predictions.
   | The log-likelyhood is defined following Braun et al. (2012):
-  |
+  
   :math:`LL = -\sum_{j=1}^{N}(\frac{ln(2\pi)}{2}+ln(\sigma_j)+0.5(\frac{S^{obs}_j - S^{pred}_j}{ \sigma_j})^2`.
-  |
+  
   | Where :math:`S^{obs}_j` the observed data j and :math:`S^{pred}_j` the predicted data j, :math:`\sigma_j` the error on the observed data j, and N the total number of observed data. The higher the value of LL, the better is the match between observed and predicted data. 
   
 
