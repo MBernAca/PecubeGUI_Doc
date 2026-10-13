@@ -9,8 +9,8 @@ Active developments
 
 .. container::
 
-  PecubeGUI
-  *********
+    PecubeGUI
+    *********
 
 
 *Installation*
@@ -25,8 +25,8 @@ Active developments
 
 .. container::
 
-  Pecube 
-  ******
+    Pecube 
+    ******
 
 *Trapped-charge predictions*
 ----------------------------
