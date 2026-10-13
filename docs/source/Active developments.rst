@@ -7,8 +7,10 @@ Active developments
 
 .. rst-class:: section-header
 
-PecubeGUI
-*********
+.. container::
+
+  PecubeGUI
+  *********
 
 
 *Installation*
@@ -19,8 +21,12 @@ PecubeGUI
 | **Scheduled release:** November-December 2026.
 
 
-Pecube 
-******
+.. rst-class:: section-header
+
+.. container::
+
+  Pecube 
+  ******
 
 *Trapped-charge predictions*
 ----------------------------
