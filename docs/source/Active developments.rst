@@ -19,7 +19,7 @@ will simplify both the installation of the user interface but also the installat
 
 
 
-******
+
 Pecube 
 ******
 
